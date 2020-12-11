@@ -1,0 +1,117 @@
+/*========================
+Declare variables for page
+=========================*/
+:root {
+  /*color scheme*/
+
+}
+
+/*======================================
+Back to Basics - reset browser defaults
+=======================================*/
+html,
+body {
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  font-size: 12px; /*mobile first design - change to 16px for views >1024px*/
+}
+
+/*set global styles*/
+body * {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+/*====================
+Text and Font Styling
+=====================*/
+
+/*reset default font - never shall Time New Roman be seen again!*/
+
+h1,
+p
+ {
+  font-family: Verdana, sans-serif;
+}
+
+/*================
+Layout
+=================*/
+
+/*================
+Header and Title
+=================*/
+
+/*================
+Nav Menu Bar
+=================*/
+
+/*==============
+Section Styling
+================*/
+
+/*==========
+Link styles
+===========*/
+
+/*================
+The little touches
+=================*/
+
+/*Back to top - only for small mobile screen views*/
+.backtotop {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+/*=============
+Responsiveness
+===============*/
+
+/*Media queries for larger monitor views*/
+@media only screen and (min-width: 1024px) {
+}
+
+/*===============
+Ye old Print view
+=================*/
+
+@media print {
+  /*reset colours and borders*/
+
+  body * {
+    background-color: none;
+    color: #000;
+    box-shadow: none;
+  }
+
+ /*font size - change px to pt*/
+
+ /*remove unneeded elements*/
+ nav {
+   display: none;
+ }
+
+ /*display footer links*/
+
+  footer a::after {
+    content: " [" attr(href) "]";
+  }
+
+  /*=============
+  Accessibility
+  ===============*/
+
+  /*Reset to user browser preference*/
+  @media (prefers-reduced-motion: reduce) {
+    scroll-behavior: auto;
+  }
+
+/*Reset to user browser preference - remove animations or moving elements*/
+@media (prefers-reduced-motion) {
+ }
+ 
+}
