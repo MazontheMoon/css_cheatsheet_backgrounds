@@ -4,6 +4,7 @@ Declare variables for page
 :root {
   /*color scheme*/
 
+  /*font and text*/
 }
 
 /*======================================
@@ -31,53 +32,85 @@ Text and Font Styling
 /*reset default font - never shall Time New Roman be seen again!*/
 
 h1,
-p
- {
+h3,
+h5,
+p,
+li {
   font-family: Verdana, sans-serif;
 }
 
-/*================
-Layout
-=================*/
+h1 {
+}
 
-/*================
-Header and Title
-=================*/
+h3 {
+}
 
-/*================
-Nav Menu Bar
-=================*/
-
-/*==============
-Section Styling
-================*/
-
-/*==========
-Link styles
+p {
+}
+/*=========
+Grid Layout
 ===========*/
 
+/*======
+Nav Menu
+=======*/
+nav {
+}
+
+#nav-bar {
+}
+
+.nav-bar-button {
+}
+
+/*===========
+Content boxes
+=============*/
+body {
+}
+
+#top-header {
+}
+
+main {
+}
+
+section {
+}
+
+.sect-header {
+}
+
+.sect-content-box {
+}
+
+.content-info-box {
+}
+
+.content-code-box {
+}
+
+.code-box {
+}
+
 /*================
-The little touches
-=================*/
+Responsivesnness
+==================*/
 
-/*Back to top - only for small mobile screen views*/
-.backtotop {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-}
+/*
 
-/*=============
-Responsiveness
-===============*/
-
-/*Media queries for larger monitor views*/
 @media only screen and (min-width: 1024px) {
+
 }
 
-/*===============
-Ye old Print view
-=================*/
+@media only screen and (min-width: 500px) {
+
+}
+*/
+
+/*======================
+Ye Olde Time Print View
+========================*/
 
 @media print {
   /*reset colours and borders*/
@@ -88,30 +121,59 @@ Ye old Print view
     box-shadow: none;
   }
 
- /*font size - change px to pt*/
+  /*font size - change px to pt*/
+  h1 {
+    font-size: 18pt;
+    text-shadow: none;
+  }
 
- /*remove unneeded elements*/
- nav {
-   display: none;
- }
+  h3 {
+    font-size: 16pt;
+    text-shadow: none;
+  }
 
- /*display footer links*/
+  h5 {
+    font-size: 14pt;
+    text-shadow: none;
+  }
+
+  p,
+  li,
+  dt,
+  dd,
+  code,
+  abbr {
+    font-size: 12pt;
+  }
+
+  /*remove unneeded elements*/
+
+  /*display footer links*/
+
+  footer a:link {
+    color: #000;
+    margin: 0;
+    display: block;
+    font-size: 10pt;
+  }
 
   footer a::after {
     content: " [" attr(href) "]";
   }
 
-  /*=============
-  Accessibility
-  ===============*/
-
-  /*Reset to user browser preference*/
-  @media (prefers-reduced-motion: reduce) {
-    scroll-behavior: auto;
+  footer a:link,
+  footer a:visited {
+    color: #000;
+    background: none;
+    padding: 0;
   }
+}
+/*=============
+Accessibility
+===============*/
 
-/*Reset to user browser preference - remove animations or moving elements*/
-@media (prefers-reduced-motion) {
- }
- 
+/*Reset to user browser preference*/
+
+@media (prefers-reduced-motion: reduce) {
+  scroll-behavior: auto;
 }
