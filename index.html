@@ -63,55 +63,130 @@ Finding your way around
       </header>
       <div class="sect-content-box">
         <div class="content-info-box">
-          <p>Did you know that the default background colour is transparent and not white!</p>
+          <p>Did you know that the default background colour is transparant and not white!</p>
           <p>
             It is recommended to always use a background color, even as just a fallback if the browser doesn’t support gradients or link to image is broken.</p>
         </div>
         <div class="content-code-box">
           <code class="code-box">
-
+            .top { <br>
+            background-color: #f3f2f1;<br>
+            }
           </code>
         </div>
-
       </div>
     </section>
     <section id="sect-image">
       <header class="sect-header">
         <h3>Background Image</h3>
       </header>
-      <div class="sect-content-box"></div>
+      <div class="sect-content-box">
+        <div class="content-info-box">
+          <p>After setting a fallback with <span class="code-word">background-color</span> an image can be set using <span class="code-word">background-image</span> to appear as the background</p>
+          <p>All background images will repeat by default so it looks like a tile affect. </p>
+          <p>Screen readers will not register any images applied this way using CSS</p>
+        </div>
+        <div class="content-code-box">
+          <code class="code-box">
+            .top { <br>
+            background-color: #f3f2f1; <span class="code-box-comment">/*fallback*/</span><br>
+            background-image: url(https://imagehosting/image.png);<br>
+            }
+          </code>
+        </div>
+        <div class="content-info-box">
+          <p>Colour gradients can also be set using <span class="code-word">background-image</span>.</p>
+        </div>
+        <div class="content-code-box">
+          <code class="code-box">
+            .top { <br>
+            background-color: #f3f2f1; <span class="code-box-comment">/*fallback*/</span><br>
+            background-image: linear-gradient(to bottom, orange, blue, white);<br>
+            }
+          </code>
+        </div>
+        <div class="content-info-box">
+          <p>Multiple images can be set using <span class="code-word">background-image</span>.</p>
+        </div>
+        <div class="content-code-box">
+          <code class="code-box">
+            .top { <br>
+            background-color: #f3f2f1; <span class="code-box-comment">/*fallback*/</span><br>
+            background-image: linear-gradient(to bottom, orange, blue, white);<span class="code-box-comment">/*fallback*/</span><br>
+            background-image: url(https://imagehosting/image.png);<br>
+            }
+          </code>
+        </div>
+      </div>
     </section>
     <section id="sect-position">
       <header class="sect-header">
         <h3>Background Position</h3>
       </header>
-      <div class="sect-content-box"></div>
+      <div class="sect-content-box">
+        <div class="content-info-box">
+        </div>
+        <div class="content-code-box">
+          <code class="code-box">
+          </code>
+        </div>
+      </div>
     </section>
     <section id="sect-repeat">
       <header class="sect-header">
         <h3>Background Repeat</h3>
       </header>
-      <div class="sect-content-box"></div>
+      <div class="sect-content-box">
+        <div class="content-info-box">
+        </div>
+        <div class="content-code-box">
+          <code class="code-box">
+          </code>
+        </div>
+      </div>
     </section>
     <section id="sect-attachment">
       <header class="sect-header">
         <h3>Background Attachment</h3>
       </header>
-      <div class="sect-content-box"></div>
+      <div class="sect-content-box">
+        <div class="content-info-box">
+        </div>
+        <div class="content-code-box">
+          <code class="code-box">
+          </code>
+        </div>
+      </div>
     </section>
     <section id="sect-size">
       <header class="sect-header">
         <h3>Background Size</h3>
       </header>
-      <div class="sect-content-box"></div>
+      <div class="sect-content-box">
+        <div class="content-info-box">
+        </div>
+        <div class="content-code-box">
+          <code class="code-box">
+          </code>
+        </div>
+      </div>
     </section>
     <section id="sect-background">
       <header class="sect-header">
         <h3>Background</h3>
       </header>
-      <div class="sect-content-box"></div>
+      <div class="sect-content-box">
+        <div class="content-info-box">
+        </div>
+        <div class="content-code-box">
+          <code class="code-box">
+          </code>
+        </div>
+      </div>
     </section>
   </main>
-  <footer></footer>
+  <footer>
+    <div id="all-about-me"></div>
+  </footer>
 </body>
 </html>
