@@ -30,8 +30,8 @@ Finding your way around
     <ul id="nav-bar">
       <li><span class="nav-bar-button"><a href="#sect-color">Color</a></span></li>
       <li><span class="nav-bar-button"><a href="#sect-image">Image</a></span></li>
-      <li><span class="nav-bar-button"><a href="#sect-position">Position</a></span></li>
       <li><span class="nav-bar-button"><a href="#sect-repeat">Repeat</a></span></li>
+      <li><span class="nav-bar-button"><a href="#sect-position">Position</a></span></li>
       <li><span class="nav-bar-button"><a href="#sect-attachment">Attachment</a></span></li>
       <li><span class="nav-bar-button"><a href="#sect-size">Size</a></span></li>
       <li><span class="nav-bar-button"><a href="#sect-background">Background</a></span></li>
@@ -49,8 +49,8 @@ Finding your way around
         <ul class="index-list">
           <li><a href="#sect-color">background-color</a></li>
           <li><a href="#sect-image">background-image</a></li>
-          <li><a href="#sect-position">background-position</a></li>
           <li><a href="#sect-repeat">background-repeat</a></li>
+          <li><a href="#sect-position">background-position</a></li>
           <li><a href="#sect-attachment">background-attachment</a></li>
           <li><a href="#sect-size">background-size</a></li>
           <li><a href="#sect-background">background</a></li>
@@ -117,24 +117,48 @@ Finding your way around
             }
           </code>
         </div>
-      </div>
-    </section>
-    <section id="sect-position">
-      <header class="sect-header">
-        <h3>Background Position</h3>
-      </header>
-      <div class="sect-content-box">
         <div class="content-info-box">
+          <h5>Color Gradients</h5>
+          <p>Gradients let you display smooth transitions between two or more specified colours.</p>
+          <p>There are two types of color gradient that can be used as a background image:</p>
+          <ul class="content-value-list">
+            <li>Linear</li>
+            <li>Radial</li>
+          </ul>
         </div>
-        <div class="content-code-box">
-          <code class="code-box">
-          </code>
-        </div>
+        <div class="content-code-box"></div>
+        <div class="content-example-box"></div>
       </div>
     </section>
     <section id="sect-repeat">
       <header class="sect-header">
         <h3>Background Repeat</h3>
+      </header>
+      <div class="sect-content-box">
+        <div class="content-info-box">
+          <p>The <span class="code-word">background-repeat</span> property allows you to specify how the background image is repeated. The default is that an image is both horizontally and vertically repeated.</p>
+          <p>Values that can be set are:</p>
+          <ul class="content-value-list">
+            <li>no-repeat</li>
+            <li>repeat-x</li>
+            <li>repeat-y</li>
+            <li>repeat (default)</li>
+          </ul>
+        </div>
+        <div class="content-code-box">
+          <code class="code-box">
+            .top { <br>
+            background-color: #f3f2f1; <span class="code-box-comment">/*fallback*/</span><br>
+            background-image: url(https://imagehosting/image.png);<br>
+            background-repeat: no-repeat;<br>
+            }
+          </code>
+        </div>
+      </div>
+    </section>
+    <section id="sect-position">
+      <header class="sect-header">
+        <h3>Background Position</h3>
       </header>
       <div class="sect-content-box">
         <div class="content-info-box">
