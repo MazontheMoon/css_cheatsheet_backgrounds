@@ -45,7 +45,16 @@ h1 {
 h3 {
 }
 
+h5 {
+}
+
 p {
+}
+
+.sub-heading {
+}
+
+.code-box-comment {
 }
 /*=========
 Grid Layout
@@ -98,6 +107,15 @@ section {
 
 .content-example-box {
 }
+
+/*===============
+Code Box Examples
+=================*/
+
+/*" colour linear gradient from top to bottom"*/
+.content-example-box #example-lin-grad-top {
+}
+
 /*================
 Responsivesnness
 ==================*/
