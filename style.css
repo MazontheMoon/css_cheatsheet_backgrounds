@@ -112,8 +112,16 @@ section {
 Code Box Examples
 =================*/
 
-/*" colour linear gradient from top to bottom"*/
+/* colour linear gradient from top to bottom"*/
 .content-example-box #example-lin-grad-top {
+}
+
+/* colour linear gradient from left to right"*/
+.content-example-box #example-lin-grad-side {
+}
+
+/* colour linear gradient from bottom left to top right"*/
+.content-example-box #example-lin-grad-diag {
 }
 
 /*================
