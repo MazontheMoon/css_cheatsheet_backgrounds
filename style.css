@@ -84,6 +84,16 @@ body {
 main {
 }
 
+/*temporary */
+section,
+div {
+  border: 2px solid blue;
+}
+
+div {
+  border: 2px solid green;
+}
+
 section {
 }
 
@@ -112,18 +122,41 @@ section {
 Code Box Examples
 =================*/
 
-/* colour linear gradient from top to bottom"*/
+/* colour linear gradient from top to bottom*/
 .content-example-box #example-lin-grad-top {
 }
 
-/* colour linear gradient from left to right"*/
+/* colour linear gradient from left to right*/
 .content-example-box #example-lin-grad-side {
 }
 
-/* colour linear gradient from bottom left to top right"*/
+/* colour linear gradient from bottom left to top right*/
 .content-example-box #example-lin-grad-diag {
 }
 
+/* colour linear gradient from top to bottom using angle*/
+.content-example-box #example-lin-grad-angle-top {
+}
+
+/* colour linear gradient from left to right using angle*/
+.content-example-box #example-lin-grad-angle-side {
+}
+
+/* colour linear gradient from bottom  to top using angle*/
+.content-example-box #example-lin-grad-angle-bottom {
+}
+
+/* colour linear gradient diagonal with angle*/
+.content-example-box #example-lin-grad-angle-125 {
+}
+
+/* colour linear gradient diagonal with angle*/
+.content-example-box #example-lin-grad-angle-270 {
+}
+
+/* colour linear gradient repeating*/
+.content-example-box #example-lin-grad-repeat {
+}
 /*================
 Responsivesnness
 ==================*/
