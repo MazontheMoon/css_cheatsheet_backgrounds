@@ -61,294 +61,36 @@ Finding your way around
       <header class="sect-header">
         <h3>Background Color</h3>
       </header>
-      <div class="sect-content-box">
-        <div class="content-info-box">
-          <p>Did you know that the default background colour is transparant and not white!</p>
-          <p>
-            It is recommended to always use a background color, even as just a fallback if the browser doesn’t support gradients or link to image is broken.</p>
-        </div>
-        <div class="content-code-box">
-          <code class="code-box">
-            .top { <br>
-            background-color: #f3f2f1;<br>
-            }
-          </code>
-        </div>
-      </div>
     </section>
     <section id="sect-image">
       <header class="sect-header">
         <h3>Background Image</h3>
       </header>
-      <div class="sect-content-box">
-        <div class="content-info-box">
-          <p>After setting a fallback with <span class="code-word">background-color</span> an image can be set using <span class="code-word">background-image</span> to appear as the background</p>
-          <p>All background images will repeat by default so it looks like a tile affect. </p>
-          <p>Screen readers will not register any images applied this way using CSS</p>
-        </div>
-        <div class="content-code-box">
-          <code class="code-box">
-            .top { <br>
-            background-color: #f3f2f1; <span class="code-box-comment">/*fallback*/</span><br>
-            background-image: url(https://imagehosting/image.png);<br>
-            }
-          </code>
-        </div>
-        <div class="content-info-box">
-          <p>Colour gradients can also be set using <span class="code-word">background-image</span>.</p>
-        </div>
-        <div class="content-code-box">
-          <code class="code-box">
-            .top { <br>
-            background-color: #f3f2f1; <span class="code-box-comment">/*fallback*/</span><br>
-            background-image: linear-gradient(to bottom, orange, blue, white);<br>
-            }
-          </code>
-        </div>
-        <div class="content-info-box">
-          <p>Multiple images can be set using <span class="code-word">background-image</span>.</p>
-        </div>
-        <div class="content-code-box">
-          <code class="code-box">
-            .top { <br>
-            background-color: #f3f2f1; <span class="code-box-comment">/*fallback*/</span><br>
-            background-image: linear-gradient(to bottom, orange, blue, white);<span class="code-box-comment">/*fallback*/</span><br>
-            background-image: url(https://imagehosting/image.png);<br>
-            }
-          </code>
-        </div>
-        <div class="content-info-box">
-          <h5>Color Gradients</h5>
-          <p>Gradients let you display smooth transitions between two or more specified colours.</p>
-          <p>There are two types of color gradient that can be used as a background image:</p>
-          <ul class="content-value-list">
-            <li>Linear</li>
-            <li>Radial</li>
-          </ul>
-          <p>It works pretty much as it sounds, the linear gradient can be from up to down, side to side, or diagonal. The radial gradient instead radiates from a central point.</p>
-        </div>
-        <div class="content-info-box">
-          <p class="sub-heading">Linear</p>
-          <p>To create a linear gradient you need:</p>
-          <ol>
-            <li>A direction or angle (default alignment is from top to bottom)</li>
-            <li>Two or more colours (transparant counts as a colour!)</li>
-          </ol>
-        </div>
-        <div class="content-code-box">
-          <code class="code-box">
-            <span class="code-box-comment">/*direction set using default of top to bottom*/</span>
-            div {<br>
-            background-image: linear-gradient(color1, color2);<br>
-            }
-          </code>
-        </div>
-        <div class="content-example-box">
-          <div id="example-lin-grad-top"></div>
-        </div>
-        <div class="content-code-box">
-          <code class="code-box">
-            <span class="code-box-comment">/*direction set from left to right*/</span>
-            div {<br>
-            background-image: linear-gradient(to right, color1, color2, color3);<br>
-            }
-          </code>
-        </div>
-        <div class="content-example-box">
-          <div id="example-lin-grad-side"></div>
-        </div>
-        <div class="content-code-box">
-          <code class="code-box">
-            <span class="code-box-comment">/*direction set diagonally*/</span>
-            div {<br>
-            background-image: linear-gradient(to top left, color1, color2, color3, color4);<br>
-            }
-          </code>
-        </div>
-        <div class="content-example-box">
-          <div id="example-lin-grad-diag"></div>
-        </div>
-        <div class="content-info-box">
-          <p>For more control of the direction of the gradient an angle can be set instead of the directions</p>
-        </div>
-        <div class="content-code-box">
-          <code class="code-box">
-            <span class="code-box-comment">/*direction set as angle 0deg which is same as bottom to top*/</span>
-            div {<br>
-            background-image: linear-gradient(0deg, color1, color2, color3, color4, color5);<br>
-            }
-          </code>
-        </div>
-        <div class="content-example-box">
-          <div id="example-lin-grad-angle-top"></div>
-        </div>
-        <div class="content-code-box">
-          <code class="code-box">
-            <span class="code-box-comment">/*direction set as angle 90deg which is same as left to right*/</span>
-            div {<br>
-            background-image: linear-gradient(90deg, color1, color2, color3, color4, color5, color6);<br>
-            }
-          </code>
-        </div>
-        <div class="content-example-box">
-          <div id="example-lin-grad-angle-side"></div>
-        </div>
-        <div class="content-code-box">
-          <code class="code-box">
-            <span class="code-box-comment">/*direction set as angle 180deg which is same as top to bottom*/</span>
-            div {<br>
-            background-image: linear-gradient(180deg, color1, color2, color3, color4, color5, color6, color7);<br>
-            }
-          </code>
-        </div>
-        <div class="content-example-box">
-          <div id="example-lin-grad-angle-bottom"></div>
-        </div>
-        <div class="content-info-box">
-          <p>This allows more exact diagonal lines to be used...</p>
-        </div>
-        <div class="content-code-box">
-          <code class="code-box">
-            <span class="code-box-comment">/*direction set as angle 125deg */</span>
-            div {<br>
-            background-image: linear-gradient(125deg, color1, color2, color3);<br>
-            }
-          </code>
-        </div>
-        <div class="content-example-box">
-          <div id="example-lin-grad-angle-125"></div>
-        </div>
-        <div class="content-code-box">
-          <code class="code-box">
-            <span class="code-box-comment">/*direction set as angle 270deg */</span>
-            div {<br>
-            background-image: linear-gradient(270deg, color1, color2, color3);<br>
-            }
-          </code>
-        </div>
-        <div class="content-example-box">
-          <div id="example-lin-grad-angle-270"></div>
-        </div>
-        <div class="content-info-box">
-          <p>The gradient can also be set to repeat itself...</p>
-        </div>
-        <div class="content-code-box">
-          <code class="code-box">
-            <span class="code-box-comment">/*2 color gradient set to repeat*/</span>
-            div {<br>
-            background-image: repeating-linear-gradient(0deg, color1, color2);<br>
-            }
-          </code>
-        </div>
-        <div class="content-example-box">
-          <div id="example-lin-grad-repeat"></div>
-        </div>
-      </div>
-      <div class="content-info-box">
-        <p class="sub-heading">Radial</p>
-        <p>To create a radial gradient you need:</p>
-        <ol>
-          <li>A shape</li>
-          <li>Two or more colours (transparant still counts as a colour!)</li>
-        </ol>
-        <p>There are two shapes:</p>
-        <ol>
-          <li>Ellipse (default)</li>
-          <li>Circle</li>
-        </ol>
-      </div>
-      <div class="content-info-box">
-        <p>Radial gradient with even colour stops</p>
-      </div>
-      <div class="content-code-box">
-        <code class="code-box">
-          <span class="code-box-comment">/*3 color elliptical*/</span>
-          div {<br>
-          background-image: repeating-linear-gradient(color1, color2, color3);<br>
-          }
-        </code>
-      </div>
-      <div class="content-example-box">
-        <div id="example-rad-grad"></div>
-      </div>
     </section>
     <section id="sect-repeat">
       <header class="sect-header">
         <h3>Background Repeat</h3>
       </header>
-      <div class="sect-content-box">
-        <div class="content-info-box">
-          <p>The <span class="code-word">background-repeat</span> property allows you to specify how the background image is repeated. The default is that an image is both horizontally and vertically repeated.</p>
-          <p>Values that can be set are:</p>
-          <ul class="content-value-list">
-            <li>no-repeat</li>
-            <li>repeat-x</li>
-            <li>repeat-y</li>
-            <li>repeat (default)</li>
-          </ul>
-        </div>
-        <div class="content-code-box">
-          <code class="code-box">
-            .top { <br>
-            background-color: #f3f2f1; <span class="code-box-comment">/*fallback*/</span><br>
-            background-image: url(https://imagehosting/image.png);<br>
-            background-repeat: no-repeat;<br>
-            }
-          </code>
-        </div>
-      </div>
     </section>
     <section id="sect-position">
       <header class="sect-header">
         <h3>Background Position</h3>
       </header>
-      <div class="sect-content-box">
-        <div class="content-info-box">
-        </div>
-        <div class="content-code-box">
-          <code class="code-box">
-          </code>
-        </div>
-      </div>
     </section>
     <section id="sect-attachment">
       <header class="sect-header">
         <h3>Background Attachment</h3>
       </header>
-      <div class="sect-content-box">
-        <div class="content-info-box">
-        </div>
-        <div class="content-code-box">
-          <code class="code-box">
-          </code>
-        </div>
-      </div>
     </section>
     <section id="sect-size">
       <header class="sect-header">
         <h3>Background Size</h3>
       </header>
-      <div class="sect-content-box">
-        <div class="content-info-box">
-        </div>
-        <div class="content-code-box">
-          <code class="code-box">
-          </code>
-        </div>
-      </div>
     </section>
     <section id="sect-background">
       <header class="sect-header">
         <h3>Background</h3>
       </header>
-      <div class="sect-content-box">
-        <div class="content-info-box">
-        </div>
-        <div class="content-code-box">
-          <code class="code-box">
-          </code>
-        </div>
-      </div>
     </section>
   </main>
   <footer>
