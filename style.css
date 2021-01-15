@@ -55,9 +55,45 @@ nav {
 .nav-bar-button {
 }
 
-/*===========
-Content boxes
-=============*/
+/*==========================
+Main and Section containers
+===========================*/
+
+main {
+}
+
+section {
+}
+
+.sect-header {
+}
+
+.sect-content-box {
+}
+
+.sect-content-box .content-box-text {
+}
+
+.sect-content-box .content-box-code {
+}
+
+.sect-content-box .content-box-code p {
+}
+
+.sect-content-box .content-box-code code {
+}
+
+.sect-content-box .content-box-code-example {
+}
+
+.sect-content-box-subsection {
+}
+
+.sect-content-box-subsection .subsection-header {
+}
+
+.sect-content-box-subsection .mini-header {
+}
 
 /*================
 Responsivesnness
