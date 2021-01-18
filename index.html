@@ -73,7 +73,9 @@ Finding your way around
             background-color: #f3f2f1;<br>
             }</code>
         </div>
-        <figure class="content-box-code-example"></figure>
+        <figure class="content-box-code-example">
+          <figcaption>Color me!</figcaption>
+        </figure>
       </div>
     </section>
     <section id="sect-image">
@@ -92,6 +94,9 @@ Finding your way around
             background-image: url(https://imagehosting/image.png);<br>
             }</code>
         </div>
+        <figure class="content-box-code-example">
+          <figcaption>Insert example box</figcaption>
+        </figure>
         <div class="content-box-code">
           <p>Colour gradients can also be set using <span class="code-word">background-image</span>.</p>
           <code>.top { <br>
@@ -99,6 +104,9 @@ Finding your way around
             background-image: linear-gradient(to bottom, orange, blue, white);
             }</code>
         </div>
+        <figure class="content-box-code-example">
+          <figcaption>Insert example box</figcaption>
+        </figure>
         <div class="content-box-code">
           <p>Multiple images can be set using <span class="code-word">background-image</span>.</p>
           <code>.top { <br>
@@ -107,6 +115,9 @@ Finding your way around
             background-image: url(https://imagehosting/image.png);
             }</code>
         </div>
+        <figure class="content-box-code-example">
+          <figcaption>Insert example box</figcaption>
+        </figure>
       </div>
       <div class="sect-content-box-subsection">
         <div class="subsection-header">
@@ -119,14 +130,120 @@ Finding your way around
             <ol>
               <li>Linear</li>
               <li>Radial</li>
-            </ol </div>
-            <div class="content-box-text">
-              <p class="mini-header">Linear Gradient</p>
-            </div>
-            <div class="content-box-code"></div>
-            <figure class="content-box-code-example"></figure>
+            </ol>
           </div>
+          <div class="content-box-text">
+            <p class="mini-header">Linear Gradient</p>
+            <p>It works pretty much as it sounds, the linear gradient can be from up to down, side to side, or diagonal.</p>
+            <p>To create a linear gradient you need:</p>
+            <ol>
+              <li>A direction or angle (default alignment is from top to bottom)</li>
+              <li>Two or more colours (transparant counts as a colour!)</li>
+            </ol>
+          </div>
+          <div class="content-box-code">
+            <code><span class="code-box-comment">/*direction set using default of top to bottom*/</span><br>
+              div { <br>
+              background-image: linear-gradient(color1, color2);<br>
+              }</code>
+          </div>
+          <figure class="content-box-code-example">
+            <figcaption>Insert example box</figcaption>
+          </figure>
+          <div class="content-box-code">
+            <code><span class="code-box-comment">/*direction set from left to right*/</span><br>
+              div { <br>
+              background-image: linear-gradient(to right, color1, color2, color3);<br>
+              }</code>
+          </div>
+          <figure class="content-box-code-example">
+            <figcaption>Insert example box</figcaption>
+          </figure>
+          <div class="content-box-code">
+            <code><span class="code-box-comment">/*direction set diagonally*/</span><br>
+              div { <br>
+              background-image: linear-gradient(to top left, color1, color2, color3, color4);<br>
+              }</code>
+          </div>
+          <figure class="content-box-code-example">
+            <figcaption>Insert example box</figcaption>
+          </figure>
+          <div class="content-box-text">
+            <p>For more control of the direction of the gradient an angle can be set instead of the directions</p>
+          </div>
+          <div class="content-box-code">
+            <code><span class="code-box-comment">/*direction set as angle 0deg which is same as bottom to top*/</span><br>
+              div { <br>
+              background-image: linear-gradient(0deg, color1, color2, color3, color4, color5);<br>
+              }</code>
+          </div>
+          <figure class="content-box-code-example">
+            <figcaption>Insert example box</figcaption>
+          </figure>
+          <div class="content-box-code">
+            <code><span class="code-box-comment">/*direction set as angle 90deg which is same as left to right*/</span><br>
+              div { <br>
+              background-image: linear-gradient(90deg, color1, color2, color3, color4, color5, color6);<br>
+              }</code>
+          </div>
+          <figure class="content-box-code-example">
+            <figcaption>Insert example box</figcaption>
+          </figure>
+          <div class="content-box-code">
+            <code><span class="code-box-comment">/*direction set as angle 180deg which is same as top to bottom*/</span><br>
+              div { <br>
+              background-image: linear-gradient(180deg, color1, color2, color3, color4, color5, color6, color7);<br>
+              }</code>
+          </div>
+          <figure class="content-box-code-example">
+            <figcaption>Insert example box</figcaption>
+          </figure>
+          <div class="content-box-text">
+            <p>This allows more exact diagonal lines to be used...</p>
+          </div>
+          <div class="content-box-code">
+            <code><span class="code-box-comment">/*direction set as angle 125deg */</span><br>
+              div { <br>
+              background-image: linear-gradient(125deg, color1, color2, color3);<br>
+              }</code>
+          </div>
+          <figure class="content-box-code-example">
+            <figcaption>Insert example box</figcaption>
+          </figure>
+          <div class="content-box-code">
+            <code><span class="code-box-comment">/*direction set as angle 270deg */</span><br>
+              div { <br>
+              background-image: linear-gradient(270deg, color1, color2, color3);<br>
+              }</code>
+          </div>
+          <figure class="content-box-code-example">
+            <figcaption>Insert example box</figcaption>
+          </figure>
+          <div class="content-box-text">
+            <p>The gradient can also be set to repeat itself...</p>
+          </div>
+          <div class="content-box-code">
+            <code><span class="code-box-comment">/*2 color gradient set to repeat*/</span><br>
+              div { <br>
+              background-image: repeating-linear-gradient(0deg, color1, color2);<br>
+              }</code>
+          </div>
+          <figure class="content-box-code-example">
+            <figcaption>Insert example box</figcaption>
+          </figure>
+
+          <div class="content-box-text">
+            <p class="mini-header">Radial Gradient</p>
+          </div>
+          <div class="content-box-code">
+            <code>.top { <br>
+              }</code>
+          </div>
+          <figure class="content-box-code-example">
+            <figcaption>Insert example box</figcaption>
+          </figure>
         </div>
+      </div>
     </section>
     <section id="sect-repeat">
       <header class="sect-header">
