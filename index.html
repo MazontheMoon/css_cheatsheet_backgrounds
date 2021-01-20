@@ -231,12 +231,101 @@ Finding your way around
           <figure class="content-box-code-example">
             <figcaption>Insert example box</figcaption>
           </figure>
-
           <div class="content-box-text">
             <p class="mini-header">Radial Gradient</p>
+            <p>The radial gradient radiates from a central point.</p>
+            <p>To create a radial gradient you need:</p>
+            <ol>
+              <li>A shape</li>
+              <li>Two or more colours (transparant counts as a colour!)</li>
+            </ol>
+            <p>There are two shapes:</p>
+            <ol>
+              <li>Ellipse (default)</li>
+              <li>Circle</li>
+            </ol>
           </div>
           <div class="content-box-code">
-            <code>.top { <br>
+            <code><span class="code-box-comment">/*3 color elliptical radial gradient*/</span><br>
+              div { <br>
+              background-image: radial-gradient(red, yellow, green);<br>
+              }</code>
+          </div>
+          <figure class="content-box-code-example">
+            <figcaption>Insert example box</figcaption>
+          </figure>
+          <div class="content-box-code">
+            <code><span class="code-box-comment">/*2 color gradient set to repeat*/</span><br>
+              div { <br>
+              background-image: repeating-radial-gradient(color1, color2);<br>
+              }</code>
+          </div>
+          <figure class="content-box-code-example">
+            <figcaption>Insert example box</figcaption>
+          </figure>
+          <div class="content-box-text">
+            <p>The size parameter defines the size of the gradient.</p>
+            <p> The values are:</p>
+            <ul>
+              <li>closest-side</li>
+              <li>farthest-side</li>
+              <li>closest-corner</li>
+              <li>farthest-corner</li>
+            </ul>
+          </div>
+          <div class="content-box-code">
+            <code><span class="code-box-comment">/*3 color radial gradient using closest-side size*/</span><br>
+              div { <br>
+              background-image: radial-gradient(closest-side at 70% 25%, color1, color2, color3);<br>
+              }</code>
+          </div>
+          <figure class="content-box-code-example">
+            <figcaption>Insert example box</figcaption>
+          </figure>
+          <div class="content-box-code">
+            <code><span class="code-box-comment">/*3 color radial gradient using farthest-side size*/</span><br>
+              div { <br>
+              background-image: radial-gradient(farthest-side at 70% 25%, color1, color2, color3);<br>
+              }</code>
+          </div>
+          <figure class="content-box-code-example">
+            <figcaption>Insert example box</figcaption>
+          </figure>
+          <div class="content-box-code">
+            <code><span class="code-box-comment">/*3 color radial gradient using closest-corner size*/</span><br>
+              div { <br>
+              background-image: radial-gradient(closest-corner at 70% 25%, color1, color2, color3);<br>
+              }</code>
+          </div>
+          <figure class="content-box-code-example">
+            <figcaption>Insert example box</figcaption>
+          </figure>
+          <div class="content-box-code">
+            <code><span class="code-box-comment">/*3 color radial gradient using farthest-corner size*/</span><br>
+              div { <br>
+              background-image: radial-gradient(farthest-corner at 70% 25%, color1, color2, color3);<br>
+              }</code>
+          </div>
+          <figure class="content-box-code-example">
+            <figcaption>Insert example box</figcaption>
+          </figure>
+          <div class="content-box-text">
+            <p class="mini-header">Colour stops</p>
+            <p>For both linear and radial gradients you can also specify how much of the gradient is in each colour instead of all using an equal fraction....</p>
+          </div>
+          <div class="content-box-code">
+            <code><span class="code-box-comment">/*3 color circular linear gradient*/</span><br>
+              div { <br>
+              background-image: linear-gradient(to right, color1 25%, color2 50%, color3);<br>
+              }</code>
+          </div>
+          <figure class="content-box-code-example">
+            <figcaption>Insert example box</figcaption>
+          </figure>
+          <div class="content-box-code">
+            <code><span class="code-box-comment">/*3 color circular radial gradient*/</span><br>
+              div { <br>
+              background-image: repeating-linear-gradient(color1 20%, color2 15%, color3);<br>
               }</code>
           </div>
           <figure class="content-box-code-example">
