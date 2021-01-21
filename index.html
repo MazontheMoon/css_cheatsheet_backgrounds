@@ -339,9 +339,25 @@ Finding your way around
         <h3>Background Repeat</h3>
       </header>
       <div class="sect-content-box">
-        <div class="content-box-text"></div>
-        <div class="content-box-code"></div>
-        <figure class="content-box-code-example"></figure>
+        <div class="content-box-text">
+          <p>The <span class="code-word">background-repeat</span> property allows you to specify how the background image is repeated. The default is that an image is both horizontally and vertically repeated.</p>
+          <p>Values that can be set are:</p>
+          <ul>
+            <li>no-repeat</li>
+            <li>repeat-x</li>
+            <li>repeat-y</li>
+            <li>repeat (default)</li>
+          </ul>
+        </div>
+        <div class="content-box-code">
+          <code>
+            .top { <br>
+            background-color: #f3f2f1; <span class="code-box-comment">/*fallback*/</span><br>
+            background-image: url(https://imagehosting/image.png);<br>
+            background-repeat: no-repeat;<br>
+            }
+          </code>
+        </div>
       </div>
     </section>
     <section id="sect-position">
