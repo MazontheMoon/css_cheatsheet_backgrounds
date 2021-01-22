@@ -365,6 +365,27 @@ Finding your way around
         <h3>Background Position</h3>
       </header>
       <div class="sect-content-box">
+        <div class="content-box-text">
+          <p>The <span class="code-word">background-position</span> property allows you to position the background image where you want in the background by specifying an x(horizontal) and y (vertical) value (top left being (0,0)).</p>
+          <p>Values can be set using:</p>
+          <ul>
+            <li>pixels</li>
+            <li>rems</li>
+            <li>percentages</li>
+            <li>keywords (left, center, right, top, center, bottom)</li>
+          </ul>
+        </div>
+        <div class="content-box-code">
+          <code>
+            .top { <br>
+            background-color: #f3f2f1; <span class="code-box-comment">/*fallback*/</span><br>
+            background-image: linear-gradient(to bottom, orange, blue, white); <span class="code-box-comment">/*fallback*/</span><br>
+            background-image: url(https://imagehosting/image.png);<br>
+            background-repeat: no-repeat;<br>
+            background-position: center center;<br>
+            }
+          </code>
+        </div>
       </div>
     </section>
     <section id="sect-attachment">
