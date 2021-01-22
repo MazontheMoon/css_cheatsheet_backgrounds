@@ -440,9 +440,26 @@ Finding your way around
       </header>
       <div class="sect-content-box">
         <div class="content-box-text">
+          <p>The <span class="code-word">background-size</span> property does pretty much exactly what you think it does (but check browser support)</p>
+          <p>Values can be set as</p>
+          <ul>
+            <li>pixels</li>
+            <li>rems</li>
+            <li>percentages</li>
+          </ul>
         </div>
         <div class="content-box-code">
-          <code></code>
+          <code>
+            div{ <br>
+            background-color: #f3f2f1; <span class="code-box-comment">/*fallback*/</span><br>
+            background-image: linear-gradient(to bottom, orange, blue, white); <span class="code-box-comment">/*fallback*/</span><br>
+            background-image: url(https://imagehosting/image.png);<br>
+            background-repeat: no-repeat;<br>
+            background-position: 30px 50px;<br>
+            background-attachment: local;<br>
+            background-size: 160px 160px; <br>
+            }
+          </code>
         </div>
       </div>
     </section>
@@ -452,9 +469,36 @@ Finding your way around
       </header>
       <div class="sect-content-box">
         <div class="content-box-text">
+          <p>The <span class="code-word">background</span> property is the shorthand of all above property values (any properties not specified are assigned default values).</p>
           <div class="content-box-code">
-            <code></code>
+            <p>So this....</p>
+            <code>
+              header { <br>
+              background-color: yellow; <br>
+              background-image: linear-gradient(to bottom, yellow, #dddd00 50%, orange);<br>
+              background-repeat: no-repeat;<br>
+              background-position: 99% center;<br>
+              }
+            </code>
+            <p>can be written as...</p>
+            <code>
+              header {
+              background: yellow linear-gradient(to bottom, orange, yellow) no-repeat left center scroll;
+              }
+            </code>
+            <p>This is where adding multiple background can get fun..</p>
+            <code>
+              header { <br>
+              background-color: yellow;<br>
+              background: url(image.png) no-repeat 99% center,
+              url(background-tile.png), <br>
+              linear-gradient(to bottom, yellow, #dddd00 50%, orange);<br>
+              }
+            </code>
           </div>
+          <figure class="content-box-code-example">
+            <figcaption>Insert example box</figcaption>
+          </figure>
         </div>
       </div>
     </section>
