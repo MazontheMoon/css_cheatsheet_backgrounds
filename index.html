@@ -377,15 +377,27 @@ Finding your way around
         </div>
         <div class="content-box-code">
           <code>
-            .top { <br>
+            div{ <br>
             background-color: #f3f2f1; <span class="code-box-comment">/*fallback*/</span><br>
             background-image: linear-gradient(to bottom, orange, blue, white); <span class="code-box-comment">/*fallback*/</span><br>
             background-image: url(https://imagehosting/image.png);<br>
             background-repeat: no-repeat;<br>
-            background-position: center center;<br>
+            background-position: 30px 50px;<br>
             }
           </code>
         </div>
+        <div class="content-box-code">
+          <code><span class="code-box-comment">/*background top and center*/</span><br>
+            div { <br>
+            background-image: url(https://imagehosting/image.png);<br>
+            background-repeat: no-repeat;<br>
+            background-position: top center;<br>
+            }
+          </code>
+        </div>
+        <figure class="content-box-code-example">
+          <figcaption>Insert example box</figcaption>
+        </figure>
       </div>
     </section>
     <section id="sect-attachment">
@@ -393,6 +405,33 @@ Finding your way around
         <h3>Background Attachment</h3>
       </header>
       <div class="sect-content-box">
+        <div class="content-box-text">
+          <p>The <span class="code-word">background-attachment</span> property allows you to specify <span class="look-at-me-text">how</span> to scroll <span class="look-at-me-text">when</span> the content scrolls <span class="look-at-me-text">if</span> the content will scroll.</p>
+          <p>Values that can be set are:</p>
+          <ul>
+            <li>scroll</li>
+            <li>fixed</li>
+            <li>local</li>
+          </ul>
+          <p><u>Scroll</u></p>
+          <p>If the element is scrolled the background does not move and scrolls as the page scrolls</p>
+          <p><u>Fixed</u></p>
+          <p>Always remains fixed to the viewport </p>
+          <p><u>Local</u></p>
+          <p>Fixes the background to the element it is set on and when element is scrolled and background scrolls with it </p>
+        </div>
+        <div class="content-box-code">
+          <code>
+            div{ <br>
+            background-color: #f3f2f1; <span class="code-box-comment">/*fallback*/</span><br>
+            background-image: linear-gradient(to bottom, orange, blue, white); <span class="code-box-comment">/*fallback*/</span><br>
+            background-image: url(https://imagehosting/image.png);<br>
+            background-repeat: no-repeat;<br>
+            background-position: 30px 50px;<br>
+            background-attachment: local;<br>
+            }
+          </code>
+        </div>
       </div>
     </section>
     <section id="sect-size">
@@ -400,6 +439,11 @@ Finding your way around
         <h3>Background Size</h3>
       </header>
       <div class="sect-content-box">
+        <div class="content-box-text">
+        </div>
+        <div class="content-box-code">
+          <code></code>
+        </div>
       </div>
     </section>
     <section id="sect-background">
@@ -407,6 +451,11 @@ Finding your way around
         <h3>Background</h3>
       </header>
       <div class="sect-content-box">
+        <div class="content-box-text">
+          <div class="content-box-code">
+            <code></code>
+          </div>
+        </div>
       </div>
     </section>
     <section id="sect-clip">
@@ -414,6 +463,11 @@ Finding your way around
         <h3>Background Clip</h3>
       </header>
       <div class="sect-content-box">
+        <div class="content-box-text">
+          <div class="content-box-code">
+            <code></code>
+          </div>
+        </div>
       </div>
     </section>
   </main>
