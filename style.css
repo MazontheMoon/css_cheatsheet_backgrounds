@@ -3,8 +3,17 @@ Declare variables for page
 =========================*/
 :root {
   /*color scheme*/
+  --page-background-colour: #22223b; /*Dark Navy Blue*/
+  --section-background-colour: #4a4e69; /*Light Navy Blue*/
+  --border-colour: #c9ada7; /*Peach*/
+  --header-colour: #9a8c98; /*Mauve*/
+  --text-colour: #f2e9e4; /*offwhite*/
 
   /*font and text*/
+  --header-font: font-family: 'BioRhyme', serif;
+  --text-font: font-family: 'Saira', sans-serif;
+  --code-font: font-family: 'Space Mono', monospace;
+  
 }
 
 /*======================================
@@ -16,6 +25,8 @@ body {
   margin: 0;
   padding: 0;
   font-size: 12px; /*mobile first design - change to 16px for views >1024px*/
+  background-color: var(--page-background-colour);
+  color: var(--text-colour);
 }
 
 /*set global styles*/
@@ -35,8 +46,9 @@ h1,
 h3,
 h5,
 p,
-li {
-  font-family: Verdana, sans-serif;
+li,
+figcaption {
+  font-family: var(-- --text-font), Verdana, sans-serif;
 }
 
 /*=========
@@ -99,12 +111,15 @@ section {
 Responsivesnness
 ==================*/
 
-/*
+
 
 @media only screen and (min-width: 1024px) {
-
+  body {
+   font-size: 16px;
+  }
 }
 
+/*
 @media only screen and (min-width: 500px) {
 
 }
@@ -173,6 +188,12 @@ Ye Olde Time Print View
 /*=============
 Accessibility
 ===============*/
+
+@media (prefers-color-scheme: dark) {
+}
+
+@media (prefers-color-scheme: light) {
+}
 
 /*Reset to user browser preference*/
 
