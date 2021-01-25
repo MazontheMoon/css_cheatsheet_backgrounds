@@ -1,6 +1,6 @@
-<!----------------------------------------------
-My CSS Cheat Sheet for learning CSS - Grid
------------------------------------------------->
+<!--=============================================
+My CSS Cheat Sheet for learning CSS - Backgrounds
+===============================================-->
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
@@ -470,36 +470,36 @@ Finding your way around
       <div class="sect-content-box">
         <div class="content-box-text">
           <p>The <span class="code-word">background</span> property is the shorthand of all above property values (any properties not specified are assigned default values).</p>
-          <div class="content-box-code">
-            <p>So this....</p>
-            <code>
-              header { <br>
-              background-color: yellow; <br>
-              background-image: linear-gradient(to bottom, yellow, #dddd00 50%, orange);<br>
-              background-repeat: no-repeat;<br>
-              background-position: 99% center;<br>
-              }
-            </code>
-            <p>can be written as...</p>
-            <code>
-              header {
-              background: yellow linear-gradient(to bottom, orange, yellow) no-repeat left center scroll;
-              }
-            </code>
-            <p>This is where adding multiple background can get fun..</p>
-            <code>
-              header { <br>
-              background-color: yellow;<br>
-              background: url(image.png) no-repeat 99% center,
-              url(background-tile.png), <br>
-              linear-gradient(to bottom, yellow, #dddd00 50%, orange);<br>
-              }
-            </code>
-          </div>
-          <figure class="content-box-code-example">
-            <figcaption>Insert example box</figcaption>
-          </figure>
         </div>
+        <div class="content-box-code">
+          <p>So this....</p>
+          <code>
+            header { <br>
+            background-color: yellow; <br>
+            background-image: linear-gradient(to bottom, yellow, #dddd00 50%, orange);<br>
+            background-repeat: no-repeat;<br>
+            background-position: 99% center;<br>
+            }
+          </code>
+          <p>can be written as...</p>
+          <code>
+            header {
+            background: yellow linear-gradient(to bottom, orange, yellow) no-repeat left center scroll;
+            }
+          </code>
+          <p>This is where adding multiple background can get fun..</p>
+          <code>
+            header { <br>
+            background-color: yellow;<br>
+            background: url(image.png) no-repeat 99% center,
+            url(background-tile.png), <br>
+            linear-gradient(to bottom, yellow, #dddd00 50%, orange);<br>
+            }
+          </code>
+        </div>
+        <figure class="content-box-code-example">
+          <figcaption>Insert example box</figcaption>
+        </figure>
       </div>
     </section>
     <section id="sect-clip">
@@ -508,15 +508,77 @@ Finding your way around
       </header>
       <div class="sect-content-box">
         <div class="content-box-text">
-          <div class="content-box-code">
-            <code></code>
-          </div>
+          <p>The <span class="code-word">background-clip</span> property (also covered in a previous cheat-sheet on <a href="https://codepen.io/mazonthemoon/full/KKdgeoJ" target="_blank"> The Box Model</a>) can be used to specify where the background extensd to on the container box</p>
+          <p>Values can be set as</p>
+          <ul>
+            <li>border (default)</li>
+            <li>padding</li>
+            <li>content</li>
+            <li>text</li>
+          </ul>
         </div>
+        <div class="content-box-code">
+          <code>
+            header { <br>
+            background-color: yellow; <br>
+            background-image: linear-gradient(to bottom, yellow, #dddd00 50%, orange); <br>
+            background-clip: border;<br>
+            }
+          </code>
+        </div>
+        <figure class="content-box-code-example">
+          <figcaption>Insert example box</figcaption>
+        </figure>
+        <div class="content-box-code">
+          <code>
+            header { <br>
+            background-color: yellow; <br>
+            background-image: linear-gradient(to bottom, yellow, #dddd00 50%, orange); <br>
+            background-clip: padding;<br>
+            }
+          </code>
+        </div>
+        <figure class="content-box-code-example">
+          <figcaption>Insert example box</figcaption>
+        </figure>
+        <div class="content-box-code">
+          <code>
+            header { <br>
+            background-color: yellow; <br>
+            background-image: linear-gradient(to bottom, yellow, #dddd00 50%, orange); <br>
+            background-clip: content;<br>
+            }
+          </code>
+        </div>
+        <figure class="content-box-code-example">
+          <figcaption>Insert example box</figcaption>
+        </figure>
       </div>
+      <div class="content-box-code">
+        <code>
+          header { <br>
+          background-color: yellow; <br>
+          background-image: linear-gradient(to bottom, yellow, #dddd00 50%, orange); <br>
+          background-clip: text;<br>
+          -webkit-background-clip: text; <br>
+          color: rgba(0, 0, 0, 0.2); <br>
+          }
+        </code>
+      </div>
+      <figure class="content-box-code-example">
+        <figcaption>Insert example box</figcaption>
+      </figure>
     </section>
   </main>
   <footer>
-    <div id="all-about-me"></div>
+    <div id="all-about-me">
+      <p>Designed by <abbr title="Mary Ronan">MazOnTheMoon</abbr> 2020</p>
+      <p><a href="https://www.linkedin.com/in/mary-ronan/" target="_blank"> <span class="fab fa-linkedin"> </span></a>
+        <a href="https://github.com/MazontheMoon" target="_blank"> <span class="fab fa-github-square"> </span></a>
+        <a href="https://codepen.io/mazonthemoon/#" target="_blank"> <span class="fab fa-codepen"> </span></a>
+        <a href="https://mazcodesonthemoon.wordpress.com/2020/10/12/teaching-myself-to-code-css/" target="_blank"> <span class="fab fa-wordpress"> </span></a>
+      </p>
+    </div>
   </footer>
 </body>
 </html>
