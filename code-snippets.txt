@@ -1,0 +1,26 @@
+<span class="really-look-at-me-text"></span>
+
+<span class="look-at-me-text"></span>
+
+<span class="code-word"></span>
+
+<span class="code-box-comment">/*fallback*/</span>
+
+
+Colour palette:
+
+#22223B -  Space Cadet - Dark Navy Blue
+#4A4E69 - Independence - Light Navy Blue
+#9A8C98 -  Heliotrope Gray - Mauve
+#C9ADA7 - Silver Pink - Peach
+#F2E9E4 - Isabelline - Off White
+
+--page-background-colour: #22223b; /*Dark Navy Blue*/
+--section-background-colour: #4a4e69; /*Light Navy Blue*/
+--border-colour: #c9ada7; /*Peach*/
+--header-colour: #9a8c98; /*Mauve*/
+--text-colour: #f2e9e4; /*offwhite*/
+
+--header-font: font-family: 'BioRhyme', serif;
+--text-font: font-family: 'Saira', sans-serif;
+--code-font: font-family: 'Space Mono', monospace;
