@@ -3,8 +3,16 @@ Declare variables for page
 =========================*/
 :root {
   /*color scheme*/
+  --page-background-colour: #22223b; /*Dark Navy Blue*/
+  --section-background-colour: #4a4e69; /*Light Navy Blue*/
+  --border-colour: #c9ada7; /*Peach*/
+  --header-colour: #9a8c98; /*Mauve*/
+  --text-colour: #f2e9e4; /*offwhite*/
 
   /*font and text*/
+  --header-font: "BioRhyme", serif;
+  --text-font: "Saira", sans-serif;
+  --code-font: "Space Mono", monospace;
 }
 
 /*======================================
@@ -12,9 +20,9 @@ Back to Basics - reset browser defaults
 =======================================*/
 html,
 body {
-  scroll-behavior: smooth;
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
   font-size: 12px; /*mobile first design - change to 16px for views >1024px*/
 }
 
@@ -23,6 +31,8 @@ body * {
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 /*====================
@@ -33,23 +43,69 @@ Text and Font Styling
 
 h1,
 h3,
-h5,
+h5 {
+  font-family: var(--header-font), Verdana, sans-serif;
+}
+
 p,
-li {
-  font-family: Verdana, sans-serif;
+li,
+figcaption {
+  font-family: var(--text-font), Verdana, sans-serif;
+}
+
+code {
+  font-family: var(--code-font), Verdana, sans-serif;
 }
 
 /*=========
 Grid Layout
 ===========*/
 
-/*======
-Nav Menu
-=======*/
+/*center the content for super wide screens*/
+html {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--page-background-colour);
+}
+
+body {
+  min-height: 100%;
+  max-width: 2500px;
+  display: grid;
+  grid-template-areas:
+    "header"
+    "nav"
+    "main"
+    "footer";
+}
+/*===============
+Header & Nav Menu
+================*/
+#top-header {
+  grid-area: header;
+  border: 1rem solid var(--page-background-colour);
+  background-color: var(--text-colour);
+}
+
+h1 {
+  text-align: center;
+  font-size: 5rem;
+  color: var(--page-background-colour);
+  text-shadow: 1px 1px 2px var(--text-colour),
+    2px 2px 5px var(--page-background-colour);
+}
+
 nav {
+  grid-area: nav;
 }
 
 #nav-bar {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-content: space-evenly;
+  list-style: none;
 }
 
 .nav-bar-button {
@@ -60,9 +116,12 @@ Main and Section containers
 ===========================*/
 
 main {
+  grid-area: main;
 }
 
 section {
+  background-color: var(--page-background-colour);
+  color: var(--text-colour);
 }
 
 .sect-header {
@@ -95,16 +154,32 @@ section {
 .sect-content-box-subsection .mini-header {
 }
 
+/*====
+Footer
+=======*/
+footer {
+  grid-area: footer;
+}
 /*================
 Responsivesnness
 ==================*/
 
-/*
-
 @media only screen and (min-width: 1024px) {
+  body {
+    font-size: 16px;
+    grid-template-areas:
+      "header header"
+      "nav main"
+      "footer footer";
+    grid-template-columns: 15% auto;
+  }
 
+  #nav-bar {
+    flex-flow: column nowrap;
+  }
 }
 
+/*
 @media only screen and (min-width: 500px) {
 
 }
@@ -173,6 +248,12 @@ Ye Olde Time Print View
 /*=============
 Accessibility
 ===============*/
+
+@media (prefers-color-scheme: dark) {
+}
+
+@media (prefers-color-scheme: light) {
+}
 
 /*Reset to user browser preference*/
 
