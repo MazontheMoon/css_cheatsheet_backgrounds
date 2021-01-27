@@ -31,8 +31,6 @@ body * {
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 
 /*====================
@@ -84,8 +82,9 @@ Header & Nav Menu
 ================*/
 #top-header {
   grid-area: header;
-  border: 1rem solid var(--page-background-colour);
-  background-color: var(--text-colour);
+  margin: 0;
+  padding: 0;
+  border: 1px solid white;
 }
 
 h1 {
@@ -93,11 +92,14 @@ h1 {
   font-size: 5rem;
   color: var(--page-background-colour);
   text-shadow: 1px 1px 2px var(--text-colour),
-    2px 2px 5px var(--page-background-colour);
+    2px 2px 5px var(--section-background-colour);
 }
 
 nav {
   grid-area: nav;
+  margin: 0;
+  padding: 0;
+  border: 1px solid white;
 }
 
 #nav-bar {
@@ -117,11 +119,15 @@ Main and Section containers
 
 main {
   grid-area: main;
+  margin: 0;
+  padding: 0;
+  border: 1px solid white;
 }
 
 section {
-  background-color: var(--page-background-colour);
-  color: var(--text-colour);
+  margin: 0;
+  padding: 0;
+  border: 1px solid white;
 }
 
 .sect-header {
@@ -130,9 +136,16 @@ section {
 .sect-content-box {
 }
 
+.sect-content-box .index-list {
+}
 .sect-content-box .content-box-text {
 }
 
+.sect-content-box .content-box-text ul {
+}
+
+.sect-content-box .content-box-text ol {
+}
 .sect-content-box .content-box-code {
 }
 
@@ -159,6 +172,9 @@ Footer
 =======*/
 footer {
   grid-area: footer;
+  margin: 0;
+  padding: 0;
+  border: 1px solid white;
 }
 /*================
 Responsivesnness
