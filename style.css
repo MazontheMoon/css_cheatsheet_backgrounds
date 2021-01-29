@@ -23,19 +23,19 @@ body {
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
-  font-size: 12px; /*mobile first design - change to 16px for views >500px*/
 }
 
-/*set global styles*/
+/*===============================
+Global styles and reset defaults
+================================*/
+
 body * {
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-
-/*====================
-Text and Font Styling
-=====================*/
 
 /*reset default font - never shall Time New Roman be seen again!*/
 
@@ -43,33 +43,34 @@ h1,
 h3,
 h5 {
   font-family: var(--header-font), Verdana, sans-serif;
+  font-size: 2rem;
 }
 
 p,
 li,
 figcaption {
   font-family: var(--text-font), Verdana, sans-serif;
+  font-size: 1rem;
 }
 
 code {
   font-family: var(--code-font), Verdana, sans-serif;
+  font-size: 1rem;
 }
 
-/*=========
-Grid Layout
-===========*/
+/*================
+Page Layout - Grid
+=================*/
 
-/*center the content for super wide screens*/
 html {
+  /*center the content for super wide screens*/
   display: flex;
-  justify-content: center;
   align-items: center;
   background-color: var(--lightest-colour, #f2e9e4);
-  background-image: linear-gradient(to bottom, var(--darkest-colour, #22223b), var(--dark-colour, #4a4e69), var(--neutral-colour, #c9ada7), var(--light-colour, #9a8c98));
 }
 
 body {
-  min-height: 100%;
+  min-width: 100%;
   max-width: 2500px;
   display: grid;
   grid-template-areas:
@@ -83,41 +84,10 @@ Header & Nav Menu
 ================*/
 #top-header {
   grid-area: header;
-  margin: 1rem;
-  padding: 0;
-  background-color: var(--lightest-colour, #f2e9e4);
-}
-
-h1 {
-  text-align: center;
-  font-size: 3.5rem;
-  color: var(--darkest-colour, #22223b);
-  margin: 1rem;
 }
 
 nav {
   grid-area: nav;
-  margin: 0 1rem;
-  padding: 0;
-  background-color: var(--lightest-colour, #f2e9e4);
-}
-
-#nav-bar {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-evenly;
-  align-content: space-evenly;
-  list-style: none;
-  margin: 0;
-  padding: 0.5rem;
-}
-
-#nav-bar li {
-  margin: 0.5rem 1rem;
-}
-
-.nav-bar-button {
-  padding: 0.5rem;
 }
 
 /*==========================
@@ -126,51 +96,6 @@ Main and Section containers
 
 main {
   grid-area: main;
-  margin-right: 1rem;
-  padding: 0;
-  background-color: var(--lightest-colour, #f2e9e4);
-}
-
-section {
-  margin: 0;
-  padding: 0;
-}
-
-.sect-header {
-}
-
-.sect-content-box {
-}
-
-.sect-content-box .index-list {
-}
-.sect-content-box .content-box-text {
-}
-
-.sect-content-box .content-box-text ul {
-}
-
-.sect-content-box .content-box-text ol {
-}
-.sect-content-box .content-box-code {
-}
-
-.sect-content-box .content-box-code p {
-}
-
-.sect-content-box .content-box-code code {
-}
-
-.sect-content-box .content-box-code-example {
-}
-
-.sect-content-box-subsection {
-}
-
-.sect-content-box-subsection .subsection-header {
-}
-
-.sect-content-box-subsection .mini-header {
 }
 
 /*====
@@ -178,13 +103,12 @@ Footer
 =======*/
 footer {
   grid-area: footer;
-  margin: 1rem;
-  padding: 0;
 }
+
 /*================
 Responsivesnness
 ==================*/
-
+/*
 @media only screen and (min-width: 500px) {
   body  {
     font-size: 16px;
@@ -204,10 +128,7 @@ Responsivesnness
   }
 }
 
-/*
-@media only screen and (min-width: 500px) {
 
-}
 */
 
 /*======================
