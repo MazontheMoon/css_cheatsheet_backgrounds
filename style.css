@@ -70,8 +70,8 @@ html {
 }
 
 body {
-  min-width: 100%;
   max-width: 2500px;
+  font-size: 12px;
   display: grid;
   grid-template-areas:
     "header"
@@ -86,8 +86,39 @@ Header & Nav Menu
   grid-area: header;
 }
 
+#top-header h1 {
+  text-align: center;
+  font-size: 3rem;
+  margin: 0;
+  padding: 0;
+}
+
 nav {
   grid-area: nav;
+}
+
+#nav-bar {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(100px,50%));
+}
+
+#nav-bar li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0.25rem 0;
+}
+
+#nav-bar .nav-bar-button {
+  width: 60%;
+  border: 2px solid;
+  text-align: center;
+  padding: 0.25rem 0.5rem;
+}
+
+.nav-link {
+  text-decoration: none;
 }
 
 /*==========================
@@ -96,15 +127,23 @@ Main and Section containers
 
 main {
   grid-area: main;
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
 }
 
+section {
+  width: 95%;
+}
+section ul {
+  list-style: none;
+}
 /*====
 Footer
 =======*/
 footer {
   grid-area: footer;
 }
-
 /*================
 Responsivesnness
 ==================*/
