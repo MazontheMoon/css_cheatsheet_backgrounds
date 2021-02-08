@@ -90,7 +90,7 @@ Header & Nav Menu
 ================*/
 #top-header {
   grid-area: header;
-  background-color: var(--light-colour, #9a8c98);
+  background-color: var(--lightest-colour, #f2e9e4);
   border-radius: 2rem;
   border-top-right-radius: 0;
   border-top-left-radius: 0;
@@ -137,6 +137,7 @@ nav {
 
 .nav-link {
   text-decoration: none;
+  font-size: 1.25rem;
   color: var(--lightest-colour, #f2e9e4);
   display: inline-block;
   width: 100%;
@@ -229,8 +230,8 @@ section .content-box-code {
 
 code,
 figure {
-  border-left: 0.3rem solid var(--lightest-colour, #f2e9e4);
-  border-right: 0.3rem solid var(--lightest-colour, #f2e9e4);
+  border-left: 0.3rem solid var(--darkest-colour, #22223b);
+  border-right: 0.3rem solid var(--darkest-colour, #22223b);
   background-color: var(--light-colour, #9a8c98);
   color: var(--darkest-colour, #22223b);
   padding: 0.5rem;
@@ -238,12 +239,45 @@ figure {
   box-shadow: 2px 2px 5px black;
 }
 
+figure {
+  display: flex;
+  align-items: center;
+  flex-flow: column nowrap;
+}
+
+figure figcaption {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+figure figcaption,
+figure div {
+  flex: 1;
+  border: 3px solid black;
+  border-radius: 1rem;
+  background-color: var(--lightest-colour, #f2e9e4);
+  text-align: center;
+  margin: 0.5rem;
+  height: 200px;
+}
+
+/*=========================
+Code example figure boxes
+===========================*/
+/*coloured background*/
+#example-bg-color {
+  border: 3px solid black;
+}
+
 /*====
 Footer
 =======*/
 footer {
   grid-area: footer;
-  background-color: var(--light-colour, #9a8c98);
+  background-color: var(--lightest-colour, #f2e9e4);
   color: var(--darkest-colour, #22223b);
   border-radius: 2rem;
   border-bottom-right-radius: 0;
@@ -253,11 +287,12 @@ footer {
 /*================
 Responsivesnness
 ==================*/
-/*
+
 @media only screen and (min-width: 500px) {
-  body  {
+  body {
     font-size: 16px;
   }
+}
 
 @media only screen and (min-width: 1024px) {
   body {
@@ -268,13 +303,28 @@ Responsivesnness
     grid-template-columns: 15% auto;
   }
 
+  nav {
+    position: relative;
+  }
+
   #nav-bar {
-    flex-flow: column nowrap;
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #nav-bar li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  figure {
+    flex-direction: row;
   }
 }
-
-
-*/
 
 /*======================
 Ye Olde Time Print View
