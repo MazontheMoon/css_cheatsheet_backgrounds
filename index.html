@@ -29,14 +29,14 @@ Finding your way around
   <!--nav menu-->
   <nav>
     <ul id="nav-bar">
-      <li><span class="nav-bar-button"><a href="#sect-color">Color</a></span></li>
-      <li><span class="nav-bar-button"><a href="#sect-image">Image</a></span></li>
-      <li><span class="nav-bar-button"><a href="#sect-repeat">Repeat</a></span></li>
-      <li><span class="nav-bar-button"><a href="#sect-position">Position</a></span></li>
-      <li><span class="nav-bar-button"><a href="#sect-attachment">Attachment</a></span></li>
-      <li><span class="nav-bar-button"><a href="#sect-size">Size</a></span></li>
-      <li><span class="nav-bar-button"><a href="#sect-background">Background</a></span></li>
-      <li><span class="nav-bar-button"><a href="#sect-clip">Clip</a></span></li>
+      <li><span class="nav-bar-button"><a class="nav-link" href="#sect-color">Color</a></span></li>
+      <li><span class="nav-bar-button"><a class="nav-link" href="#sect-image">Image</a></span></li>
+      <li><span class="nav-bar-button"><a class="nav-link" href="#sect-repeat">Repeat</a></span></li>
+      <li><span class="nav-bar-button"><a class="nav-link" href="#sect-position">Position</a></span></li>
+      <li><span class="nav-bar-button"><a class="nav-link" href="#sect-attachment">Attachment</a></span></li>
+      <li><span class="nav-bar-button"><a class="nav-link" href="#sect-size">Size</a></span></li>
+      <li><span class="nav-bar-button"><a class="nav-link" href="#sect-background">Background</a></span></li>
+      <li><span class="nav-bar-button"><a class="nav-link" href="#sect-clip">Clip</a></span></li>
     </ul>
   </nav>
   <main>
@@ -71,11 +71,12 @@ Finding your way around
         </div>
         <div class="content-box-code">
           <code>.top { <br>
-            background-color: #f3f2f1;<br>
+            background-color: #c9ada7;<br>
             }</code>
         </div>
         <figure class="content-box-code-example">
           <figcaption>Color me!</figcaption>
+          <div id="example-bg-color"></div>
         </figure>
       </div>
     </section>
@@ -97,6 +98,7 @@ Finding your way around
         </div>
         <figure class="content-box-code-example">
           <figcaption>Insert example box</figcaption>
+          <div id="example-bg-img"></div>
         </figure>
         <div class="content-box-code">
           <p>Colour gradients can also be set using <span class="code-word">background-image</span>.</p>
@@ -444,10 +446,17 @@ Finding your way around
           <p>The <span class="code-word">background-size</span> property does pretty much exactly what you think it does (but check browser support)</p>
           <p>Values can be set as</p>
           <ul>
-            <li>pixels</li>
-            <li>rems</li>
-            <li>percentages</li>
+            <li>auto</li>
+            <li>length (rem or percentage)</li>
+            <li>cover</li>
+            <li>contain</li>
           </ul>
+          <p><u>Auto</u></p>
+          <p>The image is displayed in its original size (default)</p>
+          <p><u>Cover</u></p>
+          <p>Resizes the image by stretching or cutting to cover the entire container </p>
+          <p><u>Contain</u></p>
+          <p>Resizes the image so it is fully visible</p>
         </div>
         <div class="content-box-code">
           <code>
@@ -554,21 +563,21 @@ Finding your way around
         <figure class="content-box-code-example">
           <figcaption>Insert example box</figcaption>
         </figure>
+        <div class="content-box-code">
+          <code>
+            header { <br>
+            background-color: yellow; <br>
+            background-image: linear-gradient(to bottom, yellow, #dddd00 50%, orange); <br>
+            background-clip: text;<br>
+            -webkit-background-clip: text; <br>
+            color: rgba(0, 0, 0, 0.2); <br>
+            }
+          </code>
+        </div>
+        <figure class="content-box-code-example">
+          <figcaption>Insert example box</figcaption>
+        </figure>
       </div>
-      <div class="content-box-code">
-        <code>
-          header { <br>
-          background-color: yellow; <br>
-          background-image: linear-gradient(to bottom, yellow, #dddd00 50%, orange); <br>
-          background-clip: text;<br>
-          -webkit-background-clip: text; <br>
-          color: rgba(0, 0, 0, 0.2); <br>
-          }
-        </code>
-      </div>
-      <figure class="content-box-code-example">
-        <figcaption>Insert example box</figcaption>
-      </figure>
     </section>
   </main>
   <footer>
