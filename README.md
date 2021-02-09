@@ -20,6 +20,7 @@
 ## Versioning
 
 Version 1.1 - Initial content
+Version 1.2 - Styling
 
 ## Table of Contents
 

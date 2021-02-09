@@ -114,7 +114,6 @@ nav {
 #nav-bar {
   list-style: none;
   display: grid;
-  grid-template-columns: repeat(2, minmax(100px, 50%));
 }
 
 #nav-bar li {
@@ -323,10 +322,11 @@ footer {
 Responsivesnness
 ==================*/
 
-@media only screen and (min-width: 500px) {
-  body {
-    font-size: 16px;
-  }
+@media only screen and (min-width: 550px) {
+  #nav-bar {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
 }
 
 @media only screen and (min-width: 1024px) {
