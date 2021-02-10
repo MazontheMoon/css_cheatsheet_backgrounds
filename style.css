@@ -80,7 +80,7 @@ Header
   grid-area: header;
   background-color: var(--lightest-colour, #f2e9e4);
   color: var(--darkest-colour, #22223b);
-  border: 5px solid black;
+  border: 10px solid black;
 }
 
 #top-header h1 {
@@ -101,6 +101,7 @@ nav #nav-bar {
   flex-wrap: wrap;
   justify-content: space-evenly;
   list-style: none;
+  margin: 5px;
 }
 
 nav #nav-bar li {
@@ -123,16 +124,24 @@ Main and Section containers
 
 main {
   grid-area: main;
-  margin: 5px;
-  padding: 5px;
+  border-top: 10px solid black;
+  border-bottom: 10px solid black;
 }
 
 main section {
-  margin: 5px;
-  padding: 5px;
+  margin: 10px;
   background-color: var(--lightest-colour, #f2e9e4);
   color: var(--darkest-colour, #22223b);
   border: 5px solid black;
+}
+
+section header {
+  border-bottom: 5px solid black;
+}
+
+section header h3 {
+  margin-left: 5px;
+  font-size: 1.75em;
 }
 
 /*=========================
