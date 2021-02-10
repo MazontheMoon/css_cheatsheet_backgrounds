@@ -1,6 +1,6 @@
-/*========================
-Declare variables for page
-=========================*/
+/*============
+Page variables
+==============*/
 :root {
   /*color scheme*/
   --darkest-colour: #22223b; /*Dark Navy Blue*/
@@ -43,41 +43,29 @@ h1,
 h3,
 h5 {
   font-family: var(--header-font), Verdana, sans-serif;
-  font-size: 2rem;
 }
 
 p,
 li,
 figcaption {
   font-family: var(--text-font), Verdana, sans-serif;
-  font-size: 1rem;
+  font-size: 1.25rem;
 }
 
 code {
-  font-family: var(--code-font), Verdana, sans-serif;
+  font-family: var(--code-font), "Courier New" monospace;
   font-size: 1rem;
 }
 
-ol {
-  list-style-position: inside;
-}
 /*================
 Page Layout - Grid
 =================*/
-
-html {
-  /*center the content for super wide screens*/
-  display: flex;
-  align-items: center;
-  background-color: var(--darkest-colour, #22223b);
-  color: var(--light-colour, #9a8c98);
-}
 
 body {
   background-color: var(--darkest-colour, #22223b);
   color: var(--light-colour, #9a8c98);
   max-width: 2500px;
-  font-size: 12px;
+  margin: 0 auto;
   display: grid;
   grid-template-areas:
     "header"
@@ -85,61 +73,48 @@ body {
     "main"
     "footer";
 }
-/*===============
-Header & Nav Menu
-================*/
+/*=====
+Header 
+=======*/
 #top-header {
   grid-area: header;
   background-color: var(--lightest-colour, #f2e9e4);
-  border-radius: 2rem;
-  border-top-right-radius: 0;
-  border-top-left-radius: 0;
-  margin: 0 0 0.5rem 0;
-  box-shadow: 3px 3px 5px black;
+  color: var(--darkest-colour, #22223b);
+  border: 5px solid black;
 }
 
 #top-header h1 {
+  font-size: 3em;
   text-align: center;
-  font-size: 3rem;
-  color: var(--dark-colour, #4a4e69);
-  text-shadow: 1px 1px 2px black;
-  margin: 0;
-  padding: 0;
 }
+
+/*=======
+Nav Menu
+=========*/
 
 nav {
   grid-area: nav;
 }
 
-#nav-bar {
-  list-style: none;
-  display: grid;
-}
-
-#nav-bar li {
+nav #nav-bar {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0.25rem 0;
-  margin-left: 1rem;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  list-style: none;
 }
 
-#nav-bar .nav-bar-button {
-  width: 100%;
-  margin-right: 1rem;
-  border: 0.3rem solid var(--lightest-colour, #f2e9e4);
-  border-radius: 1.5rem;
-  box-shadow: 3px 3px 5px black;
+nav #nav-bar li {
+  flex: 1 0 150px;
+  border: 3px solid var(--lightest-colour, #f2e9e4);
+  margin: 5px;
+  padding: 5px;
   text-align: center;
-  padding: 0.25rem 0.5rem;
 }
 
-.nav-link {
+nav #nav-bar .nav-link {
   text-decoration: none;
-  font-size: 1.25rem;
   color: var(--lightest-colour, #f2e9e4);
-  display: inline-block;
-  width: 100%;
+  font-size: 1.25em;
 }
 
 /*==========================
@@ -148,217 +123,36 @@ Main and Section containers
 
 main {
   grid-area: main;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: 100%;
-  margin-top: 0.5rem solid var(--darkest-colour, #22223b);
+  margin: 5px;
+  padding: 5px;
 }
 
-section {
-  width: 95%;
-}
-
-section .sect-header {
-  margin-top: 0.5rem;
-  border-radius: 1.5rem;
-  box-shadow: 3px 3px 5px black;
-  background-color: var(--light-colour, #9a8c98);
-  padding: 0.5rem 1rem;
-}
-
-.sect-header h3 {
-  color: var(--dark-colour, #4a4e69);
-  text-shadow: 1px 1px 3px white;
-}
-
-section .sect-content-box-subsection .subsection-header {
-  border-radius: 1.5rem;
-  box-shadow: 3px 3px 5px black;
-  background-color: var(--light-colour, #9a8c98);
-}
-
-section .sect-content-box-subsection .subsection-header h5 {
-  color: var(--dark-colour, #4a4e69);
-  text-shadow: 1px 1px 3px white, 2px 2px 3px black;
-  padding: 0 0.5rem;
-}
-
-section .sect-content-box {
-  border-top: 0.2rem solid var(--darkest-colour, #22223b);
-  border-left: 1.5rem solid var(--darkest-colour, #22223b);
-  margin: 0 1rem 1rem 0;
-  padding: 0 0.5rem 1rem;
+main section {
+  margin: 5px;
+  padding: 5px;
   background-color: var(--lightest-colour, #f2e9e4);
   color: var(--darkest-colour, #22223b);
-}
-
-section ul {
-  list-style: none;
-  margin-left: 1.5rem;
-  margin-left: 1.5rem;
-}
-
-section ol {
-  margin: 0.5rem 0.5rem 0.5rem 1.5rem;
-}
-
-section p {
-  line-height: 200%;
-}
-
-section .index-list li {
-  border-left: 0.25rem solid var(--darkest-colour, #22223b);
-  margin: 0.25rem;
-  padding: 0.25rem;
-}
-
-section .index-list li a {
-  text-decoration: none;
-  color: inherit;
-}
-
-section .index-list li a:hover {
-  border-bottom: 0.25rem solid var(--darkest-colour, #22223b);
-}
-
-section .content-box-code {
-  display: flex;
-  flex-direction: column;
-}
-
-code,
-figure {
-  border-left: 0.3rem solid var(--darkest-colour, #22223b);
-  border-right: 0.3rem solid var(--darkest-colour, #22223b);
-  background-color: var(--light-colour, #9a8c98);
-  color: var(--darkest-colour, #22223b);
-  padding: 0.5rem;
-  margin: 0.5rem 2rem;
-  box-shadow: 2px 2px 5px black;
-}
-
-figure {
-  display: flex;
-  align-items: center;
-  flex-flow: column nowrap;
-}
-
-figure figcaption {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 3rem;
-  font-weight: 600;
-  color: var(--dark-colour, #4a4e69);
-}
-
-figure figcaption,
-figure div {
-  flex: 1;
-  border: 3px solid var(--dark-colour, #4a4e69);
-  border-radius: 1rem;
-  background-color: var(--lightest-colour, #f2e9e4);
-  text-align: center;
-  margin: 0.5rem;
-  height: 200px;
-  position: relative;
-}
-
-.cite {
-  font-size: 1rem;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  padding: 0.25rem;
-  color: var(--lightest-colour, #f2e9e4);
-  font-family: var(--code-font), Verdana, sans-serif;
-}
-
-.cite a {
-  color: var(--light-colour, #9a8c98);
+  border: 5px solid black;
 }
 
 /*=========================
 Code example figure boxes
 ===========================*/
-/*coloured background*/
-#example-bg-color {
-  background-color: var(--neutral-colour, #c9ada7);
-}
-
-/*image - sourced from https://unsplash.com/@joshuaryanphoto*/
-#example-bg-img {
-  background-color: var(--neutral-colour, #c9ada7); /*fallback*/
-  background-image: url(https://images.unsplash.com/photo-1580927752452-89d86da3fa0a?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8Y29kaW5nfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-/*image - sourced from unsplash*/
-#example-bg-img-grad-intro {
-  background-color: var(--neutral-colour, #c9ada7); /*fallback*/
-  background-image: linear-gradient(to bottom, orange, blue, white);
-}
-
-/* repeating smiley
-background-image: url(https://upload.wikimedia.org/wikipedia/commons/b/b0/Smiley_head_happy.png);
- /*cite = https://en.wikipedia.org/wiki/en:User:Robbrown*/
-*/
 
 /*====
 Footer
 =======*/
 footer {
   grid-area: footer;
-  background-color: var(--lightest-colour, #f2e9e4);
-  color: var(--darkest-colour, #22223b);
-  border-radius: 2rem;
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
-  margin: 0.5rem 0 0 0;
 }
 /*================
 Responsivesnness
 ==================*/
 
 @media only screen and (min-width: 550px) {
-  #nav-bar {
-  list-style: none;
-  display: grid;
-  grid-template-columns: repeat(2, 50%);
 }
 
 @media only screen and (min-width: 1024px) {
-  body {
-    grid-template-areas:
-      "header header"
-      "nav main"
-      "footer footer";
-    grid-template-columns: 15% auto;
-  }
-
-  nav {
-    position: relative;
-  }
-
-  #nav-bar {
-    position: sticky;
-    top: 0;
-    display: flex;
-    flex-direction: column;
-  }
-
-  #nav-bar li {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-  }
-
-  figure {
-    flex-direction: row;
-  }
 }
 
 /*======================
