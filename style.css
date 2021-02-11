@@ -53,7 +53,7 @@ figcaption {
 }
 
 code {
-  font-family: var(--code-font), "Courier New" monospace;
+  font-family: var(--code-font), "Courier New", monospace;
   font-size: 1rem;
 }
 
@@ -130,18 +130,67 @@ main {
 
 main section {
   margin: 10px;
+  padding: 0;
   background-color: var(--lightest-colour, #f2e9e4);
   color: var(--darkest-colour, #22223b);
   border: 5px solid black;
 }
 
 section header {
+  margin: 0;
   border-bottom: 5px solid black;
 }
 
 section header h3 {
-  margin-left: 5px;
+  padding-left: 5px;
   font-size: 1.75em;
+}
+
+section .sect-content-box {
+  margin: 0;
+  padding: 0;
+}
+
+section p {
+  padding: 0.3em;
+}
+
+section #index-list {
+  /*padding: 0.5em;*/
+  list-style: none;
+}
+
+section #index-list a {
+  text-decoration: none;
+  color: inherit;
+  margin-left: 1em;
+  font-weight: 600;
+}
+
+section #index-list a:hover {
+  text-decoration: underline;
+}
+
+figure {
+  margin: 0.3em;
+  background-color: var(--darkest-colour, #22223b);
+  border: 0.3em solid black;
+  color: var(--lightest-colour, #f2e9e4);
+}
+
+figure figcaption {
+  margin: 0;
+  background-color: black;
+  padding-left: 0.3em;
+  color: var(--lightest-colour, #f2e9e4);
+}
+
+figure div {
+  background-color: var(--lightest-colour, #f2e9e4);
+  color: var(--darkest-colour, #22223b);
+  border: 2px solid black;
+  margin: 0.5em;
+  padding: 0.3em;
 }
 
 /*=========================
@@ -237,5 +286,7 @@ Accessibility
 /*Reset to user browser preference*/
 
 @media (prefers-reduced-motion: reduce) {
-  scroll-behavior: auto;
+  body {
+    scroll-behavior: auto;
+  }
 }
