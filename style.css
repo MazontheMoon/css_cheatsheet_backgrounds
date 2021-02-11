@@ -193,6 +193,37 @@ figure div {
   padding: 0.3em;
 }
 
+section .sect-content-box-subsection {
+  margin: 0.3em;
+  background-color: var(--darkest-colour, #22223b);
+  border: 0.3em solid black;
+  color: var(--lightest-colour, #f2e9e4);
+}
+
+section .sect-content-box-subsection .subsection-header {
+  margin: 0;
+  background-color: var(--lightest-colour, #f2e9e4);
+  color: var(--darkest-colour, #22223b);
+}
+
+section .sect-content-box-subsection .subsection-header h5 {
+  font-size: 1.25em;
+  padding-left: 0.3em;
+  border-bottom: 0.2em solid black;
+}
+
+.sect-content-box-subsection .sect-content-box {
+  margin: 0.3em;
+  background-color: var(--lightest-colour, #f2e9e4);
+  border: 0.3em solid black;
+  color: var(--darkest-colour, #22223b);
+}
+
+.sect-content-box-subsection .sect-content-box ol,
+.sect-content-box-subsection .sect-content-box ul {
+  margin-left: 2em;
+}
+
 /*=========================
 Code example figure boxes
 ===========================*/
