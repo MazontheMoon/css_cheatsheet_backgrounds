@@ -156,7 +156,7 @@ section p {
 }
 
 section #index-list {
-  /*padding: 0.5em;*/
+  margin-bottom: 0.5em;
   list-style: none;
 }
 
@@ -193,6 +193,10 @@ figure div {
   padding: 0.3em;
 }
 
+figure .example-boxes {
+  height: 150px;
+}
+
 section .sect-content-box-subsection {
   margin: 0.3em;
   background-color: var(--darkest-colour, #22223b);
@@ -227,6 +231,10 @@ section .sect-content-box-subsection .subsection-header h5 {
 /*=========================
 Code example figure boxes
 ===========================*/
+
+#example-bg-color {
+  background-color: var(--dark-colour);
+}
 
 /*====
 Footer
