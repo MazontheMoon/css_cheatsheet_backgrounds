@@ -155,8 +155,22 @@ section p {
   padding: 0.3em;
 }
 
+section .content-box-text {
+  padding: 0.3em;
+}
+
+section .content-box-code code {
+  display: inline-block;
+  margin-left: 0.5em;
+}
+
+section .content-box-text ul {
+  padding-left: 1em;
+  margin-left: 1em;
+}
+
 section #index-list {
-  /*padding: 0.5em;*/
+  margin-bottom: 0.5em;
   list-style: none;
 }
 
@@ -193,9 +207,48 @@ figure div {
   padding: 0.3em;
 }
 
+figure .example-boxes {
+  height: 150px;
+}
+
+section .sect-content-box-subsection {
+  margin: 0.3em;
+  background-color: var(--darkest-colour, #22223b);
+  border: 0.3em solid black;
+  color: var(--lightest-colour, #f2e9e4);
+}
+
+section .sect-content-box-subsection .subsection-header {
+  margin: 0;
+  background-color: var(--lightest-colour, #f2e9e4);
+  color: var(--darkest-colour, #22223b);
+}
+
+section .sect-content-box-subsection .subsection-header h5 {
+  font-size: 1.25em;
+  padding-left: 0.3em;
+  border-bottom: 0.2em solid black;
+}
+
+.sect-content-box-subsection .sect-content-box {
+  margin: 0.3em;
+  background-color: var(--lightest-colour, #f2e9e4);
+  border: 0.3em solid black;
+  color: var(--darkest-colour, #22223b);
+}
+
+.sect-content-box-subsection .sect-content-box ol,
+.sect-content-box-subsection .sect-content-box ul {
+  margin-left: 2em;
+}
+
 /*=========================
 Code example figure boxes
 ===========================*/
+
+#example-bg-color {
+  background-color: var(--dark-colour);
+}
 
 /*====
 Footer
