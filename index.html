@@ -30,6 +30,7 @@ Finding your way around
   2h Clip
 3. Footer
 =========================-->
+
 <body>
   <!--Header-->
   <header id="top-header">
@@ -57,7 +58,7 @@ Finding your way around
         <p>My series of cheatsheets have led me through the design process of laying out and positioning elements on the page, and how best to select the elements to apply styling. Now that I have my building blocks in place it is time to start with the actual styles that can be applied....starting with the background!</p>
         <p>A background applied to an element sits under the content, padding and border by default (margin doesn't count as part of an element's area) and is on the bottom of the z-index stack.</p>
         <p>The properties for <span class="code-word">background</span> are:</p>
-        <ul class="index-list">
+        <ul id="index-list">
           <li><a href="#sect-color">background-color</a></li>
           <li><a href="#sect-image">background-image</a></li>
           <li><a href="#sect-repeat">background-repeat</a></li>
@@ -78,14 +79,14 @@ Finding your way around
           <p>Did you know that the default background colour is transparant and not white!</p>
           <p>It is recommended to always use a background color, even as just a fallback if the browser doesn’t support gradients or link to image is broken.</p>
         </div>
-        <div class="content-box-code">
-          <code>.top { <br>
-            background-color: #c9ada7;<br>
-            }</code>
-        </div>
         <figure class="content-box-code-example">
           <figcaption>Color me!</figcaption>
-          <div id="example-bg-color"></div>
+          <div class="content-box-code">
+            <code>.top { <br>
+              background-color: #c9ada7;<br>
+              }</code>
+          </div>
+          <div class="example-boxes" id="example-bg-color"></div>
         </figure>
       </div>
     </section>
@@ -99,39 +100,39 @@ Finding your way around
           <p>All background images will repeat by default so it looks like a tile affect</p>
           <p>Screen readers will not register any images applied this way using CSS</p>
         </div>
-        <div class="content-box-code">
-          <code>.top { <br>
-            background-color: #f3f2f1; <span class="code-box-comment">/*fallback*/</span><br>
-            background-image: url(https://imagehosting/image.png);<br>
-            }</code>
-        </div>
         <figure class="content-box-code-example">
           <figcaption>Image</figcaption>
-          <div id="example-bg-img">
+          <div class="content-box-code">
+            <code>.top { <br>
+              background-color: #f3f2f1; <span class="code-box-comment">/*fallback*/</span><br>
+              background-image: url(https://imagehosting/image.png);<br>
+              }</code>
+          </div>
+          <div class="example-boxes" id="example-bg-img">
             <span class="cite"> by <a href="https://unsplash.com/@joshuaryanphoto">Joshua Ryan</a></span>
           </div>
         </figure>
-        <div class="content-box-code">
-          <p>Colour gradients can also be set using <span class="code-word">background-image</span>.</p>
-          <code>.top { <br>
-            background-color: #f3f2f1; <span class="code-box-comment">/*fallback*/</span><br>
-            background-image: linear-gradient(to bottom, orange, blue, white);<br>
-            }</code>
-        </div>
         <figure class="content-box-code-example">
           <figcaption>Color Gradient</figcaption>
-          <div id="example-bg-img-grad-intro"></div>
+          <div class="content-box-code">
+            <p>Colour gradients can also be set using <span class="code-word">background-image</span>.</p>
+            <code>.top { <br>
+              background-color: #f3f2f1; <span class="code-box-comment">/*fallback*/</span><br>
+              background-image: linear-gradient(to bottom, orange, blue);<br>
+              }</code>
+          </div>
+          <div class="example-boxes" id="example-bg-img-grad-intro"></div>
         </figure>
-        <div class="content-box-code">
-          <p>Multiple images can be set using <span class="code-word">background-image</span>.</p>
-          <code>.top { <br>
-            background-color: #f3f2f1; <span class="code-box-comment">/*fallback*/</span><br>
-            background-image: linear-gradient(to bottom, orange, blue, white);<span class="code-box-comment">/*fallback*/</span><br>
-            background-image: url(https://imagehosting/image.png);
-            }</code>
-        </div>
         <figure class="content-box-code-example">
-          <figcaption>Insert example box</figcaption>
+          <figcaption>Image Stack</figcaption>
+          <div class="content-box-code">
+            <p>Multiple images can be set using <span class="code-word">background-image</span>.</p>
+            <code>.top { <br>
+              background-color: #f3f2f1; <span class="code-box-comment">/*fallback*/</span><br>
+              background-image: linear-gradient(to bottom, orange, blue, white);<span class="code-box-comment">/*fallback*/</span><br>
+              background-image: url(https://imagehosting/image.png);
+              }</code>
+          </div>
         </figure>
       </div>
       <div class="sect-content-box-subsection">
@@ -163,7 +164,8 @@ Finding your way around
               }</code>
           </div>
           <figure class="content-box-code-example">
-            <figcaption>Insert example box</figcaption>
+            <figcaption>2 Colour gradient</figcaption>
+            <div class="example-boxes" id="example-bg-img-grad-top-bottom-2col"></div>
           </figure>
           <div class="content-box-code">
             <code><span class="code-box-comment">/*direction set from left to right*/</span><br>
@@ -172,7 +174,8 @@ Finding your way around
               }</code>
           </div>
           <figure class="content-box-code-example">
-            <figcaption>Insert example box</figcaption>
+            <figcaption>3 colour gradient</figcaption>
+            <div class="example-boxes" id="example-bg-img-grad-lefttoright-3col"></div>
           </figure>
           <div class="content-box-code">
             <code><span class="code-box-comment">/*direction set diagonally*/</span><br>

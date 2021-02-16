@@ -267,17 +267,33 @@ section .sect-content-box-subsection .subsection-header h5 {
 Code example figure boxes
 ===========================*/
 
+/*solid background colour*/
 #example-bg-color {
   background-color: var(--dark-colour);
 }
 
+/*background image covering entire container*/
 #example-bg-img {
   background-color: var(--dark-colour);
 }
 
-#example-bg-img-grad-intro {
-  background-image: linear-gradient(to bottom, orange, blue);
+/*2 colour gradient from top to bottom */
+#example-bg-img-grad-top-bottom-2col {
+  background-image: linear-gradient(
+    to bottom,
+    var(--dark-colour),
+    var(--light-colour)
+  );
 }
+
+/*3 colour gradient from left to right */
+#example-bg-img-grad-lefttoright-3col {
+  background-image: linear-gradient(
+    to right,
+    var(--dark-colour),
+    var(--neutral-colour),
+    var(--lightest-colour)
+  );
 
 /*====
 Footer
