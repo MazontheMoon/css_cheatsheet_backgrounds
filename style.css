@@ -161,8 +161,8 @@ section .content-box-text {
 
 section .content-box-code code {
   display: inline-block;
-  margin-left: 1em;
-  padding: 0.3em 0;
+  margin: 0 0.5em;
+  padding: 0.3em;
 }
 
 section .content-box-code code .code-box-comment {
@@ -281,7 +281,7 @@ Code example figure boxes
 
 #example-bg-img-grad-intro {
   background-color: var(--dark-colour);
-   background-image: linear-gradient(to bottom, orange, blue, white);
+  background-image: linear-gradient(to bottom, orange, blue, white);
 }
 
 /*2 colour gradient from top to bottom */
@@ -302,6 +302,7 @@ Code example figure boxes
     var(--lightest-colour)
   );
 }
+
 /*====
 Footer
 =======*/
