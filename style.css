@@ -113,6 +113,8 @@ nav #nav-bar li {
 }
 
 nav #nav-bar .nav-link {
+  display: inline-block;
+  width: 100%;
   text-decoration: none;
   color: var(--lightest-colour, #f2e9e4);
   font-size: 1.25em;
@@ -189,6 +191,7 @@ section #index-list a {
 
 section #index-list a:hover {
   text-decoration: underline;
+  text-underline-offset: 4px;
 }
 
 figure {
@@ -279,28 +282,87 @@ Code example figure boxes
   background-size: contain;
 }
 
+/*colourful example linear gradient for section intro*/
 #example-bg-img-grad-intro {
   background-color: var(--dark-colour);
   background-image: linear-gradient(to bottom, orange, blue, white);
 }
 
-/*2 colour gradient from top to bottom */
+/*2 colour linear gradient from top to bottom */
 #example-bg-img-grad-top-bottom-2col {
+  background-image: linear-gradient(to bottom, blue, white);
+}
+
+/*3 colour linear gradient from left to right */
+#example-bg-img-grad-lefttoright-3col {
+  background-image: linear-gradient(to right, blue, white, purple);
+}
+
+/*4 colour diagonal linear gradient*/
+#example-bg-img-grad-topleft-4col {
+  background-image: linear-gradient(to top left, blue, white, purple, yellow);
+}
+
+/*5 colour linear gradient*/
+#example-bg-img-grad-0deg-5col {
+  background-image: linear-gradient(0deg, blue, white, purple, yellow, green);
+}
+
+/*6 colour linear gradient*/
+#example-bg-img-grad-90deg-6col {
   background-image: linear-gradient(
-    to bottom,
-    var(--dark-colour),
-    var(--light-colour)
+    90deg,
+    blue,
+    white,
+    purple,
+    yellow,
+    green,
+    orange
   );
 }
 
-/*3 colour gradient from left to right */
-#example-bg-img-grad-lefttoright-3col {
+/*7 colour linear gradient*/
+#example-bg-img-grad-180deg-7col {
   background-image: linear-gradient(
-    to right,
-    var(--dark-colour),
-    var(--neutral-colour),
-    var(--lightest-colour)
+    180deg,
+    blue,
+    white,
+    purple,
+    yellow,
+    green,
+    orange,
+    black
   );
+}
+
+/*3 colour diagonal linear gradient*/
+#example-bg-img-grad-125deg-3col {
+  background-image: linear-gradient(125deg, blue, white, purple);
+}
+
+/*3 colour diagonal linear gradient*/
+#example-bg-img-grad-270deg-3col {
+  background-image: linear-gradient(270deg, blue, white, purple);
+}
+
+/*2 colour repeating linear gradient*/
+#example-bg-img-grad-rep {
+  background-image: repeating-linear-gradient(
+    0deg,
+    blue,
+    white 20%,
+    purple 10%
+  );
+}
+
+/*3 colour elliptical radial gradient*/
+#example-bg-img-grad-rad-3col {
+  background-image: radial-gradient(blue, white, purple);
+}
+
+/*3 colour circular radial gradient*/
+#example-bg-img-grad-rad-circle-3col {
+  background-image: radial-gradient(circle, blue, white, purple);
 }
 
 /*====
