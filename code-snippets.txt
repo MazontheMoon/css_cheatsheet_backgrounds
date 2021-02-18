@@ -42,3 +42,7 @@ background-image: url(https://upload.wikimedia.org/wikipedia/commons/b/b0/Smiley
 
 text-underline-offset: auto;
 text-underline-offset: 4px;
+
+css clamp 
+eg.
+width: clamp(16rem, 90vw, 70rem);

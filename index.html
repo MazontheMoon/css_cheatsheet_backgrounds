@@ -158,7 +158,7 @@ Finding your way around
             </ol>
           </div>
           <figure class="content-box-code-example">
-            <figcaption>2 Colour gradient</figcaption>
+            <figcaption>2 colour linear gradient</figcaption>
             <div class="content-box-code">
               <code><span class="code-box-comment">/*direction set using default of top to bottom*/</span><br>
                 div { <br>
@@ -168,7 +168,7 @@ Finding your way around
             <div class="example-boxes" id="example-bg-img-grad-top-bottom-2col"></div>
           </figure>
           <figure class="content-box-code-example">
-            <figcaption>3 colour gradient</figcaption>
+            <figcaption>3 colour linear gradient</figcaption>
             <div class="content-box-code">
               <code><span class="code-box-comment">/*direction set from left to right*/</span><br>
                 div { <br>
@@ -178,85 +178,84 @@ Finding your way around
             <div class="example-boxes" id="example-bg-img-grad-lefttoright-3col"></div>
           </figure>
           <figure class="content-box-code-example">
-            <figcaption>Insert example box</figcaption>
+            <figcaption>4 colour diagonal linear gradient</figcaption>
             <div class="content-box-code">
               <code><span class="code-box-comment">/*direction set diagonally*/</span><br>
                 div { <br>
                 background-image: linear-gradient(to top left, color1, color2, color3, color4);<br>
                 }</code>
             </div>
-            <div class="example-boxes" id=""></div>
+            <div class="example-boxes" id="example-bg-img-grad-topleft-4col"></div>
           </figure>
           <div class="content-box-text">
             <p>For more control of the direction of the gradient an angle can be set instead of the directions</p>
           </div>
           <figure class="content-box-code-example">
-            <figcaption>Insert example box</figcaption>
+            <figcaption>5 colour linear gradient</figcaption>
             <div class="content-box-code">
               <code><span class="code-box-comment">/*direction set as angle 0deg which is same as bottom to top*/</span><br>
                 div { <br>
                 background-image: linear-gradient(0deg, color1, color2, color3, color4, color5);<br>
                 }</code>
             </div>
-            <div class="example-boxes" id=""></div>
+            <div class="example-boxes" id="example-bg-img-grad-0deg-5col"></div>
           </figure>
           <figure class="content-box-code-example">
-            <figcaption>Insert example box</figcaption>
+            <figcaption>6 colour linear gradient</figcaption>
             <div class="content-box-code">
               <code><span class="code-box-comment">/*direction set as angle 90deg which is same as left to right*/</span><br>
                 div { <br>
                 background-image: linear-gradient(90deg, color1, color2, color3, color4, color5, color6);<br>
                 }</code>
             </div>
-            <div class="example-boxes" id=""></div>
+            <div class="example-boxes" id="example-bg-img-grad-90deg-6col"></div>
           </figure>
           <figure class="content-box-code-example">
-            <figcaption>Insert example box</figcaption>
+            <figcaption>7 colour linear gradient</figcaption>
             <div class="content-box-code">
               <code><span class="code-box-comment">/*direction set as angle 180deg which is same as top to bottom*/</span><br>
                 div { <br>
                 background-image: linear-gradient(180deg, color1, color2, color3, color4, color5, color6, color7);<br>
                 }</code>
             </div>
-            <div class="example-boxes" id=""></div>
+            <div class="example-boxes" id="example-bg-img-grad-180deg-7col"></div>
           </figure>
           <div class="content-box-text">
             <p>This allows more exact diagonal lines to be used...</p>
           </div>
-
           <figure class="content-box-code-example">
-            <figcaption>Insert example box</figcaption>
+            <figcaption>3 colour diagonal gradient</figcaption>
             <div class="content-box-code">
               <code><span class="code-box-comment">/*direction set as angle 125deg */</span><br>
                 div { <br>
                 background-image: linear-gradient(125deg, color1, color2, color3);<br>
                 }</code>
             </div>
-            <div class="example-boxes" id=""></div>
+            <div class="example-boxes" id="example-bg-img-grad-125deg-3col"></div>
           </figure>
 
           <figure class="content-box-code-example">
-            <figcaption>Insert example box</figcaption>
+            <figcaption>3 colour diagonal gradient</figcaption>
             <div class="content-box-code">
               <code><span class="code-box-comment">/*direction set as angle 270deg */</span><br>
                 div { <br>
                 background-image: linear-gradient(270deg, color1, color2, color3);<br>
                 }</code>
             </div>
-            <div class="example-boxes" id=""></div>
+            <div class="example-boxes" id="example-bg-img-grad-270deg-3col"></div>
           </figure>
           <div class="content-box-text">
             <p>The gradient can also be set to repeat itself...</p>
           </div>
           <figure class="content-box-code-example">
-            <figcaption>Insert example box</figcaption>
+            <figcaption>Repeating linear gradient</figcaption>
             <div class="content-box-code">
-              <code><span class="code-box-comment">/*2 color gradient set to repeat*/</span><br>
+              <code><span class="code-box-comment">/*Color gradient set to repeat*/</span><br>
                 div { <br>
-                background-image: repeating-linear-gradient(0deg, color1, color2);<br>
+                background-image: repeating-linear-gradient(0deg, black, color1 20%, color2 10%);<br>
                 }</code>
             </div>
-            <div class="example-boxes" id=""></div>
+            <div class="example-boxes" id="example-bg-img-grad-rep"></div>
           </figure>
           <div class="content-box-text">
             <p class="mini-header">Radial Gradient</p>
@@ -274,22 +273,33 @@ Finding your way around
           </div>
 
           <figure class="content-box-code-example">
-            <figcaption>Insert example box</figcaption>
+            <figcaption>3 colour elliptical radial gradient</figcaption>
             <div class="content-box-code">
               <code><span class="code-box-comment">/*3 color elliptical radial gradient*/</span><br>
                 div { <br>
-                background-image: radial-gradient(red, yellow, green);<br>
+                background-image: radial-gradient(color1, color2, color3);<br>
                 }</code>
             </div>
-            <div class="example-boxes" id=""></div>
+            <div class="example-boxes" id="example-bg-img-grad-rad-3col"></div>
           </figure>
 
           <figure class="content-box-code-example">
-            <figcaption>Insert example box</figcaption>
+            <figcaption>3 colour circular radial gradient</figcaption>
             <div class="content-box-code">
-              <code><span class="code-box-comment">/*2 color gradient set to repeat*/</span><br>
+              <code><span class="code-box-comment">/*3 color circular radial gradient*/</span><br>
                 div { <br>
-                background-image: repeating-radial-gradient(color1, color2);<br>
+                background-image: radial-gradient( circle, color1, color2, color3);<br>
+                }</code>
+            </div>
+            <div class="example-boxes" id="example-bg-img-grad-rad-circle-3col"></div>
+          </figure>
+
+          <figure class="content-box-code-example">
+            <figcaption>Repeating radial gradient</figcaption>
+            <div class="content-box-code">
+              <code><span class="code-box-comment">/*color gradient set to repeat*/</span><br>
+                div { <br>
+                background-image: repeating-radial-gradient(color1, color2 10%, color3 20%);<br>
                 }</code>
             </div>
             <div class="example-boxes" id=""></div>
