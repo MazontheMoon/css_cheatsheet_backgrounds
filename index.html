@@ -143,13 +143,13 @@ Finding your way around
           <div class="content-box-text">
             <p>Gradients let you display smooth transitions between two or more specified colours.</p>
             <p>There are two types of color gradient that can be used as a background image:</p>
-            <ol>
-              <li>Linear</li>
-              <li>Radial</li>
+            <ol class="mini-subindex">
+              <li><a href="#lin-grad-subsection">Linear</a></li>
+              <li><a href="#rad-grad-subsection">Radial</a></li>
             </ol>
           </div>
           <div class="content-box-text">
-            <p class="mini-header">Linear Gradient</p>
+            <p class="mini-header" id="lin-grad-subsection">Linear Gradient</p>
             <p>It works pretty much as it sounds, the linear gradient can be from up to down, side to side, or diagonal.</p>
             <p>To create a linear gradient you need:</p>
             <ol>
@@ -258,17 +258,18 @@ Finding your way around
             <div class="example-boxes" id="example-bg-img-grad-rep"></div>
           </figure>
           <div class="content-box-text">
-            <p class="mini-header">Radial Gradient</p>
+            <p class="mini-header" id="rad-grad-subsection">Radial Gradient</p>
             <p>The radial gradient radiates from a central point.</p>
             <p>To create a radial gradient you need:</p>
             <ol>
               <li>A shape</li>
               <li>Two or more colours (transparant counts as a colour!)</li>
             </ol>
-            <p>There are two shapes:</p>
+            <p>There are different shapes:</p>
             <ol>
               <li>Ellipse (default)</li>
               <li>Circle</li>
+              <li>Conical</li>
             </ol>
           </div>
 
@@ -302,7 +303,7 @@ Finding your way around
                 background-image: repeating-radial-gradient(color1, color2 10%, color3 20%);<br>
                 }</code>
             </div>
-            <div class="example-boxes" id=""></div>
+            <div class="example-boxes" id="example-bg-img-grad-rad-repeat-3col"></div>
           </figure>
           <div class="content-box-text">
             <p>The size parameter defines the size of the gradient.</p>
@@ -314,16 +315,25 @@ Finding your way around
               <li>farthest-corner</li>
             </ul>
           </div>
-
           <figure class="content-box-code-example">
-            <figcaption>Insert example box</figcaption>
+            <figcaption>Radial gradiant</figcaption>
             <div class="content-box-code">
               <code><span class="code-box-comment">/*3 color radial gradient using closest-side size*/</span><br>
                 div { <br>
-                background-image: radial-gradient(closest-side at 70% 25%, color1, color2, color3);<br>
+                background-image: radial-gradient(circle closest-side, color1, color2, color3);<br>
                 }</code>
             </div>
-            <div class="example-boxes" id=""></div>
+            <div class="example-boxes" id="example-bg-img-grad-rad-closest-side"></div>
+          </figure>
+          <figure class="content-box-code-example">
+            <figcaption>Radial gradiant</figcaption>
+            <div class="content-box-code">
+              <code><span class="code-box-comment">/*3 color radial gradient using closest-side size set by degree*/</span><br>
+                div { <br>
+                background-image: radial-gradient(circel closest-side at 70% 25%, color1, color2, color3);<br>
+                }</code>
+            </div>
+            <div class="example-boxes" id="example-bg-img-grad-rad-closest-side-deg"></div>
           </figure>
 
           <figure class="content-box-code-example">
@@ -334,7 +344,7 @@ Finding your way around
                 background-image: radial-gradient(farthest-side at 70% 25%, color1, color2, color3);<br>
                 }</code>
             </div>
-            <div class="example-boxes" id=""></div>
+            <div class="example-boxes" id="example-bg-img-grad-rad-farthest-side"></div>
           </figure>
 
           <figure class="content-box-code-example">
@@ -380,6 +390,56 @@ Finding your way around
               <code><span class="code-box-comment">/*3 color circular radial gradient*/</span><br>
                 div { <br>
                 background-image: repeating-linear-gradient(color1 20%, color2 15%, color3);<br>
+                }</code>
+            </div>
+            <div class="example-boxes" id=""></div>
+          </figure>
+          <figure class="content-box-code-example">
+            <figcaption>Conical gradient</figcaption>
+            <div class="content-box-code">
+              <code><span class="code-box-comment">/*2 color conical gradient*/</span><br>
+                div { <br>
+                background-image: conic-gradient(color1, color2);<br>
+                }</code>
+            </div>
+            <div class="example-boxes" id=""></div>
+          </figure>
+          <figure class="content-box-code-example">
+            <figcaption>Conical gradient</figcaption>
+            <div class="content-box-code">
+              <code><span class="code-box-comment">/*pie chart with conical gradient*/</span><br>
+                div { <br>
+                background-image: conic-gradient(color1, color2);<br>
+                }</code>
+            </div>
+            <div class="example-boxes" id=""></div>
+          </figure>
+          <figure class="content-box-code-example">
+            <figcaption>Conical gradient</figcaption>
+            <div class="content-box-code">
+              <code><span class="code-box-comment">/*colour wheel with conical gradient*/</span><br>
+                div { <br>
+                background-image: conic-gradient(color1, color2);<br>
+                }</code>
+            </div>
+            <div class="example-boxes" id=""></div>
+          </figure>
+          <figure class="content-box-code-example">
+            <figcaption>Conical gradient by %</figcaption>
+            <div class="content-box-code">
+              <code><span class="code-box-comment">/*colour wheel with conical gradient*/</span><br>
+                div { <br>
+                background-image: conic-gradient(color1, color2);<br>
+                }</code>
+            </div>
+            <div class="example-boxes" id=""></div>
+          </figure>
+          <figure class="content-box-code-example">
+            <figcaption>Conical gradient by degrees</figcaption>
+            <div class="content-box-code">
+              <code><span class="code-box-comment">/*colour wheel with conical gradient*/</span><br>
+                div { <br>
+                background-image: conic-gradient(color1, color2);<br>
                 }</code>
             </div>
             <div class="example-boxes" id=""></div>

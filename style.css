@@ -266,6 +266,10 @@ section .sect-content-box-subsection .subsection-header h5 {
   padding-left: 1em;
 }
 
+.sect-content-box-subsection .mini-subindex a {
+  color: inherit;
+  padding: 0.3em;
+}
 /*=========================
 Code example figure boxes
 ===========================*/
@@ -365,6 +369,30 @@ Code example figure boxes
   background-image: radial-gradient(circle, blue, white, purple);
 }
 
+/*3 colour repeating radial gradient*/
+#example-bg-img-grad-rad-repeat-3col {
+  background-image: repeating-radial-gradient(blue, white 10%, purple 20%);
+}
+
+/*3 colour radial gradient using closest-side*/
+#example-bg-img-grad-rad-closest-side {
+  background-image: radial-gradient(circle closest-side, blue, white, purple);
+}
+
+/*3 colour radial gradient using closest-side by degrees*/
+#example-bg-img-grad-rad-closest-side-deg {
+  background-image: radial-gradient(
+    circle closest-side at 70% 25%,
+    blue,
+    white,
+    purple
+  );
+}
+
+/*3 colour radial gradient using closest-side*/
+#example-bg-img-grad-rad-farthest-side {
+  background-image: radial-gradient(circle farthest-side, blue, white, purple);
+}
 /*====
 Footer
 =======*/
