@@ -389,9 +389,54 @@ Code example figure boxes
   );
 }
 
-/*3 colour radial gradient using closest-side*/
+/*3 colour radial gradient using farthest-side*/
 #example-bg-img-grad-rad-farthest-side {
   background-image: radial-gradient(circle farthest-side, blue, white, purple);
+}
+
+/*3 colour radial gradient using farthest-side by degrees*/
+#example-bg-img-grad-rad-farthest-side-deg {
+  background-image: radial-gradient(
+    circle farthest-side at 25% 50%,
+    blue,
+    white,
+    purple
+  );
+}
+
+/*3 colour radial gradient using closest-corner*/
+#example-bg-img-grad-rad-closest-corner {
+  background-image: radial-gradient(circle closest-corner, blue, white, purple);
+}
+
+/*3 colour radial gradient using closest-corner by degrees*/
+#example-bg-img-grad-rad-closest-corner-deg {
+  background-image: radial-gradient(
+    circle closest-corner at 50% 25%,
+    blue,
+    white,
+    purple
+  );
+}
+
+/*3 colour radial gradient using farthest-corner*/
+#example-bg-img-grad-rad-farthest-corner {
+  background-image: radial-gradient(
+    circle farthest-corner,
+    blue,
+    white,
+    purple
+  );
+}
+
+/*3 colour radial gradient farthest farthest-corner by degrees*/
+#example-bg-img-grad-rad-farthest-corner-deg {
+  background-image: radial-gradient(
+    circle farthest-corner at 70% 25%,
+    blue,
+    white,
+    purple
+  );
 }
 /*====
 Footer
