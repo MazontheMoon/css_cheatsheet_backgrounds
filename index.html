@@ -276,7 +276,7 @@ Finding your way around
           <figure class="content-box-code-example">
             <figcaption>Radial Ellipsis</figcaption>
             <div class="content-box-code">
-              <code><span class="code-box-comment">/*3 color elliptical radial gradient*/</span><br>
+              <code><span class="code-box-comment">/*elliptical radial gradient*/</span><br>
                 div { <br>
                 background-image: radial-gradient(color1, color2, color3);<br>
                 }</code>
@@ -287,7 +287,7 @@ Finding your way around
           <figure class="content-box-code-example">
             <figcaption>Radial circle</figcaption>
             <div class="content-box-code">
-              <code><span class="code-box-comment">/*3 color circular radial gradient*/</span><br>
+              <code><span class="code-box-comment">/*circular radial gradient*/</span><br>
                 div { <br>
                 background-image: radial-gradient( circle, color1, color2, color3);<br>
                 }</code>
@@ -398,6 +398,58 @@ Finding your way around
             </div>
             <div class="example-boxes" id="example-bg-img-grad-rad-farthest-corner-deg"></div>
           </figure>
+          <figure class="content-box-code-example">
+            <figcaption>Circle Top</figcaption>
+            <div class="content-box-code">
+              <code><span class="code-box-comment">/*radial gradient with circle starting at top*/</span><br>
+                div { <br>
+                background-image: radial-gradient(circle at top, color1, color2, color3);<br>
+                }</code>
+            </div>
+            <div class="example-boxes" id="example-bg-img-grad-rad-c-top"></div>
+          </figure>
+          <figure class="content-box-code-example">
+            <figcaption>Circle Top Right</figcaption>
+            <div class="content-box-code">
+              <code><span class="code-box-comment">/*radial gradient with circle starting at top right*/</span><br>
+                div { <br>
+                background-image: radial-gradient(circle at top right, color1, color2, color3);<br>
+                }</code>
+            </div>
+            <div class="example-boxes" id="example-bg-img-grad-rad-c-topright"></div>
+          </figure>
+          <figure class="content-box-code-example">
+            <figcaption>Circle Right</figcaption>
+            <div class="content-box-code">
+              <code><span class="code-box-comment">/*radial gradient with circle starting at right*/</span><br>
+                div { <br>
+                background-image: radial-gradient(circle at right, color1, color2, color3);<br>
+                }</code>
+            </div>
+            <div class="example-boxes" id="example-bg-img-grad-rad-c-right"></div>
+          </figure>
+
+          <figure class="content-box-code-example">
+            <figcaption>Circle Bottom</figcaption>
+            <div class="content-box-code">
+              <code><span class="code-box-comment">/*radial gradient with circle starting at bottom*/</span><br>
+                div { <br>
+                background-image: radial-gradient(circle at bottom, color1, color2, color3);<br>
+                }</code>
+            </div>
+            <div class="example-boxes" id="example-bg-img-grad-rad-c-bottom"></div>
+          </figure>
+          <figure class="content-box-code-example">
+            <figcaption>Circle Left</figcaption>
+            <div class="content-box-code">
+              <code><span class="code-box-comment">/*radial gradient with circle starting at left*/</span><br>
+                div { <br>
+                background-image: radial-gradient(circle at left, color1, color2, color3);<br>
+                }</code>
+            </div>
+            <div class="example-boxes" id="example-bg-img-grad-rad-c-left"></div>
+          </figure>
+
           <div class="content-box-text">
             <p class="mini-header">Colour stops</p>
             <p>For both linear and radial gradients you can also specify how much of the gradient is in each colour instead of all using an equal fraction....</p>
@@ -406,23 +458,22 @@ Finding your way around
           <figure class="content-box-code-example">
             <figcaption>Linear colour stops</figcaption>
             <div class="content-box-code">
-              <code><span class="code-box-comment">/*3 color circular linear gradient*/</span><br>
+              <code><span class="code-box-comment">/*3 color linear gradient with stops*/</span><br>
                 div { <br>
-                background-image: linear-gradient(to right, color1 25%, color2 50%, color3);<br>
+                background-image: linear-gradient(to right, color1 5%, color2 30%, color3);<br>
                 }</code>
             </div>
-            <div class="example-boxes" id=""></div>
+            <div class="example-boxes" id="example-bg-img-lin-colstop"></div>
           </figure>
-
           <figure class="content-box-code-example">
             <figcaption>Radial colour stops</figcaption>
             <div class="content-box-code">
-              <code><span class="code-box-comment">/*3 color circular radial gradient*/</span><br>
+              <code><span class="code-box-comment">/*3 color circular radial gradient with stops*/</span><br>
                 div { <br>
-                background-image: repeating-linear-gradient(color1 20%, color2 15%, color3);<br>
+                background-image: radial-gradient(circle, color1 5%, color2 25%, color3);<br>
                 }</code>
             </div>
-            <div class="example-boxes" id=""></div>
+            <div class="example-boxes" id="example-bg-img-rad-colstop"></div>
           </figure>
           <figure class="content-box-code-example">
             <figcaption>Conical gradient</figcaption>
