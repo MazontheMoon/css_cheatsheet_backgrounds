@@ -374,12 +374,12 @@ Code example figure boxes
   background-image: repeating-radial-gradient(blue, white 10%, purple 20%);
 }
 
-/*3 colour radial gradient using closest-side*/
+/*radial gradient using closest-side*/
 #example-bg-img-grad-rad-closest-side {
   background-image: radial-gradient(circle closest-side, blue, white, purple);
 }
 
-/*3 colour radial gradient using closest-side by degrees*/
+/*radial gradient using closest-side by degrees*/
 #example-bg-img-grad-rad-closest-side-deg {
   background-image: radial-gradient(
     circle closest-side at 70% 25%,
@@ -389,12 +389,12 @@ Code example figure boxes
   );
 }
 
-/*3 colour radial gradient using farthest-side*/
+/*radial gradient using farthest-side*/
 #example-bg-img-grad-rad-farthest-side {
   background-image: radial-gradient(circle farthest-side, blue, white, purple);
 }
 
-/*3 colour radial gradient using farthest-side by degrees*/
+/*radial gradient using farthest-side by degrees*/
 #example-bg-img-grad-rad-farthest-side-deg {
   background-image: radial-gradient(
     circle farthest-side at 25% 50%,
@@ -404,12 +404,12 @@ Code example figure boxes
   );
 }
 
-/*3 colour radial gradient using closest-corner*/
+/*radial gradient using closest-corner*/
 #example-bg-img-grad-rad-closest-corner {
   background-image: radial-gradient(circle closest-corner, blue, white, purple);
 }
 
-/*3 colour radial gradient using closest-corner by degrees*/
+/*radial gradient using closest-corner by degrees*/
 #example-bg-img-grad-rad-closest-corner-deg {
   background-image: radial-gradient(
     circle closest-corner at 50% 25%,
@@ -419,7 +419,7 @@ Code example figure boxes
   );
 }
 
-/*3 colour radial gradient using farthest-corner*/
+/*radial gradient using farthest-corner*/
 #example-bg-img-grad-rad-farthest-corner {
   background-image: radial-gradient(
     circle farthest-corner,
@@ -429,7 +429,7 @@ Code example figure boxes
   );
 }
 
-/*3 colour radial gradient farthest farthest-corner by degrees*/
+/*radial gradient farthest farthest-corner by degrees*/
 #example-bg-img-grad-rad-farthest-corner-deg {
   background-image: radial-gradient(
     circle farthest-corner at 70% 25%,
@@ -437,6 +437,86 @@ Code example figure boxes
     white,
     purple
   );
+}
+
+/*radial gradient with circle starting at top*/
+#example-bg-img-grad-rad-c-top {
+  background-image: radial-gradient(
+    circle at top,
+    blue,
+    white,
+    purple,
+    yellow,
+    green,
+    orange,
+    black
+  );
+}
+
+/*radial gradient with circle starting at top right*/
+#example-bg-img-grad-rad-c-topright {
+  background-image: radial-gradient(
+    circle at top right,
+    blue,
+    white,
+    purple,
+    yellow,
+    green,
+    orange,
+    black
+  );
+}
+
+/*radial gradient with circle starting at right*/
+#example-bg-img-grad-rad-c-right {
+  background-image: radial-gradient(
+    circle at right,
+    blue,
+    white,
+    purple,
+    yellow,
+    green,
+    orange,
+    black
+  );
+}
+
+/*radial gradient with circle starting at bottom*/
+#example-bg-img-grad-rad-c-bottom {
+  background-image: radial-gradient(
+    circle at bottom,
+    blue,
+    white,
+    purple,
+    yellow,
+    green,
+    orange,
+    black
+  );
+}
+
+/*radial gradient with circle starting at left*/
+#example-bg-img-grad-rad-c-left {
+  background-image: radial-gradient(
+    circle at left,
+    blue,
+    white,
+    purple,
+    yellow,
+    green,
+    orange,
+    black
+  );
+}
+
+/*3 color linear gradient with stops*/
+#example-bg-img-lin-colstop {
+  background-image: linear-gradient(to right, blue 5%, white 30%, purple);
+}
+
+/*3 color circular radial gradient with stops*/
+#example-bg-img-rad-colstop {
+  background-image: radial-gradient(circle, blue 5%, white 25%, purple);
 }
 /*====
 Footer
