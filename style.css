@@ -518,6 +518,62 @@ Code example figure boxes
 #example-bg-img-rad-colstop {
   background-image: radial-gradient(circle, blue 5%, white 25%, purple);
 }
+
+/*Circular container for the conical examples*/
+.conehead {
+  width: 150px;
+  border-radius: 50%;
+  margin: 0 auto;
+  border: solid 3px black;
+}
+
+/*2 colour conical gradient*/
+#example-bg-img-con-grad {
+  background-image: conic-gradient(blue, purple);
+}
+
+/*conical gradient with set center point*/
+#example-bg-img-con-grad-set-center {
+  background-image: conic-gradient(at 30% 60%, blue, purple);
+}
+
+/*conical gradient with set starting angle*/
+#example-bg-img-con-grad-set-angle {
+  background-image: conic-gradient(from 20deg, blue, purple);
+}
+
+/*conical gradient with set center and starting angle*/
+#example-bg-img-con-grad-set-centerangle {
+  background-image: conic-gradient(from 120deg at top, blue, purple);
+}
+
+/*conical gradient with percentages instead of degrees*/
+#example-bg-img-con-grad-set-per {
+  background-image: conic-gradient(blue 60%, white, purple);
+}
+
+/*conical gradient with end colour set by turn*/
+#example-bg-img-con-grad-set-endturn {
+  background-image: conic-gradient(blue 130deg, purple 1turn);
+}
+
+/*pie chart with conical gradient*/
+#example-bg-img-con-grad-pie {
+  background-image: conic-gradient(red 40%, yellow 0 70%, green 0);
+}
+
+/*colour wheel with conical gradient*/
+#example-bg-img-con-grad-wheel {
+  background-image: conic-gradient(
+    blue,
+    white,
+    purple,
+    yellow,
+    green,
+    orange,
+    black
+  );
+}
 /*====
 Footer
 =======*/
