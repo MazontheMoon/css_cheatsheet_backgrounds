@@ -571,9 +571,34 @@ Code example figure boxes
     yellow,
     green,
     orange,
-    black
+    black,
+    blue
   );
 }
+
+/*background-image with repeat*/
+#example-bg-img-rep {
+  background-color: var(--dark-colour);
+  background-image: url(https://images.unsplash.com/photo-1580927752452-89d86da3fa0a?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8Y29kaW5nfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
+  background-size: contain;
+}
+
+/*background-image with no repeat*/
+#example-bg-img-norep {
+  background-color: var(--dark-colour);
+  background-image: url(https://images.unsplash.com/photo-1580927752452-89d86da3fa0a?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8Y29kaW5nfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/*background-image with repeat-x*/
+#example-bg-img-repx {
+  background-color: var(--dark-colour);
+  background-image: url(https://images.unsplash.com/photo-1580927752452-89d86da3fa0a?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8Y29kaW5nfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
+  background-size: contain;
+  background-repeat: repeat-x;
+}
+
 /*====
 Footer
 =======*/
