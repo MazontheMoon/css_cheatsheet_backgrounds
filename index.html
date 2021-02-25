@@ -636,20 +636,23 @@ Finding your way around
             <li>keywords (left, center, right, top, center, bottom)</li>
           </ul>
         </div>
-        <div class="content-box-code">
-          <code>
-            div{ <br>
-            background-color: #f3f2f1; <span class="code-box-comment">/*fallback*/</span><br>
-            background-image: linear-gradient(to bottom, orange, blue, white); <span class="code-box-comment">/*fallback*/</span><br>
-            background-image: url(https://imagehosting/image.png);<br>
-            background-repeat: no-repeat;<br>
-            background-position: 30px 50px;<br>
-            }
-          </code>
-        </div>
-
         <figure class="content-box-code-example">
-          <figcaption>Insert example box</figcaption>
+          <figcaption>Position by pixel</figcaption>
+          <div class="content-box-code">
+            <code>
+              div{ <br>
+              background-color: #f3f2f1; <span class="code-box-comment">/*fallback*/</span><br>
+              background-image: linear-gradient(to bottom, orange, blue, white); <span class="code-box-comment">/*fallback*/</span><br>
+              background-image: url(https://imagehosting/image.png);<br>
+              background-repeat: no-repeat;<br>
+              background-position: 0px 20px;<br>
+              }
+            </code>
+          </div>
+          <div class="example-boxes" id="example-bg-img-pos-pix"></div>
+        </figure>
+        <figure class="content-box-code-example">
+          <figcaption>Position by word</figcaption>
           <div class="content-box-code">
             <code><span class="code-box-comment">/*background top and center*/</span><br>
               div { <br>
@@ -659,7 +662,7 @@ Finding your way around
               }
             </code>
           </div>
-          <div class="example-boxes" id=""></div>
+          <div class="example-boxes" id="example-bg-img-pos-word"></div>
         </figure>
       </div>
     </section>

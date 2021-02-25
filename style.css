@@ -599,6 +599,24 @@ Code example figure boxes
   background-repeat: repeat-x;
 }
 
+/*background position by pixel*/
+#example-bg-img-pos-pix {
+  background-color: var(--dark-colour);
+  background-image: url(https://images.unsplash.com/photo-1580927752452-89d86da3fa0a?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8Y29kaW5nfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 5px 5px;
+}
+
+/*background position by keyword*/
+#example-bg-img-pos-word {
+  background-color: var(--dark-colour);
+  background-image: url(https://images.unsplash.com/photo-1580927752452-89d86da3fa0a?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8Y29kaW5nfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
 /*====
 Footer
 =======*/
