@@ -701,13 +701,13 @@ Finding your way around
             </code>
           </div>
           <div class="example-boxes" id="example-bg-img-fixed">
+            <p>s.....</p>
+            <p>sc....</p>
+            <p>scr...</p>
+            <p>scro..</p>
+            <p>scrol.</p>
             <p>scroll</p>
-            <p>scroll</p>
-            <p>scroll</p>
-            <p>scroll</p>
-            <p>scroll</p>
-            <p>scroll</p>
-            <p>scroll</p>
+            <p>scrolling</p>
           </div>
         </figure>
         <figure class="content-box-code-example">
@@ -725,13 +725,13 @@ Finding your way around
             </code>
           </div>
           <div class="example-boxes" id="example-bg-img-local">
+            <p>s.....</p>
+            <p>sc....</p>
+            <p>scr...</p>
+            <p>scro..</p>
+            <p>scrol.</p>
             <p>scroll</p>
-            <p>scroll</p>
-            <p>scroll</p>
-            <p>scroll</p>
-            <p>scroll</p>
-            <p>scroll</p>
-            <p>scroll</p>
+            <p>scrolling</p>
 
           </div>
         </figure>
@@ -758,19 +758,57 @@ Finding your way around
           <p><u>Contain</u></p>
           <p>Resizes the image so it is fully visible</p>
         </div>
-        <div class="content-box-code">
-          <code>
-            div{ <br>
-            background-color: #f3f2f1; <span class="code-box-comment">/*fallback*/</span><br>
-            background-image: linear-gradient(to bottom, orange, blue, white); <span class="code-box-comment">/*fallback*/</span><br>
-            background-image: url(https://imagehosting/image.png);<br>
-            background-repeat: no-repeat;<br>
-            background-position: 30px 50px;<br>
-            background-attachment: local;<br>
-            background-size: 160px 160px; <br>
-            }
-          </code>
-        </div>
+        <figure class="content-box-code-example">
+          <figcaption>Background sized</figcaption>
+          <div class="content-box-code">
+            <code>
+              div{ <br>
+              background-color: #f3f2f1; <span class="code-box-comment">/*fallback*/</span><br>
+              background-image: linear-gradient(to bottom, orange, blue, white); <span class="code-box-comment">/*fallback*/</span><br>
+              background-image: url(https://imagehosting/image.png);<br>
+              background-repeat: no-repeat;<br>
+              background-position: top center<br>
+              background-attachment: local;<br>
+              background-size: 50% 50% <br>
+              }
+            </code>
+          </div>
+          <div class="example-boxes" id="example-bg-img-sized"></div>
+        </figure>
+        <figure class="content-box-code-example">
+          <figcaption>Background Cover</figcaption>
+          <div class="content-box-code">
+            <code>
+              div{ <br>
+              background-color: #f3f2f1; <span class="code-box-comment">/*fallback*/</span><br>
+              background-image: linear-gradient(to bottom, orange, blue, white); <span class="code-box-comment">/*fallback*/</span><br>
+              background-image: url(https://imagehosting/image.png);<br>
+              background-repeat: no-repeat;<br>
+              background-position: top center<br>
+              background-attachment: local;<br>
+              background-size: cover;
+              }
+            </code>
+          </div>
+          <div class="example-boxes" id="example-bg-img-size-cover"></div>
+        </figure>
+        <figure class="content-box-code-example">
+          <figcaption>Background contain</figcaption>
+          <div class="content-box-code">
+            <code>
+              div{ <br>
+              background-color: #f3f2f1; <span class="code-box-comment">/*fallback*/</span><br>
+              background-image: linear-gradient(to bottom, orange, blue, white); <span class="code-box-comment">/*fallback*/</span><br>
+              background-image: url(https://imagehosting/image.png);<br>
+              background-repeat: no-repeat;<br>
+              background-position: 30px 50px;<br>
+              background-attachment: local;<br>
+              background-size: contain;
+              }
+            </code>
+          </div>
+          <div class="example-boxes" id="example-bg-img-size-contain"></div>
+        </figure>
       </div>
     </section>
     <section id="sect-background">
