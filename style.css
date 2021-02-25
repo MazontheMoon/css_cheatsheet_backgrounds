@@ -617,6 +617,34 @@ Code example figure boxes
   background-position: top center;
 }
 
+/*background attachment in fixed position*/
+#example-bg-img-fixed {
+  background-color: var(--dark-colour);
+  background-image: url(https://images.unsplash.com/photo-1580927752452-89d86da3fa0a?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8Y29kaW5nfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-attachment: fixed;
+  color: var(--lightest-colour, #f2e9e4);
+  text-align: center;
+  height: 150px;
+  overflow-y: scroll;
+}
+
+/*background attachment in local position*/
+#example-bg-img-local {
+  background-color: var(--dark-colour);
+  background-image: url(https://images.unsplash.com/photo-1580927752452-89d86da3fa0a?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8Y29kaW5nfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-attachment: local;
+  color: var(--lightest-colour, #f2e9e4);
+  text-align: center;
+  height: 150px;
+  overflow-y: scroll;
+}
+
 /*====
 Footer
 =======*/

@@ -686,18 +686,55 @@ Finding your way around
           <p><u>Local</u></p>
           <p>Fixes the background to the element it is set on and when element is scrolled and background scrolls with it </p>
         </div>
-        <div class="content-box-code">
-          <code>
-            div{ <br>
-            background-color: #f3f2f1; <span class="code-box-comment">/*fallback*/</span><br>
-            background-image: linear-gradient(to bottom, orange, blue, white); <span class="code-box-comment">/*fallback*/</span><br>
-            background-image: url(https://imagehosting/image.png);<br>
-            background-repeat: no-repeat;<br>
-            background-position: 30px 50px;<br>
-            background-attachment: local;<br>
-            }
-          </code>
-        </div>
+        <figure class="content-box-code-example">
+          <figcaption>Fixed attachment</figcaption>
+          <div class="content-box-code">
+            <code>
+              div{ <br>
+              background-color: #f3f2f1; <span class="code-box-comment">/*fallback*/</span><br>
+              background-image: linear-gradient(to bottom, orange, blue, white); <span class="code-box-comment">/*fallback*/</span><br>
+              background-image: url(https://imagehosting/image.png);<br>
+              background-repeat: no-repeat;<br>
+              background-position: top center;<br>
+              background-attachment: fixed;<br>
+              }
+            </code>
+          </div>
+          <div class="example-boxes" id="example-bg-img-fixed">
+            <p>scroll</p>
+            <p>scroll</p>
+            <p>scroll</p>
+            <p>scroll</p>
+            <p>scroll</p>
+            <p>scroll</p>
+            <p>scroll</p>
+          </div>
+        </figure>
+        <figure class="content-box-code-example">
+          <figcaption>Local attachment</figcaption>
+          <div class="content-box-code">
+            <code>
+              div{ <br>
+              background-color: #f3f2f1; <span class="code-box-comment">/*fallback*/</span><br>
+              background-image: linear-gradient(to bottom, orange, blue, white); <span class="code-box-comment">/*fallback*/</span><br>
+              background-image: url(https://imagehosting/image.png);<br>
+              background-repeat: no-repeat;<br>
+              background-position: top center;<br>
+              background-attachment: local;<br>
+              }
+            </code>
+          </div>
+          <div class="example-boxes" id="example-bg-img-local">
+            <p>scroll</p>
+            <p>scroll</p>
+            <p>scroll</p>
+            <p>scroll</p>
+            <p>scroll</p>
+            <p>scroll</p>
+            <p>scroll</p>
+
+          </div>
+        </figure>
       </div>
     </section>
     <section id="sect-size">
