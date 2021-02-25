@@ -645,6 +645,31 @@ Code example figure boxes
   overflow-y: scroll;
 }
 
+/*background image with set size*/
+#example-bg-img-sized {
+  background-color: var(--dark-colour);
+  background-image: url(https://images.unsplash.com/photo-1580927752452-89d86da3fa0a?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8Y29kaW5nfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
+  background-size: 150px 100px;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+/*background image with size set to cover*/
+#example-bg-img-size-cover {
+  background-color: var(--dark-colour);
+  background-image: url(https://images.unsplash.com/photo-1580927752452-89d86da3fa0a?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8Y29kaW5nfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+/*background image with size set to cover*/
+#example-bg-img-size-contain {
+  background-color: var(--dark-colour);
+  background-image: url(https://images.unsplash.com/photo-1580927752452-89d86da3fa0a?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8Y29kaW5nfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
 /*====
 Footer
 =======*/
