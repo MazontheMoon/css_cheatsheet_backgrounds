@@ -127,7 +127,6 @@ Main and Section containers
 main {
   grid-area: main;
   border-top: 10px solid black;
-  border-bottom: 10px solid black;
 }
 
 main section {
@@ -708,7 +707,30 @@ Footer
 =======*/
 footer {
   grid-area: footer;
+  border: 10px solid black;
+  padding: 0.5em;
 }
+
+footer #all-about-me {
+  text-align: center;
+}
+
+#all-about-me a:link {
+  padding: 0.2em 0.5em;
+  font-size: 1.2em;
+  color: var(--light-colour, #9a8c98);
+}
+
+#all-about-me a:visited {
+  color: black;
+}
+
+#all-about-me a:focus,
+#all-about-me a:hover,
+#all-about-me a:active {
+  color: var(--lightest-colour, #f2e9e4);
+}
+
 /*================
 Responsivesnness
 ==================*/
