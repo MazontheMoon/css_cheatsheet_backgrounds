@@ -826,7 +826,8 @@ Finding your way around
             background-color: yellow; <br>
             background-image: linear-gradient(to bottom, yellow, #dddd00 50%, orange);<br>
             background-repeat: no-repeat;<br>
-            background-position: 99% center;<br>
+            background-position: left center;<br>
+            background-attachment: scroll;<br>
             }
           </code>
           <p>can be written as...</p>
@@ -835,20 +836,7 @@ Finding your way around
             background: yellow linear-gradient(to bottom, orange, yellow) no-repeat left center scroll;
             }
           </code>
-          <p>This is where adding multiple background can get fun..</p>
-          <code>
-            header { <br>
-            background-color: yellow;<br>
-            background: url(image.png) no-repeat 99% center,
-            url(background-tile.png), <br>
-            linear-gradient(to bottom, yellow, #dddd00 50%, orange);<br>
-            }
-          </code>
         </div>
-        <figure class="content-box-code-example">
-          <figcaption>Insert example box</figcaption>
-          <div class="example-boxes" id=""></div>
-        </figure>
       </div>
     </section>
     <section id="sect-clip">
@@ -857,7 +845,7 @@ Finding your way around
       </header>
       <div class="sect-content-box">
         <div class="content-box-text">
-          <p>The <span class="code-word">background-clip</span> property (also covered in a previous cheat-sheet on <a href="https://codepen.io/mazonthemoon/full/KKdgeoJ" target="_blank"> The Box Model</a>) can be used to specify where the background extensd to on the container box</p>
+          <p>The <span class="code-word">background-clip</span> property (also covered in a previous cheat-sheet on <a href="https://codepen.io/mazonthemoon/full/KKdgeoJ" target="_blank"> The Box Model</a>) can be used to specify where the background extends to on the container box</p>
           <p>Values can be set as</p>
           <ul>
             <li>border (default)</li>
@@ -866,59 +854,79 @@ Finding your way around
             <li>text</li>
           </ul>
         </div>
-        <div class="content-box-code">
-          <code>
-            header { <br>
-            background-color: yellow; <br>
-            background-image: linear-gradient(to bottom, yellow, #dddd00 50%, orange); <br>
-            background-clip: border;<br>
-            }
-          </code>
-        </div>
+
         <figure class="content-box-code-example">
-          <figcaption>Insert example box</figcaption>
-          <div class="example-boxes" id=""></div>
+          <figcaption>Border clip</figcaption>
+          <div class="content-box-code">
+            <code>
+              header { <br>
+              background-color: var(--color); <br>
+              background-image: linear-gradient(to bottom, color1, color2, color3); <br>
+              background-clip: border;<br>
+              }
+            </code>
+          </div>
+          <div class="example-boxes example-boxes-clip">
+            <div class="clip-box" id="example-bg-clip-border">
+              <p>Text</p>
+            </div>
+          </div>
         </figure>
-        <div class="content-box-code">
-          <code>
-            header { <br>
-            background-color: yellow; <br>
-            background-image: linear-gradient(to bottom, yellow, #dddd00 50%, orange); <br>
-            background-clip: padding;<br>
-            }
-          </code>
-        </div>
+
         <figure class="content-box-code-example">
-          <figcaption>Insert example box</figcaption>
-          <div class="example-boxes" id=""></div>
+          <figcaption>Padding clip</figcaption>
+          <div class="content-box-code">
+            <code>
+              header { <br>
+              background-color: yellow; <br>
+              background-image: linear-gradient(to bottom, yellow, #dddd00 50%, orange); <br>
+              background-clip: padding;<br>
+              }
+            </code>
+          </div>
+          <div class="example-boxes example-boxes-clip">
+            <div class="clip-box" id="example-bg-clip-pad">
+              <p>Text</p>
+            </div>
+          </div>
         </figure>
-        <div class="content-box-code">
-          <code>
-            header { <br>
-            background-color: yellow; <br>
-            background-image: linear-gradient(to bottom, yellow, #dddd00 50%, orange); <br>
-            background-clip: content;<br>
-            }
-          </code>
-        </div>
+
         <figure class="content-box-code-example">
-          <figcaption>Insert example box</figcaption>
-          <div class="example-boxes" id=""></div>
+          <figcaption>Content clip</figcaption>
+          <div class="content-box-code">
+            <code>
+              header { <br>
+              background-color: yellow; <br>
+              background-image: linear-gradient(to bottom, yellow, #dddd00 50%, orange); <br>
+              background-clip: content;<br>
+              }
+            </code>
+          </div>
+          <div class="example-boxes example-boxes-clip">
+            <div class="clip-box" id="example-bg-clip-content">
+              <p>Text</p>
+            </div>
+          </div>
         </figure>
-        <div class="content-box-code">
-          <code>
-            header { <br>
-            background-color: yellow; <br>
-            background-image: linear-gradient(to bottom, yellow, #dddd00 50%, orange); <br>
-            background-clip: text;<br>
-            -webkit-background-clip: text; <br>
-            color: rgba(0, 0, 0, 0.2); <br>
-            }
-          </code>
-        </div>
+
         <figure class="content-box-code-example">
-          <figcaption>Insert example box</figcaption>
-          <div class="example-boxes" id=""></div>
+          <figcaption>Text Clip</figcaption>
+          <div class="content-box-code">
+            <code>
+              header { <br>
+              background-color: yellow; <br>
+              background-image: linear-gradient(to bottom, yellow, #dddd00 50%, orange); <br>
+              background-clip: text;<br>
+              -webkit-background-clip: text; <br>
+              color: rgba(0, 0, 0, 0.2); <br>
+              }
+            </code>
+          </div>
+          <div class="example-boxes example-boxes-clip">
+            <div class="clip-box" id="example-bg-clip-text">
+              <p>Text</p>
+            </div>
+          </div>
         </figure>
       </div>
     </section>

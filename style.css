@@ -670,6 +670,39 @@ Code example figure boxes
   background-repeat: no-repeat;
   background-position: top center;
 }
+
+.example-boxes-clip {
+  border: 0.75rem solid black;
+  padding: 0.5rem;
+}
+.example-boxes-clip .clip-box {
+  padding: 1rem;
+  border: 0.75rem dashed black;
+  background-color: var(--dark-colour);
+}
+
+/*background clipped to border*/
+#example-bg-clip-border {
+  background-clip: border-box;
+}
+
+/*background clipped to padding*/
+#example-bg-clip-pad {
+  background-clip: padding-box;
+}
+
+/*background clipped to content*/
+#example-bg-clip-content {
+  background-clip: content-box;
+}
+
+/*background clipped to text*/
+#example-bg-clip-text {
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: rgba(0, 0, 0, 0.2);
+}
+
 /*====
 Footer
 =======*/
@@ -680,12 +713,15 @@ footer {
 Responsivesnness
 ==================*/
 
+/*
+
 @media only screen and (min-width: 550px) {
 }
 
 @media only screen and (min-width: 1024px) {
 }
 
+*/
 /*======================
 Ye Olde Time Print View
 ========================*/
@@ -749,12 +785,14 @@ Ye Olde Time Print View
 /*=============
 Accessibility
 ===============*/
-
+/*
 @media (prefers-color-scheme: dark) {
 }
 
 @media (prefers-color-scheme: light) {
 }
+
+*/
 
 /*Reset to user browser preference*/
 
