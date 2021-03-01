@@ -94,6 +94,7 @@ Nav Menu
 
 nav {
   grid-area: nav;
+  position: relative;
 }
 
 nav #nav-bar {
@@ -126,7 +127,6 @@ Main and Section containers
 
 main {
   grid-area: main;
-  border-top: 10px solid black;
 }
 
 main section {
@@ -707,6 +707,7 @@ Footer
 =======*/
 footer {
   grid-area: footer;
+  position: relative;
   border: 10px solid black;
   padding: 0.5em;
 }
@@ -732,18 +733,47 @@ footer #all-about-me {
 }
 
 /*================
+The little touches
+=================*/
+
+/*Back to top - only for small mobile screen views*/
+.backtotop {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 2rem;
+  padding: 0.4rem;
+}
+
+.backtotop a {
+  color: var(--light-colour, #9a8c98);
+  text-shadow: 1px 1px 2px black;
+}
+
+/*================
 Responsivesnness
 ==================*/
 
-/*
-
-@media only screen and (min-width: 550px) {
-}
-
 @media only screen and (min-width: 1024px) {
+  body {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-areas:
+      "header header"
+      "nav main"
+      "footer footer";
+  }
+
+  nav #nav-bar {
+    position: sticky;
+    top: 0;
+  }
+
+  .backtotop {
+    display: none;
+  }
 }
 
-*/
 /*======================
 Ye Olde Time Print View
 ========================*/
@@ -783,6 +813,10 @@ Ye Olde Time Print View
   }
 
   /*remove unneeded elements*/
+  nav,
+  .backtotop {
+    display: none;
+  }
 
   /*display footer links*/
 
@@ -807,14 +841,6 @@ Ye Olde Time Print View
 /*=============
 Accessibility
 ===============*/
-/*
-@media (prefers-color-scheme: dark) {
-}
-
-@media (prefers-color-scheme: light) {
-}
-
-*/
 
 /*Reset to user browser preference*/
 
