@@ -57,6 +57,11 @@ code {
   font-size: 1rem;
 }
 
+.code-word {
+  font-family: var(--code-font), "Courier New", monospace;
+  background-color: var(--neutral-colour);
+  padding: 0 3px;
+}
 /*================
 Page Layout - Grid
 =================*/
