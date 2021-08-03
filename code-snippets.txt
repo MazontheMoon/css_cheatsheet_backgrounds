@@ -40,9 +40,14 @@ background-image: url(https://upload.wikimedia.org/wikipedia/commons/b/b0/Smiley
 
 /*image - sourced from https://unsplash.com/@joshuaryanphoto*/
 
-text-underline-offset: auto;
-text-underline-offset: 4px;
+https://www.w3schools.com/cssref/pr_background-blend-mode.asp
 
-css clamp 
-eg.
-width: clamp(16rem, 90vw, 70rem);
+https://css-tricks.com/almanac/properties/b/background-blend-mode/
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/blend-mode
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/background-blend-mode
+
+mask-image
+
+text - stroke (only show the outline of font) or use text-shadow?
