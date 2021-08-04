@@ -21,6 +21,7 @@
 
 Version 1.1 - Initial content
 Version 1.2 - Styling
+Version 1.3 - Add new section for Background Blend
 
 ## Table of Contents
 
