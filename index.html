@@ -15,6 +15,9 @@ My CSS Cheat Sheet for learning CSS - Backgrounds
     <link href="https://fonts.googleapis.com/css2?family=BioRhyme&family=Saira&family=Space+Mono&display=swap" rel="stylesheet">
 
   </head>
+<!--================================================
+My CSS Cheat Sheet for learning CSS - Backgrounds
+==================================================-->
 <!--=====================
 Finding your way around 
 =========================
@@ -28,6 +31,7 @@ Finding your way around
   2f Size
   2g Background
   2h Clip
+  2i Blend
 3. Footer
 =========================-->
 
@@ -47,6 +51,7 @@ Finding your way around
       <li><span class="nav-bar-button"><a class="nav-link" href="#sect-size">Size</a></span></li>
       <li><span class="nav-bar-button"><a class="nav-link" href="#sect-background">Background</a></span></li>
       <li><span class="nav-bar-button"><a class="nav-link" href="#sect-clip">Clip</a></span></li>
+      <li><span class="nav-bar-button"><a class="nav-link" href="#sect-blend">Blend</a></span></li>
     </ul>
   </nav>
   <main>
@@ -67,6 +72,7 @@ Finding your way around
           <li><a href="#sect-size">background-size</a></li>
           <li><a href="#sect-background">background</a></li>
           <li><a href="#sect-clip">background-clip</a></li>
+          <li><a href="#sect-blend">background-blend</a></li>
         </ul>
       </div>
     </section>
@@ -143,13 +149,13 @@ Finding your way around
           <div class="content-box-text">
             <p>Gradients let you display smooth transitions between two or more specified colours.</p>
             <p>There are two types of color gradient that can be used as a background image:</p>
-            <ol>
-              <li>Linear</li>
-              <li>Radial</li>
+            <ol class="mini-subindex">
+              <li><a href="#lin-grad-subsection">Linear</a></li>
+              <li><a href="#rad-grad-subsection">Radial</a></li>
             </ol>
           </div>
           <div class="content-box-text">
-            <p class="mini-header">Linear Gradient</p>
+            <p class="mini-header" id="lin-grad-subsection">Linear Gradient</p>
             <p>It works pretty much as it sounds, the linear gradient can be from up to down, side to side, or diagonal.</p>
             <p>To create a linear gradient you need:</p>
             <ol>
@@ -158,7 +164,7 @@ Finding your way around
             </ol>
           </div>
           <figure class="content-box-code-example">
-            <figcaption>2 colour linear gradient</figcaption>
+            <figcaption>Up and Down</figcaption>
             <div class="content-box-code">
               <code><span class="code-box-comment">/*direction set using default of top to bottom*/</span><br>
                 div { <br>
@@ -168,7 +174,7 @@ Finding your way around
             <div class="example-boxes" id="example-bg-img-grad-top-bottom-2col"></div>
           </figure>
           <figure class="content-box-code-example">
-            <figcaption>3 colour linear gradient</figcaption>
+            <figcaption>Side to Side</figcaption>
             <div class="content-box-code">
               <code><span class="code-box-comment">/*direction set from left to right*/</span><br>
                 div { <br>
@@ -178,7 +184,7 @@ Finding your way around
             <div class="example-boxes" id="example-bg-img-grad-lefttoright-3col"></div>
           </figure>
           <figure class="content-box-code-example">
-            <figcaption>4 colour diagonal linear gradient</figcaption>
+            <figcaption>Diagonally</figcaption>
             <div class="content-box-code">
               <code><span class="code-box-comment">/*direction set diagonally*/</span><br>
                 div { <br>
@@ -191,7 +197,7 @@ Finding your way around
             <p>For more control of the direction of the gradient an angle can be set instead of the directions</p>
           </div>
           <figure class="content-box-code-example">
-            <figcaption>5 colour linear gradient</figcaption>
+            <figcaption>Top by degrees</figcaption>
             <div class="content-box-code">
               <code><span class="code-box-comment">/*direction set as angle 0deg which is same as bottom to top*/</span><br>
                 div { <br>
@@ -201,7 +207,7 @@ Finding your way around
             <div class="example-boxes" id="example-bg-img-grad-0deg-5col"></div>
           </figure>
           <figure class="content-box-code-example">
-            <figcaption>6 colour linear gradient</figcaption>
+            <figcaption>Sideways degrees</figcaption>
             <div class="content-box-code">
               <code><span class="code-box-comment">/*direction set as angle 90deg which is same as left to right*/</span><br>
                 div { <br>
@@ -211,7 +217,7 @@ Finding your way around
             <div class="example-boxes" id="example-bg-img-grad-90deg-6col"></div>
           </figure>
           <figure class="content-box-code-example">
-            <figcaption>7 colour linear gradient</figcaption>
+            <figcaption>Bottom degree</figcaption>
             <div class="content-box-code">
               <code><span class="code-box-comment">/*direction set as angle 180deg which is same as top to bottom*/</span><br>
                 div { <br>
@@ -224,7 +230,7 @@ Finding your way around
             <p>This allows more exact diagonal lines to be used...</p>
           </div>
           <figure class="content-box-code-example">
-            <figcaption>3 colour diagonal gradient</figcaption>
+            <figcaption>Diagonal degree</figcaption>
             <div class="content-box-code">
               <code><span class="code-box-comment">/*direction set as angle 125deg */</span><br>
                 div { <br>
@@ -235,7 +241,7 @@ Finding your way around
           </figure>
 
           <figure class="content-box-code-example">
-            <figcaption>3 colour diagonal gradient</figcaption>
+            <figcaption>Diagonal gradient</figcaption>
             <div class="content-box-code">
               <code><span class="code-box-comment">/*direction set as angle 270deg */</span><br>
                 div { <br>
@@ -248,7 +254,7 @@ Finding your way around
             <p>The gradient can also be set to repeat itself...</p>
           </div>
           <figure class="content-box-code-example">
-            <figcaption>Repeating linear gradient</figcaption>
+            <figcaption>Linear repeating</figcaption>
             <div class="content-box-code">
               <code><span class="code-box-comment">/*Color gradient set to repeat*/</span><br>
                 div { <br>
@@ -258,24 +264,25 @@ Finding your way around
             <div class="example-boxes" id="example-bg-img-grad-rep"></div>
           </figure>
           <div class="content-box-text">
-            <p class="mini-header">Radial Gradient</p>
+            <p class="mini-header" id="rad-grad-subsection">Radial Gradient</p>
             <p>The radial gradient radiates from a central point.</p>
             <p>To create a radial gradient you need:</p>
             <ol>
               <li>A shape</li>
               <li>Two or more colours (transparant counts as a colour!)</li>
             </ol>
-            <p>There are two shapes:</p>
+            <p>There are different shapes:</p>
             <ol>
               <li>Ellipse (default)</li>
               <li>Circle</li>
+              <li>Conical</li>
             </ol>
           </div>
 
           <figure class="content-box-code-example">
-            <figcaption>3 colour elliptical radial gradient</figcaption>
+            <figcaption>Radial Ellipsis</figcaption>
             <div class="content-box-code">
-              <code><span class="code-box-comment">/*3 color elliptical radial gradient*/</span><br>
+              <code><span class="code-box-comment">/*elliptical radial gradient*/</span><br>
                 div { <br>
                 background-image: radial-gradient(color1, color2, color3);<br>
                 }</code>
@@ -284,9 +291,9 @@ Finding your way around
           </figure>
 
           <figure class="content-box-code-example">
-            <figcaption>3 colour circular radial gradient</figcaption>
+            <figcaption>Radial circle</figcaption>
             <div class="content-box-code">
-              <code><span class="code-box-comment">/*3 color circular radial gradient*/</span><br>
+              <code><span class="code-box-comment">/*circular radial gradient*/</span><br>
                 div { <br>
                 background-image: radial-gradient( circle, color1, color2, color3);<br>
                 }</code>
@@ -295,14 +302,14 @@ Finding your way around
           </figure>
 
           <figure class="content-box-code-example">
-            <figcaption>Repeating radial gradient</figcaption>
+            <figcaption>Radial repeating</figcaption>
             <div class="content-box-code">
               <code><span class="code-box-comment">/*color gradient set to repeat*/</span><br>
                 div { <br>
                 background-image: repeating-radial-gradient(color1, color2 10%, color3 20%);<br>
                 }</code>
             </div>
-            <div class="example-boxes" id=""></div>
+            <div class="example-boxes" id="example-bg-img-grad-rad-repeat-3col"></div>
           </figure>
           <div class="content-box-text">
             <p>The size parameter defines the size of the gradient.</p>
@@ -314,76 +321,248 @@ Finding your way around
               <li>farthest-corner</li>
             </ul>
           </div>
-
           <figure class="content-box-code-example">
-            <figcaption>Insert example box</figcaption>
+            <figcaption>Closest-Side Radial</figcaption>
             <div class="content-box-code">
               <code><span class="code-box-comment">/*3 color radial gradient using closest-side size*/</span><br>
                 div { <br>
-                background-image: radial-gradient(closest-side at 70% 25%, color1, color2, color3);<br>
+                background-image: radial-gradient(circle closest-side, color1, color2, color3);<br>
                 }</code>
             </div>
-            <div class="example-boxes" id=""></div>
+            <div class="example-boxes" id="example-bg-img-grad-rad-closest-side"></div>
+          </figure>
+          <figure class="content-box-code-example">
+            <figcaption>Closest-Side Degree</figcaption>
+            <div class="content-box-code">
+              <code><span class="code-box-comment">/*3 color radial gradient using closest-side size set by degree*/</span><br>
+                div { <br>
+                background-image: radial-gradient(circle closest-side at 70% 25%, color1, color2, color3);<br>
+                }</code>
+            </div>
+            <div class="example-boxes" id="example-bg-img-grad-rad-closest-side-deg"></div>
           </figure>
 
           <figure class="content-box-code-example">
-            <figcaption>Insert example box</figcaption>
+            <figcaption>Farthest-Side Radial</figcaption>
             <div class="content-box-code">
               <code><span class="code-box-comment">/*3 color radial gradient using farthest-side size*/</span><br>
                 div { <br>
-                background-image: radial-gradient(farthest-side at 70% 25%, color1, color2, color3);<br>
+                background-image: radial-gradient(circle farthest-side, color1, color2, color3);<br>
                 }</code>
             </div>
-            <div class="example-boxes" id=""></div>
+            <div class="example-boxes" id="example-bg-img-grad-rad-farthest-side"></div>
           </figure>
-
           <figure class="content-box-code-example">
-            <figcaption>Insert example box</figcaption>
+            <figcaption>Farthest-Side Degree</figcaption>
+            <div class="content-box-code">
+              <code><span class="code-box-comment">/*3 color radial gradient using farthest-side size set by degree*/</span><br>
+                div { <br>
+                background-image: radial-gradient(circle farthest-side at 25% 50%, color1, color2, color3);<br>
+                }</code>
+            </div>
+            <div class="example-boxes" id="example-bg-img-grad-rad-farthest-side-deg"></div>
+          </figure>
+          <figure class="content-box-code-example">
+            <figcaption>Closest-corner Radial</figcaption>
             <div class="content-box-code">
               <code><span class="code-box-comment">/*3 color radial gradient using closest-corner size*/</span><br>
                 div { <br>
-                background-image: radial-gradient(closest-corner at 70% 25%, color1, color2, color3);<br>
+                background-image: radial-gradient(circle closest-corner, color1, color2, color3);<br>
                 }</code>
             </div>
-            <div class="example-boxes" id=""></div>
+            <div class="example-boxes" id="example-bg-img-grad-rad-closest-corner"></div>
           </figure>
 
           <figure class="content-box-code-example">
-            <figcaption>Insert example box</figcaption>
+            <figcaption>Closest-corner Radial</figcaption>
+            <div class="content-box-code">
+              <code><span class="code-box-comment">/*3 color radial gradient using closest-corner size set by degree*/</span><br>
+                div { <br>
+                background-image: radial-gradient(circle closest-corner at 70% 25%, color1, color2, color3);<br>
+                }</code>
+            </div>
+            <div class="example-boxes" id="example-bg-img-grad-rad-closest-corner-deg"></div>
+          </figure>
+
+          <figure class="content-box-code-example">
+            <figcaption>Farthest-corner Radial</figcaption>
             <div class="content-box-code">
               <code><span class="code-box-comment">/*3 color radial gradient using farthest-corner size*/</span><br>
                 div { <br>
-                background-image: radial-gradient(farthest-corner at 70% 25%, color1, color2, color3);<br>
+                background-image: radial-gradient(circel farthest-corner, color1, color2, color3);<br>
                 }</code>
             </div>
-            <div class="example-boxes" id=""></div>
+            <div class="example-boxes" id="example-bg-img-grad-rad-farthest-corner"></div>
           </figure>
+          <figure class="content-box-code-example">
+            <figcaption>Farthest-corner degrees</figcaption>
+            <div class="content-box-code">
+              <code><span class="code-box-comment">/*3 color radial gradient using farthest-corner size set by degree*/</span><br>
+                div { <br>
+                background-image: radial-gradient(circle farthest-corner at 50% 25%, color1, color2, color3);<br>
+                }</code>
+            </div>
+            <div class="example-boxes" id="example-bg-img-grad-rad-farthest-corner-deg"></div>
+          </figure>
+          <figure class="content-box-code-example">
+            <figcaption>Circle Top</figcaption>
+            <div class="content-box-code">
+              <code><span class="code-box-comment">/*radial gradient with circle starting at top*/</span><br>
+                div { <br>
+                background-image: radial-gradient(circle at top, color1, color2, color3);<br>
+                }</code>
+            </div>
+            <div class="example-boxes" id="example-bg-img-grad-rad-c-top"></div>
+          </figure>
+          <figure class="content-box-code-example">
+            <figcaption>Circle Top Right</figcaption>
+            <div class="content-box-code">
+              <code><span class="code-box-comment">/*radial gradient with circle starting at top right*/</span><br>
+                div { <br>
+                background-image: radial-gradient(circle at top right, color1, color2, color3);<br>
+                }</code>
+            </div>
+            <div class="example-boxes" id="example-bg-img-grad-rad-c-topright"></div>
+          </figure>
+          <figure class="content-box-code-example">
+            <figcaption>Circle Right</figcaption>
+            <div class="content-box-code">
+              <code><span class="code-box-comment">/*radial gradient with circle starting at right*/</span><br>
+                div { <br>
+                background-image: radial-gradient(circle at right, color1, color2, color3);<br>
+                }</code>
+            </div>
+            <div class="example-boxes" id="example-bg-img-grad-rad-c-right"></div>
+          </figure>
+
+          <figure class="content-box-code-example">
+            <figcaption>Circle Bottom</figcaption>
+            <div class="content-box-code">
+              <code><span class="code-box-comment">/*radial gradient with circle starting at bottom*/</span><br>
+                div { <br>
+                background-image: radial-gradient(circle at bottom, color1, color2, color3);<br>
+                }</code>
+            </div>
+            <div class="example-boxes" id="example-bg-img-grad-rad-c-bottom"></div>
+          </figure>
+          <figure class="content-box-code-example">
+            <figcaption>Circle Left</figcaption>
+            <div class="content-box-code">
+              <code><span class="code-box-comment">/*radial gradient with circle starting at left*/</span><br>
+                div { <br>
+                background-image: radial-gradient(circle at left, color1, color2, color3);<br>
+                }</code>
+            </div>
+            <div class="example-boxes" id="example-bg-img-grad-rad-c-left"></div>
+          </figure>
+
           <div class="content-box-text">
             <p class="mini-header">Colour stops</p>
             <p>For both linear and radial gradients you can also specify how much of the gradient is in each colour instead of all using an equal fraction....</p>
           </div>
 
           <figure class="content-box-code-example">
-            <figcaption>Insert example box</figcaption>
+            <figcaption>Linear colour stops</figcaption>
             <div class="content-box-code">
-              <code><span class="code-box-comment">/*3 color circular linear gradient*/</span><br>
+              <code><span class="code-box-comment">/*3 color linear gradient with stops*/</span><br>
                 div { <br>
-                background-image: linear-gradient(to right, color1 25%, color2 50%, color3);<br>
+                background-image: linear-gradient(to right, color1 5%, color2 30%, color3);<br>
                 }</code>
             </div>
-            <div class="example-boxes" id=""></div>
+            <div class="example-boxes" id="example-bg-img-lin-colstop"></div>
+          </figure>
+          <figure class="content-box-code-example">
+            <figcaption>Radial colour stops</figcaption>
+            <div class="content-box-code">
+              <code><span class="code-box-comment">/*3 color circular radial gradient with stops*/</span><br>
+                div { <br>
+                background-image: radial-gradient(circle, color1 5%, color2 25%, color3);<br>
+                }</code>
+            </div>
+            <div class="example-boxes" id="example-bg-img-rad-colstop"></div>
+          </figure>
+          <figure class="content-box-code-example">
+            <figcaption>Conical gradient</figcaption>
+            <div class="content-box-code">
+              <code><span class="code-box-comment">/*2 color conical gradient*/</span><br>
+                div { <br>
+                background-image: conic-gradient(color1, color2);<br>
+                }</code>
+            </div>
+            <div class="example-boxes conehead" id="example-bg-img-con-grad"></div>
+          </figure>
+          <figure class="content-box-code-example">
+            <figcaption>Conical center point</figcaption>
+            <div class="content-box-code">
+              <code><span class="code-box-comment">/*conical gradient with set center point*/</span><br>
+                div { <br>
+                background-image: conic-gradient(at 30% 60%, color1, color2);<br>
+                }</code>
+            </div>
+            <div class="example-boxes conehead" id="example-bg-img-con-grad-set-center"></div>
+          </figure>
+          <figure class="content-box-code-example">
+            <figcaption>Conical angle</figcaption>
+            <div class="content-box-code">
+              <code><span class="code-box-comment">/*conical gradient with set starting angle*/</span><br>
+                div { <br>
+                background-image: conic-gradient(from 20deg, color1, color2);<br>
+                }</code>
+            </div>
+            <div class="example-boxes conehead" id="example-bg-img-con-grad-set-angle"></div>
           </figure>
 
           <figure class="content-box-code-example">
-            <figcaption>Insert example box</figcaption>
+            <figcaption>Conical center angle</figcaption>
             <div class="content-box-code">
-              <code><span class="code-box-comment">/*3 color circular radial gradient*/</span><br>
+              <code><span class="code-box-comment">/*conical gradient with set center and starting angle*/</span><br>
                 div { <br>
-                background-image: repeating-linear-gradient(color1 20%, color2 15%, color3);<br>
+                background-image: conic-gradient(from 120deg at top, color1, color2);<br>
                 }</code>
             </div>
-            <div class="example-boxes" id=""></div>
+            <div class="example-boxes conehead" id="example-bg-img-con-grad-set-centerangle"></div>
           </figure>
+          <figure class="content-box-code-example">
+            <figcaption>Conical percentage angle</figcaption>
+            <div class="content-box-code">
+              <code><span class="code-box-comment">/*conical gradient with percentages instead of degrees*/</span><br>
+                div { <br>
+                background-image: conic-gradient(color1 60%, color2, color3);<br>
+                }</code>
+            </div>
+            <div class="example-boxes conehead" id="example-bg-img-con-grad-set-per"></div>
+          </figure>
+          <figure class="content-box-code-example">
+            <figcaption>Conical end turn</figcaption>
+            <div class="content-box-code">
+              <code><span class="code-box-comment">/*conical gradient end colour set*/</span><br>
+                div { <br>
+                background-image: conic-gradient(color1 0deg, color2 1turn);<br>
+                }</code>
+            </div>
+            <div class="example-boxes conehead" id="example-bg-img-con-grad-set-endturn"></div>
+          </figure>
+          <figure class="content-box-code-example">
+            <figcaption>Conical pie chart</figcaption>
+            <div class="content-box-code">
+              <code><span class="code-box-comment">/*pie chart with conical gradient*/</span><br>
+                div { <br>
+                background-image: conic-gradient(color1 40%, color2 0 70%, color3 0);<br>
+                }</code>
+            </div>
+            <div class="example-boxes conehead" id="example-bg-img-con-grad-pie"></div>
+          </figure>
+          <figure class="content-box-code-example">
+            <figcaption>Conical colour wheel</figcaption>
+            <div class="content-box-code">
+              <code><span class="code-box-comment">/*colour wheel with conical gradient*/</span><br>
+                div { <br>
+                background-image: conic-gradient(color1, color2);<br>
+                }</code>
+            </div>
+            <div class="example-boxes conehead" id="example-bg-img-con-grad-wheel"></div>
+          </figure>
+
         </div>
       </div>
     </section>
@@ -402,15 +581,50 @@ Finding your way around
             <li>repeat (default)</li>
           </ul>
         </div>
-        <div class="content-box-code">
-          <code>
-            .top { <br>
-            background-color: #f3f2f1; <span class="code-box-comment">/*fallback*/</span><br>
-            background-image: url(https://imagehosting/image.png);<br>
-            background-repeat: no-repeat;<br>
-            }
-          </code>
-        </div>
+        <figure class="content-box-code-example">
+          <figcaption>Background(default)</figcaption>
+          <div class="content-box-code">
+            <code>
+              .top { <br>
+              background-color: #f3f2f1; <span class="code-box-comment">/*fallback*/</span><br>
+              background-image: url(https://imagehosting/image.png);<br>
+              }
+            </code>
+          </div>
+          <div class="example-boxes" id="example-bg-img-rep">
+            <span class="cite"> by <a href="https://unsplash.com/@joshuaryanphoto">Joshua Ryan</a></span>
+          </div>
+        </figure>
+        <figure class="content-box-code-example">
+          <figcaption>Background no-repeat</figcaption>
+          <div class="content-box-code">
+            <code>
+              .top { <br>
+              background-color: #f3f2f1; <span class="code-box-comment">/*fallback*/</span><br>
+              background-image: url(https://imagehosting/image.png);<br>
+              background-repeat: no-repeat;<br>
+              }
+            </code>
+          </div>
+          <div class="example-boxes" id="example-bg-img-norep">
+            <span class="cite"> by <a href="https://unsplash.com/@joshuaryanphoto">Joshua Ryan</a></span>
+          </div>
+        </figure>
+        <figure class="content-box-code-example">
+          <figcaption>Background repeat-x (or y)</figcaption>
+          <div class="content-box-code">
+            <code>
+              .top { <br>
+              background-color: #f3f2f1; <span class="code-box-comment">/*fallback*/</span><br>
+              background-image: url(https://imagehosting/image.png);<br>
+              background-repeat: repeat-x;<br>
+              }
+            </code>
+          </div>
+          <div class="example-boxes" id="example-bg-img-repx">
+            <span class="cite"> by <a href="https://unsplash.com/@joshuaryanphoto">Joshua Ryan</a></span>
+          </div>
+        </figure>
       </div>
     </section>
     <section id="sect-position">
@@ -428,20 +642,23 @@ Finding your way around
             <li>keywords (left, center, right, top, center, bottom)</li>
           </ul>
         </div>
-        <div class="content-box-code">
-          <code>
-            div{ <br>
-            background-color: #f3f2f1; <span class="code-box-comment">/*fallback*/</span><br>
-            background-image: linear-gradient(to bottom, orange, blue, white); <span class="code-box-comment">/*fallback*/</span><br>
-            background-image: url(https://imagehosting/image.png);<br>
-            background-repeat: no-repeat;<br>
-            background-position: 30px 50px;<br>
-            }
-          </code>
-        </div>
-
         <figure class="content-box-code-example">
-          <figcaption>Insert example box</figcaption>
+          <figcaption>Position by pixel</figcaption>
+          <div class="content-box-code">
+            <code>
+              div{ <br>
+              background-color: #f3f2f1; <span class="code-box-comment">/*fallback*/</span><br>
+              background-image: linear-gradient(to bottom, orange, blue, white); <span class="code-box-comment">/*fallback*/</span><br>
+              background-image: url(https://imagehosting/image.png);<br>
+              background-repeat: no-repeat;<br>
+              background-position: 0px 20px;<br>
+              }
+            </code>
+          </div>
+          <div class="example-boxes" id="example-bg-img-pos-pix"></div>
+        </figure>
+        <figure class="content-box-code-example">
+          <figcaption>Position by word</figcaption>
           <div class="content-box-code">
             <code><span class="code-box-comment">/*background top and center*/</span><br>
               div { <br>
@@ -451,7 +668,7 @@ Finding your way around
               }
             </code>
           </div>
-          <div class="example-boxes" id=""></div>
+          <div class="example-boxes" id="example-bg-img-pos-word"></div>
         </figure>
       </div>
     </section>
@@ -475,18 +692,55 @@ Finding your way around
           <p><u>Local</u></p>
           <p>Fixes the background to the element it is set on and when element is scrolled and background scrolls with it </p>
         </div>
-        <div class="content-box-code">
-          <code>
-            div{ <br>
-            background-color: #f3f2f1; <span class="code-box-comment">/*fallback*/</span><br>
-            background-image: linear-gradient(to bottom, orange, blue, white); <span class="code-box-comment">/*fallback*/</span><br>
-            background-image: url(https://imagehosting/image.png);<br>
-            background-repeat: no-repeat;<br>
-            background-position: 30px 50px;<br>
-            background-attachment: local;<br>
-            }
-          </code>
-        </div>
+        <figure class="content-box-code-example">
+          <figcaption>Fixed attachment</figcaption>
+          <div class="content-box-code">
+            <code>
+              div{ <br>
+              background-color: #f3f2f1; <span class="code-box-comment">/*fallback*/</span><br>
+              background-image: linear-gradient(to bottom, orange, blue, white); <span class="code-box-comment">/*fallback*/</span><br>
+              background-image: url(https://imagehosting/image.png);<br>
+              background-repeat: no-repeat;<br>
+              background-position: top center;<br>
+              background-attachment: fixed;<br>
+              }
+            </code>
+          </div>
+          <div class="example-boxes" id="example-bg-img-fixed">
+            <p>s.....</p>
+            <p>sc....</p>
+            <p>scr...</p>
+            <p>scro..</p>
+            <p>scrol.</p>
+            <p>scroll</p>
+            <p>scrolling</p>
+          </div>
+        </figure>
+        <figure class="content-box-code-example">
+          <figcaption>Local attachment</figcaption>
+          <div class="content-box-code">
+            <code>
+              div{ <br>
+              background-color: #f3f2f1; <span class="code-box-comment">/*fallback*/</span><br>
+              background-image: linear-gradient(to bottom, orange, blue, white); <span class="code-box-comment">/*fallback*/</span><br>
+              background-image: url(https://imagehosting/image.png);<br>
+              background-repeat: no-repeat;<br>
+              background-position: top center;<br>
+              background-attachment: local;<br>
+              }
+            </code>
+          </div>
+          <div class="example-boxes" id="example-bg-img-local">
+            <p>s.....</p>
+            <p>sc....</p>
+            <p>scr...</p>
+            <p>scro..</p>
+            <p>scrol.</p>
+            <p>scroll</p>
+            <p>scrolling</p>
+
+          </div>
+        </figure>
       </div>
     </section>
     <section id="sect-size">
@@ -510,19 +764,57 @@ Finding your way around
           <p><u>Contain</u></p>
           <p>Resizes the image so it is fully visible</p>
         </div>
-        <div class="content-box-code">
-          <code>
-            div{ <br>
-            background-color: #f3f2f1; <span class="code-box-comment">/*fallback*/</span><br>
-            background-image: linear-gradient(to bottom, orange, blue, white); <span class="code-box-comment">/*fallback*/</span><br>
-            background-image: url(https://imagehosting/image.png);<br>
-            background-repeat: no-repeat;<br>
-            background-position: 30px 50px;<br>
-            background-attachment: local;<br>
-            background-size: 160px 160px; <br>
-            }
-          </code>
-        </div>
+        <figure class="content-box-code-example">
+          <figcaption>Background sized</figcaption>
+          <div class="content-box-code">
+            <code>
+              div{ <br>
+              background-color: #f3f2f1; <span class="code-box-comment">/*fallback*/</span><br>
+              background-image: linear-gradient(to bottom, orange, blue, white); <span class="code-box-comment">/*fallback*/</span><br>
+              background-image: url(https://imagehosting/image.png);<br>
+              background-repeat: no-repeat;<br>
+              background-position: top center<br>
+              background-attachment: local;<br>
+              background-size: 50% 50% <br>
+              }
+            </code>
+          </div>
+          <div class="example-boxes" id="example-bg-img-sized"></div>
+        </figure>
+        <figure class="content-box-code-example">
+          <figcaption>Background Cover</figcaption>
+          <div class="content-box-code">
+            <code>
+              div{ <br>
+              background-color: #f3f2f1; <span class="code-box-comment">/*fallback*/</span><br>
+              background-image: linear-gradient(to bottom, orange, blue, white); <span class="code-box-comment">/*fallback*/</span><br>
+              background-image: url(https://imagehosting/image.png);<br>
+              background-repeat: no-repeat;<br>
+              background-position: top center<br>
+              background-attachment: local;<br>
+              background-size: cover;
+              }
+            </code>
+          </div>
+          <div class="example-boxes" id="example-bg-img-size-cover"></div>
+        </figure>
+        <figure class="content-box-code-example">
+          <figcaption>Background contain</figcaption>
+          <div class="content-box-code">
+            <code>
+              div{ <br>
+              background-color: #f3f2f1; <span class="code-box-comment">/*fallback*/</span><br>
+              background-image: linear-gradient(to bottom, orange, blue, white); <span class="code-box-comment">/*fallback*/</span><br>
+              background-image: url(https://imagehosting/image.png);<br>
+              background-repeat: no-repeat;<br>
+              background-position: 30px 50px;<br>
+              background-attachment: local;<br>
+              background-size: contain;
+              }
+            </code>
+          </div>
+          <div class="example-boxes" id="example-bg-img-size-contain"></div>
+        </figure>
       </div>
     </section>
     <section id="sect-background">
@@ -540,7 +832,8 @@ Finding your way around
             background-color: yellow; <br>
             background-image: linear-gradient(to bottom, yellow, #dddd00 50%, orange);<br>
             background-repeat: no-repeat;<br>
-            background-position: 99% center;<br>
+            background-position: left center;<br>
+            background-attachment: scroll;<br>
             }
           </code>
           <p>can be written as...</p>
@@ -549,20 +842,7 @@ Finding your way around
             background: yellow linear-gradient(to bottom, orange, yellow) no-repeat left center scroll;
             }
           </code>
-          <p>This is where adding multiple background can get fun..</p>
-          <code>
-            header { <br>
-            background-color: yellow;<br>
-            background: url(image.png) no-repeat 99% center,
-            url(background-tile.png), <br>
-            linear-gradient(to bottom, yellow, #dddd00 50%, orange);<br>
-            }
-          </code>
         </div>
-        <figure class="content-box-code-example">
-          <figcaption>Insert example box</figcaption>
-          <div class="example-boxes" id=""></div>
-        </figure>
       </div>
     </section>
     <section id="sect-clip">
@@ -571,7 +851,7 @@ Finding your way around
       </header>
       <div class="sect-content-box">
         <div class="content-box-text">
-          <p>The <span class="code-word">background-clip</span> property (also covered in a previous cheat-sheet on <a href="https://codepen.io/mazonthemoon/full/KKdgeoJ" target="_blank"> The Box Model</a>) can be used to specify where the background extensd to on the container box</p>
+          <p>The <span class="code-word">background-clip</span> property (also covered in a previous cheat-sheet on <a href="https://codepen.io/mazonthemoon/full/KKdgeoJ" target="_blank"> The Box Model</a>) can be used to specify where the background extends to on the container box</p>
           <p>Values can be set as</p>
           <ul>
             <li>border (default)</li>
@@ -580,71 +860,102 @@ Finding your way around
             <li>text</li>
           </ul>
         </div>
-        <div class="content-box-code">
-          <code>
-            header { <br>
-            background-color: yellow; <br>
-            background-image: linear-gradient(to bottom, yellow, #dddd00 50%, orange); <br>
-            background-clip: border;<br>
-            }
-          </code>
-        </div>
+
         <figure class="content-box-code-example">
-          <figcaption>Insert example box</figcaption>
-          <div class="example-boxes" id=""></div>
+          <figcaption>Border clip</figcaption>
+          <div class="content-box-code">
+            <code>
+              header { <br>
+              background-color: var(--color); <br>
+              background-image: linear-gradient(to bottom, color1, color2, color3); <br>
+              background-clip: border;<br>
+              }
+            </code>
+          </div>
+          <div class="example-boxes example-boxes-clip">
+            <div class="clip-box" id="example-bg-clip-border">
+              <p>Text</p>
+            </div>
+          </div>
         </figure>
-        <div class="content-box-code">
-          <code>
-            header { <br>
-            background-color: yellow; <br>
-            background-image: linear-gradient(to bottom, yellow, #dddd00 50%, orange); <br>
-            background-clip: padding;<br>
-            }
-          </code>
-        </div>
+
         <figure class="content-box-code-example">
-          <figcaption>Insert example box</figcaption>
-          <div class="example-boxes" id=""></div>
+          <figcaption>Padding clip</figcaption>
+          <div class="content-box-code">
+            <code>
+              header { <br>
+              background-color: yellow; <br>
+              background-image: linear-gradient(to bottom, yellow, #dddd00 50%, orange); <br>
+              background-clip: padding;<br>
+              }
+            </code>
+          </div>
+          <div class="example-boxes example-boxes-clip">
+            <div class="clip-box" id="example-bg-clip-pad">
+              <p>Text</p>
+            </div>
+          </div>
         </figure>
-        <div class="content-box-code">
-          <code>
-            header { <br>
-            background-color: yellow; <br>
-            background-image: linear-gradient(to bottom, yellow, #dddd00 50%, orange); <br>
-            background-clip: content;<br>
-            }
-          </code>
-        </div>
+
         <figure class="content-box-code-example">
-          <figcaption>Insert example box</figcaption>
-          <div class="example-boxes" id=""></div>
+          <figcaption>Content clip</figcaption>
+          <div class="content-box-code">
+            <code>
+              header { <br>
+              background-color: yellow; <br>
+              background-image: linear-gradient(to bottom, yellow, #dddd00 50%, orange); <br>
+              background-clip: content;<br>
+              }
+            </code>
+          </div>
+          <div class="example-boxes example-boxes-clip">
+            <div class="clip-box" id="example-bg-clip-content">
+              <p>Text</p>
+            </div>
+          </div>
         </figure>
-        <div class="content-box-code">
-          <code>
-            header { <br>
-            background-color: yellow; <br>
-            background-image: linear-gradient(to bottom, yellow, #dddd00 50%, orange); <br>
-            background-clip: text;<br>
-            -webkit-background-clip: text; <br>
-            color: rgba(0, 0, 0, 0.2); <br>
-            }
-          </code>
-        </div>
+
         <figure class="content-box-code-example">
-          <figcaption>Insert example box</figcaption>
-          <div class="example-boxes" id=""></div>
+          <figcaption>Text Clip</figcaption>
+          <div class="content-box-code">
+            <code>
+              header { <br>
+              background-color: yellow; <br>
+              background-image: linear-gradient(to bottom, yellow, #dddd00 50%, orange); <br>
+              background-clip: text;<br>
+              -webkit-background-clip: text; <br>
+              color: rgba(0, 0, 0, 0.2); <br>
+              }
+            </code>
+          </div>
+          <div class="example-boxes example-boxes-clip">
+            <div class="clip-box" id="example-bg-clip-text">
+              <p>Text</p>
+            </div>
+          </div>
         </figure>
+      </div>
+    </section>
+    <section id="sect-blend">
+      <header class="sect-header">
+        <h3>Background Blend</h3>
+      </header>
+      <div class="sect-content-box">
+        <div class="content-box-text"></div>
+        <div class="content-box-code"></div>
       </div>
     </section>
   </main>
   <footer>
     <div id="all-about-me">
-      <p>Designed by <abbr title="Mary Ronan">MazOnTheMoon</abbr> 2020</p>
+      <p>Designed by <abbr title="Mary Ronan">MazOnTheMoon</abbr> 2021</p>
       <p><a href="https://www.linkedin.com/in/mary-ronan/" target="_blank"> <span class="fab fa-linkedin"> </span></a>
         <a href="https://github.com/MazontheMoon" target="_blank"> <span class="fab fa-github-square"> </span></a>
         <a href="https://codepen.io/mazonthemoon/#" target="_blank"> <span class="fab fa-codepen"> </span></a>
         <a href="https://mazcodesonthemoon.wordpress.com/2020/10/12/teaching-myself-to-code-css/" target="_blank"> <span class="fab fa-wordpress"> </span></a>
       </p>
+      <!--Back to top shortcut-->
+      <div class="backtotop"><a class="toplink" href="#top"> <i class="far fa-arrow-alt-circle-up"></i></a></div>
     </div>
   </footer>
 </body>

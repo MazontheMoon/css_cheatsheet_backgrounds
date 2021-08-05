@@ -57,6 +57,11 @@ code {
   font-size: 1rem;
 }
 
+.code-word {
+  font-family: var(--code-font), "Courier New", monospace;
+  background-color: var(--neutral-colour);
+  padding: 0 3px;
+}
 /*================
 Page Layout - Grid
 =================*/
@@ -94,6 +99,7 @@ Nav Menu
 
 nav {
   grid-area: nav;
+  position: relative;
 }
 
 nav #nav-bar {
@@ -126,8 +132,6 @@ Main and Section containers
 
 main {
   grid-area: main;
-  border-top: 10px solid black;
-  border-bottom: 10px solid black;
 }
 
 main section {
@@ -266,6 +270,10 @@ section .sect-content-box-subsection .subsection-header h5 {
   padding-left: 1em;
 }
 
+.sect-content-box-subsection .mini-subindex a {
+  color: inherit;
+  padding: 0.3em;
+}
 /*=========================
 Code example figure boxes
 ===========================*/
@@ -365,20 +373,410 @@ Code example figure boxes
   background-image: radial-gradient(circle, blue, white, purple);
 }
 
+/*3 colour repeating radial gradient*/
+#example-bg-img-grad-rad-repeat-3col {
+  background-image: repeating-radial-gradient(blue, white 10%, purple 20%);
+}
+
+/*radial gradient using closest-side*/
+#example-bg-img-grad-rad-closest-side {
+  background-image: radial-gradient(circle closest-side, blue, white, purple);
+}
+
+/*radial gradient using closest-side by degrees*/
+#example-bg-img-grad-rad-closest-side-deg {
+  background-image: radial-gradient(
+    circle closest-side at 70% 25%,
+    blue,
+    white,
+    purple
+  );
+}
+
+/*radial gradient using farthest-side*/
+#example-bg-img-grad-rad-farthest-side {
+  background-image: radial-gradient(circle farthest-side, blue, white, purple);
+}
+
+/*radial gradient using farthest-side by degrees*/
+#example-bg-img-grad-rad-farthest-side-deg {
+  background-image: radial-gradient(
+    circle farthest-side at 25% 50%,
+    blue,
+    white,
+    purple
+  );
+}
+
+/*radial gradient using closest-corner*/
+#example-bg-img-grad-rad-closest-corner {
+  background-image: radial-gradient(circle closest-corner, blue, white, purple);
+}
+
+/*radial gradient using closest-corner by degrees*/
+#example-bg-img-grad-rad-closest-corner-deg {
+  background-image: radial-gradient(
+    circle closest-corner at 50% 25%,
+    blue,
+    white,
+    purple
+  );
+}
+
+/*radial gradient using farthest-corner*/
+#example-bg-img-grad-rad-farthest-corner {
+  background-image: radial-gradient(
+    circle farthest-corner,
+    blue,
+    white,
+    purple
+  );
+}
+
+/*radial gradient farthest farthest-corner by degrees*/
+#example-bg-img-grad-rad-farthest-corner-deg {
+  background-image: radial-gradient(
+    circle farthest-corner at 70% 25%,
+    blue,
+    white,
+    purple
+  );
+}
+
+/*radial gradient with circle starting at top*/
+#example-bg-img-grad-rad-c-top {
+  background-image: radial-gradient(
+    circle at top,
+    blue,
+    white,
+    purple,
+    yellow,
+    green,
+    orange,
+    black
+  );
+}
+
+/*radial gradient with circle starting at top right*/
+#example-bg-img-grad-rad-c-topright {
+  background-image: radial-gradient(
+    circle at top right,
+    blue,
+    white,
+    purple,
+    yellow,
+    green,
+    orange,
+    black
+  );
+}
+
+/*radial gradient with circle starting at right*/
+#example-bg-img-grad-rad-c-right {
+  background-image: radial-gradient(
+    circle at right,
+    blue,
+    white,
+    purple,
+    yellow,
+    green,
+    orange,
+    black
+  );
+}
+
+/*radial gradient with circle starting at bottom*/
+#example-bg-img-grad-rad-c-bottom {
+  background-image: radial-gradient(
+    circle at bottom,
+    blue,
+    white,
+    purple,
+    yellow,
+    green,
+    orange,
+    black
+  );
+}
+
+/*radial gradient with circle starting at left*/
+#example-bg-img-grad-rad-c-left {
+  background-image: radial-gradient(
+    circle at left,
+    blue,
+    white,
+    purple,
+    yellow,
+    green,
+    orange,
+    black
+  );
+}
+
+/*3 color linear gradient with stops*/
+#example-bg-img-lin-colstop {
+  background-image: linear-gradient(to right, blue 5%, white 30%, purple);
+}
+
+/*3 color circular radial gradient with stops*/
+#example-bg-img-rad-colstop {
+  background-image: radial-gradient(circle, blue 5%, white 25%, purple);
+}
+
+/*Circular container for the conical examples*/
+.conehead {
+  width: 150px;
+  border-radius: 50%;
+  margin: 0 auto;
+  border: solid 3px black;
+}
+
+/*2 colour conical gradient*/
+#example-bg-img-con-grad {
+  background-image: conic-gradient(blue, purple);
+}
+
+/*conical gradient with set center point*/
+#example-bg-img-con-grad-set-center {
+  background-image: conic-gradient(at 30% 60%, blue, purple);
+}
+
+/*conical gradient with set starting angle*/
+#example-bg-img-con-grad-set-angle {
+  background-image: conic-gradient(from 20deg, blue, purple);
+}
+
+/*conical gradient with set center and starting angle*/
+#example-bg-img-con-grad-set-centerangle {
+  background-image: conic-gradient(from 120deg at top, blue, purple);
+}
+
+/*conical gradient with percentages instead of degrees*/
+#example-bg-img-con-grad-set-per {
+  background-image: conic-gradient(blue 60%, white, purple);
+}
+
+/*conical gradient with end colour set by turn*/
+#example-bg-img-con-grad-set-endturn {
+  background-image: conic-gradient(blue 130deg, purple 1turn);
+}
+
+/*pie chart with conical gradient*/
+#example-bg-img-con-grad-pie {
+  background-image: conic-gradient(red 40%, yellow 0 70%, green 0);
+}
+
+/*colour wheel with conical gradient*/
+#example-bg-img-con-grad-wheel {
+  background-image: conic-gradient(
+    blue,
+    white,
+    purple,
+    yellow,
+    green,
+    orange,
+    black,
+    blue
+  );
+}
+
+/*background-image with repeat*/
+#example-bg-img-rep {
+  background-color: var(--dark-colour);
+  background-image: url(https://images.unsplash.com/photo-1580927752452-89d86da3fa0a?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8Y29kaW5nfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
+  background-size: contain;
+}
+
+/*background-image with no repeat*/
+#example-bg-img-norep {
+  background-color: var(--dark-colour);
+  background-image: url(https://images.unsplash.com/photo-1580927752452-89d86da3fa0a?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8Y29kaW5nfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/*background-image with repeat-x*/
+#example-bg-img-repx {
+  background-color: var(--dark-colour);
+  background-image: url(https://images.unsplash.com/photo-1580927752452-89d86da3fa0a?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8Y29kaW5nfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
+  background-size: contain;
+  background-repeat: repeat-x;
+}
+
+/*background position by pixel*/
+#example-bg-img-pos-pix {
+  background-color: var(--dark-colour);
+  background-image: url(https://images.unsplash.com/photo-1580927752452-89d86da3fa0a?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8Y29kaW5nfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 5px 5px;
+}
+
+/*background position by keyword*/
+#example-bg-img-pos-word {
+  background-color: var(--dark-colour);
+  background-image: url(https://images.unsplash.com/photo-1580927752452-89d86da3fa0a?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8Y29kaW5nfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+/*background attachment in fixed position*/
+#example-bg-img-fixed {
+  background-color: var(--dark-colour);
+  background-image: url(https://images.unsplash.com/photo-1580927752452-89d86da3fa0a?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8Y29kaW5nfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-attachment: fixed;
+  color: var(--lightest-colour, #f2e9e4);
+  text-align: center;
+  height: 150px;
+  overflow-y: scroll;
+}
+
+/*background attachment in local position*/
+#example-bg-img-local {
+  background-color: var(--dark-colour);
+  background-image: url(https://images.unsplash.com/photo-1580927752452-89d86da3fa0a?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8Y29kaW5nfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-attachment: local;
+  color: var(--lightest-colour, #f2e9e4);
+  text-align: center;
+  height: 150px;
+  overflow-y: scroll;
+}
+
+/*background image with set size*/
+#example-bg-img-sized {
+  background-color: var(--dark-colour);
+  background-image: url(https://images.unsplash.com/photo-1580927752452-89d86da3fa0a?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8Y29kaW5nfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
+  background-size: 150px 100px;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+/*background image with size set to cover*/
+#example-bg-img-size-cover {
+  background-color: var(--dark-colour);
+  background-image: url(https://images.unsplash.com/photo-1580927752452-89d86da3fa0a?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8Y29kaW5nfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+/*background image with size set to cover*/
+#example-bg-img-size-contain {
+  background-color: var(--dark-colour);
+  background-image: url(https://images.unsplash.com/photo-1580927752452-89d86da3fa0a?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8Y29kaW5nfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.example-boxes-clip {
+  border: 0.75rem solid black;
+  padding: 0.5rem;
+}
+.example-boxes-clip .clip-box {
+  padding: 1rem;
+  border: 0.75rem dashed black;
+  background-color: var(--dark-colour);
+}
+
+/*background clipped to border*/
+#example-bg-clip-border {
+  background-clip: border-box;
+}
+
+/*background clipped to padding*/
+#example-bg-clip-pad {
+  background-clip: padding-box;
+}
+
+/*background clipped to content*/
+#example-bg-clip-content {
+  background-clip: content-box;
+}
+
+/*background clipped to text*/
+#example-bg-clip-text {
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: rgba(0, 0, 0, 0.2);
+}
+
 /*====
 Footer
 =======*/
 footer {
   grid-area: footer;
+  position: relative;
+  border: 10px solid black;
+  padding: 0.5em;
 }
+
+footer #all-about-me {
+  text-align: center;
+}
+
+#all-about-me a:link {
+  padding: 0.2em 0.5em;
+  font-size: 1.2em;
+  color: var(--light-colour, #9a8c98);
+}
+
+#all-about-me a:visited {
+  color: black;
+}
+
+#all-about-me a:focus,
+#all-about-me a:hover,
+#all-about-me a:active {
+  color: var(--lightest-colour, #f2e9e4);
+}
+
+/*================
+The little touches
+=================*/
+
+/*Back to top - only for small mobile screen views*/
+.backtotop {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 2rem;
+  padding: 0.4rem;
+}
+
+.backtotop a {
+  color: var(--light-colour, #9a8c98);
+  text-shadow: 1px 1px 2px black;
+}
+
 /*================
 Responsivesnness
 ==================*/
 
-@media only screen and (min-width: 550px) {
-}
-
 @media only screen and (min-width: 1024px) {
+  body {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-areas:
+      "header header"
+      "nav main"
+      "footer footer";
+  }
+
+  nav #nav-bar {
+    position: sticky;
+    top: 0;
+  }
+
+  .backtotop {
+    display: none;
+  }
 }
 
 /*======================
@@ -420,6 +818,10 @@ Ye Olde Time Print View
   }
 
   /*remove unneeded elements*/
+  nav,
+  .backtotop {
+    display: none;
+  }
 
   /*display footer links*/
 
@@ -444,12 +846,6 @@ Ye Olde Time Print View
 /*=============
 Accessibility
 ===============*/
-
-@media (prefers-color-scheme: dark) {
-}
-
-@media (prefers-color-scheme: light) {
-}
 
 /*Reset to user browser preference*/
 
