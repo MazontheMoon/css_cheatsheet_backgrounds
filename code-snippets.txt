@@ -40,6 +40,14 @@ background-image: url(https://upload.wikimedia.org/wikipedia/commons/b/b0/Smiley
 
 /*image - sourced from https://unsplash.com/@joshuaryanphoto*/
 
+texture - image:
+ https://commons.wikimedia.org/wiki/File:Gfp-tree-bark-texture.jpg
+ cite: Yina Chen http://www.goodfreephotos.com/
+ 
+ Balloon:
+ Photo by <a href="https://unsplash.com/@ashishjha?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Avinash Kumar</a> on <a href="https://unsplash.com/s/photos/balloon?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  
+
 https://www.w3schools.com/cssref/pr_background-blend-mode.asp
 
 https://css-tricks.com/almanac/properties/b/background-blend-mode/
