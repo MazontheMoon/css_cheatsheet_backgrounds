@@ -941,8 +941,46 @@ Finding your way around
         <h3>Background Blend</h3>
       </header>
       <div class="sect-content-box">
-        <div class="content-box-text"></div>
-        <div class="content-box-code"></div>
+        <div class="content-box-text">
+          <p>The <span class="code-word">background-blend</span> property defines the blending mode of each background layer whether color or image.</p>
+          <p>Values can be set as</p>
+          <ul>
+            <li>normal</li>
+            <li>multiply</li>
+            <li>screen</li>
+            <li>overlay</li>
+            <li>darken</li>
+            <li>lighten</li>
+            <li>color-dodge</li>
+            <li>color-burn</li>
+            <li>hard-light</li>
+            <li>soft-light</li>
+            <li>difference</li>
+            <li>exclusion</li>
+            <li>hue</li>
+            <li>saturation</li>
+            <li>color</li>
+            <li>luminosity</li>
+          </ul>
+        </div>
+        <div class="content-box-code">
+          <code>
+            header {<br>
+              background-color: yellow;<br>
+              background-repeat: no-repeat, repeat;<br>
+              background-image: url("img_tree.gif"), url("paper.gif");<br>
+              background-blend-mode: color-dodge; <br>
+              }
+          </code>
+          <figure class="content-box-code-example">
+            <figcaption>A normal blend with background colour</figcaption>
+            <div id="blend_col_normal"></div>
+          </figure>
+          <figure class="content-box-code-example">
+            <figcaption>A normal blend with background image</figcaption>
+            <div id="blend_img_normal"></div>
+          </figure>
+        </div>
       </div>
     </section>
   </main>
