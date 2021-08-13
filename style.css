@@ -37,6 +37,10 @@ body * {
   padding: 0;
 }
 
+img {
+  max-width: 100%;
+}
+
 /*reset default font - never shall Time New Roman be seen again!*/
 
 h1,
@@ -707,6 +711,30 @@ Code example figure boxes
   color: rgba(0, 0, 0, 0.2);
 }
 
+/*BACKGROUND BLEND EXAMPLES*/
+
+.figure_box {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.figure_box figure {
+  flex: 1;
+}
+
+.figure_box figure div {
+  margin: auto;
+}
+
+/* blend normal colour*/
+#blend_col_normal {
+  background-color: var(--dark-colour);
+  background-blend-mode: normal;
+  }
+
+  #blend_img_normal {
+    background-blend-mode: normal;
+  }
 /*====
 Footer
 =======*/
@@ -754,6 +782,8 @@ The little touches
   color: var(--light-colour, #9a8c98);
   text-shadow: 1px 1px 2px black;
 }
+
+/*Selection highlighting*/
 
 /*================
 Responsivesnness
