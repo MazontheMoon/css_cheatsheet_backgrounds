@@ -720,21 +720,50 @@ Code example figure boxes
 
 .figure_box figure {
   flex: 1;
-}
+  }
 
 .figure_box figure div {
-  margin: auto;
+  height: 45vh;
+
 }
 
-/* blend normal colour*/
-#blend_col_normal {
+/* blend colour*/
+.blend_col {
   background-color: var(--dark-colour);
-  background-blend-mode: normal;
+  background-image: url("https://github.com/MazontheMoon/css_cheatsheet_backgrounds/blob/main/assets/balloon.jpg?raw=true");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+  .blend_img {
+    background-image: url("https://github.com/MazontheMoon/css_cheatsheet_backgrounds/blob/main/assets/balloon.jpg?raw=true"), url("https://github.com/MazontheMoon/css_cheatsheet_backgrounds/blob/main/assets/tree-bark-texture.jpg?raw=true");
+    background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   }
 
-  #blend_img_normal {
+  /* normal blend*/
+  .blend_normal {
     background-blend-mode: normal;
   }
+
+  /* multiply blend*/
+  /* screen blend*/
+  /* overlay blend*/
+  /* darken blend*/
+  /* lighten blend*/
+  /* color-dodge blend*/
+  /* color-burn blend*/
+  /* hard-light blend*/
+  /* soft-light blend*/
+  /* difference blend*/
+  /* exclusion blend*/
+  /* hue blend*/
+  /* saturation blend*/
+  /* color blend*/
+  /* luminosity blend*/
+
 /*====
 Footer
 =======*/
