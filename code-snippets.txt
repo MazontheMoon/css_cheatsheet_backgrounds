@@ -48,14 +48,6 @@ texture - image:
  Photo by <a href="https://unsplash.com/@ashishjha?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Avinash Kumar</a> on <a href="https://unsplash.com/s/photos/balloon?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
   
 
-https://www.w3schools.com/cssref/pr_background-blend-mode.asp
-
-https://css-tricks.com/almanac/properties/b/background-blend-mode/
-
-https://developer.mozilla.org/en-US/docs/Web/CSS/blend-mode
-
-https://developer.mozilla.org/en-US/docs/Web/CSS/background-blend-mode
-
 mask-image
 
 text - stroke (only show the outline of font) or use text-shadow?
