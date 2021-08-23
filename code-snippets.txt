@@ -1,3 +1,36 @@
+Helping me...
+https://mazcodesonthemoon.wordpress.com/2020/10/12/teaching-myself-to-code-css/
+
+https://dev.w3.org/html5/html-author/charref
+https://google.github.io/styleguide/htmlcssguide.html
+https://www.w3.org/2009/cheatsheet/
+https://caniuse.com/
+https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes
+https://html.spec.whatwg.org/
+https://www.w3.org/WAI/test-evaluate/preliminary/
+https://validator.w3.org/
+https://jigsaw.w3.org/css-validator/
+https://validator.w3.org/checklink
+https://www.smashingmagazine.com/2021/05/useful-vs-code-extensions-web-developers/
+https://responsibleweb.app
+https://whatwg.org/
+https://tiny-helpers.dev
+https://shields.io/
+
+My Design Hat:
+
+https://fluid-typography.netlify.app/
+https://cssgradient.io/
+https://shadows.brumm.af/
+https://omatsuri.app/color-shades-generator
+https://www.smashingmagazine.com/2021/03/svg-generators/
+http://jashgopani.me/colorinator/
+https://www.imagemaps.net
+https://realfavicongenerator.net
+https://favicon.io/emoji-favicons
+
+As a ..., I want to ..., so that...
+
 <span class="really-look-at-me-text"></span>
 
 <span class="look-at-me-text"></span>
@@ -40,17 +73,6 @@ background-image: url(https://upload.wikimedia.org/wikipedia/commons/b/b0/Smiley
 
 /*image - sourced from https://unsplash.com/@joshuaryanphoto*/
 
-texture - image:
- https://commons.wikimedia.org/wiki/File:Gfp-tree-bark-texture.jpg
- cite: Yina Chen http://www.goodfreephotos.com/
- 
- Balloon:
- Photo by <a href="https://unsplash.com/@ashishjha?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Avinash Kumar</a> on <a href="https://unsplash.com/s/photos/balloon?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-  
+https://github.com/MazontheMoon/css_cheatsheet_backgrounds/blob/main/assets/balloon.jpg?raw=true
 
-mask-image
-
-text - stroke (only show the outline of font) or use text-shadow?
-
-rem = font
-em - padding & margins
+https://github.com/MazontheMoon/css_cheatsheet_backgrounds/blob/main/assets/tree-bark-texture.jpg?raw=true

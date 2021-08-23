@@ -818,6 +818,7 @@ Finding your way around
           <p><u>Contain</u></p>
           <p>Resizes the image so it is fully visible</p>
         </div>
+        <!--Example of background image set by size-->
         <figure class="content-box-code-example">
           <figcaption>Background sized</figcaption>
           <div class="content-box-code">
@@ -835,6 +836,7 @@ Finding your way around
           </div>
           <div class="example-boxes" id="example-bg-img-sized"></div>
         </figure>
+        <!--Example of background image set to cover-->
         <figure class="content-box-code-example">
           <figcaption>Background Cover</figcaption>
           <div class="content-box-code">
@@ -852,6 +854,7 @@ Finding your way around
           </div>
           <div class="example-boxes" id="example-bg-img-size-cover"></div>
         </figure>
+        <!--Example of background image set to contain-->
         <figure class="content-box-code-example">
           <figcaption>Background contain</figcaption>
           <div class="content-box-code">
@@ -918,7 +921,7 @@ Finding your way around
             <li>text</li>
           </ul>
         </div>
-
+        <!--Example of background clipped to border box-->
         <figure class="content-box-code-example">
           <figcaption>Border clip</figcaption>
           <div class="content-box-code">
@@ -936,7 +939,7 @@ Finding your way around
             </div>
           </div>
         </figure>
-
+        <!--Example of background clipped to padding box-->
         <figure class="content-box-code-example">
           <figcaption>Padding clip</figcaption>
           <div class="content-box-code">
@@ -954,7 +957,7 @@ Finding your way around
             </div>
           </div>
         </figure>
-
+        <!--Example of background clipped to content box-->
         <figure class="content-box-code-example">
           <figcaption>Content clip</figcaption>
           <div class="content-box-code">
@@ -972,7 +975,7 @@ Finding your way around
             </div>
           </div>
         </figure>
-
+        <!--Example of background clipped to text box-->
         <figure class="content-box-code-example">
           <figcaption>Text Clip</figcaption>
           <div class="content-box-code">
@@ -1032,44 +1035,183 @@ Finding your way around
               background-blend-mode: color-dodge; <br>
               }
           </code>
-          <!--EX-->
+          <!--EXAMPLE OF NORMAL BACKGROUND BLEND -->
           <div class="figure_box">
             <figure class="content-box-code-example">
-              <figcaption>A normal blend with background colour</figcaption>
+              <figcaption>A <span class="look-at-me-text">normal</span> blend with background colour</figcaption>
               <div class="blend_col blend_normal"></div>
             </figure>
             <figure class="content-box-code-example">
-              <figcaption>A normal blend with background image</figcaption>
+              <figcaption>A <span class="look-at-me-text">normal</span> blend with background image</figcaption>
               <div class="blend_img blend_normal"></div>
             </figure>
           </div>
-          
+          <!--EXAMPLE OF MULTIPLY BACKGROUND IMAGE BLEND -->
           <div class="figure_box">
             <figure class="content-box-code-example">
-              <figcaption>A normal blend with background colour</figcaption>
-              <div class="blend_col blend_normal"></div>
+              <figcaption>A <span class="look-at-me-text">multiply</span> blend with background colour</figcaption>
+              <div class="blend_col blend_multiply"></div>
             </figure>
             <figure class="content-box-code-example">
-              <figcaption>A normal blend with background image</figcaption>
-              <div class="blend_img blend_normal"></div>
+              <figcaption>A <span class="look-at-me-text">multiply</span> blend with background image</figcaption>
+              <div class="blend_img blend_multiply"></div>
             </figure>
           </div>
-          <!--
+          <!--EXAMPLE OF SCREEN BACKGROUND IMAGE BLEND -->
           <div class="figure_box">
             <figure class="content-box-code-example">
-              <figcaption>A normal blend with background colour</figcaption>
-              <div id="blend_col_normal">
-                <img src="https://raw.githubusercontent.com/MazontheMoon/css_cheatsheet_backgrounds/main/assets/balloon.jpg" alt="A shiny orange balloon">
-              </div>
+              <figcaption>A <span class="look-at-me-text">screen</span> blend with background colour</figcaption>
+              <div class="blend_col blend_screen"></div>
             </figure>
             <figure class="content-box-code-example">
-              <figcaption>A normal blend with background image</figcaption>
-              <div id="blend_img_normal">
-                <img src="https://raw.githubusercontent.com/MazontheMoon/css_cheatsheet_backgrounds/main/assets/balloon.jpg" alt="A shiny orange balloon">
-                <img src="https://github.com/MazontheMoon/css_cheatsheet_backgrounds/blob/main/assets/tree-bark-texture.jpg?raw=true" alt="A shiny orange balloon">
-              </div>
+              <figcaption>A <span class="look-at-me-text">screen</span> blend with background image</figcaption>
+              <div class="blend_img blend_screen"></div>
             </figure>
-          </div>-->
+          </div>
+          <!--EXAMPLE OF OVERLAY BACKGROUND IMAGE BLEND -->
+          <div class="figure_box">
+            <figure class="content-box-code-example">
+              <figcaption>A <span class="look-at-me-text">overlay</span> blend with background colour</figcaption>
+              <div class="blend_col blend_overlay"></div>
+            </figure>
+            <figure class="content-box-code-example">
+              <figcaption>A <span class="look-at-me-text">overlay</span> blend with background image</figcaption>
+              <div class="blend_img blend_overlay"></div>
+            </figure>
+          </div>
+          <!--EXAMPLE OF DARKEN BACKGROUND IMAGE BLEND -->
+          <div class="figure_box">
+            <figure class="content-box-code-example">
+              <figcaption>A <span class="look-at-me-text">darken</span> blend with background colour</figcaption>
+              <div class="blend_col blend_darken"></div>
+            </figure>
+            <figure class="content-box-code-example">
+              <figcaption>A <span class="look-at-me-text">darken</span> blend with background image</figcaption>
+              <div class="blend_img blend_darken"></div>
+            </figure>
+          </div>
+          <!--EXAMPLE OF LIGHTEN BACKGROUND IMAGE BLEND -->
+          <div class="figure_box">
+            <figure class="content-box-code-example">
+              <figcaption>A <span class="look-at-me-text">lighten</span> blend with background colour</figcaption>
+              <div class="blend_col blend_lighten"></div>
+            </figure>
+            <figure class="content-box-code-example">
+              <figcaption>A <span class="look-at-me-text">lighten</span> blend with background image</figcaption>
+              <div class="blend_img blend_lighten"></div>
+            </figure>
+          </div>
+          <!--EXAMPLE OF COLOR-DODGE BACKGROUND IMAGE BLEND -->
+          <div class="figure_box">
+            <figure class="content-box-code-example">
+              <figcaption>A <span class="look-at-me-text">color-dodge</span> blend with background colour</figcaption>
+              <div class="blend_col blend_colordodge"></div>
+            </figure>
+            <figure class="content-box-code-example">
+              <figcaption>A <span class="look-at-me-text">color-dodge</span> blend with background image</figcaption>
+              <div class="blend_img blend_colordodge"></div>
+            </figure>
+          </div>
+          <!--EXAMPLE OF COLOR-BURN BACKGROUND IMAGE BLEND -->
+          <div class="figure_box">
+            <figure class="content-box-code-example">
+              <figcaption>A <span class="look-at-me-text">color-burn</span> blend with background colour</figcaption>
+              <div class="blend_col blend_colorburn"></div>
+            </figure>
+            <figure class="content-box-code-example">
+              <figcaption>A <span class="look-at-me-text">color-burn</span> blend with background image</figcaption>
+              <div class="blend_img blend_colorburn"></div>
+            </figure>
+          </div>
+          <!--EXAMPLE OF HARD-LIGHT BACKGROUND IMAGE BLEND -->
+          <div class="figure_box">
+            <figure class="content-box-code-example">
+              <figcaption>A <span class="look-at-me-text"> hard-light</span> blend with background colour</figcaption>
+              <div class="blend_col blend_hardlight"></div>
+            </figure>
+            <figure class="content-box-code-example">
+              <figcaption>A <span class="look-at-me-text"> hard-light</span> blend with background image</figcaption>
+              <div class="blend_img blend_hardlight"></div>
+            </figure>
+          </div>
+          <!--EXAMPLE OF SOFT-LIGHT BACKGROUND IMAGE BLEND -->
+          <div class="figure_box">
+            <figure class="content-box-code-example">
+              <figcaption>A <span class="look-at-me-text"> soft-light</span> blend with background colour</figcaption>
+              <div class="blend_col blend_softlight"></div>
+            </figure>
+            <figure class="content-box-code-example">
+              <figcaption>A <span class="look-at-me-text"> soft-light</span> blend with background image</figcaption>
+              <div class="blend_img blend_softlight"></div>
+            </figure>
+          </div>
+          <!--EXAMPLE OF DIFFERENCE BACKGROUND IMAGE BLEND -->
+          <div class="figure_box">
+            <figure class="content-box-code-example">
+              <figcaption>A <span class="look-at-me-text"> difference</span> blend with background colour</figcaption>
+              <div class="blend_col blend_difference"></div>
+            </figure>
+            <figure class="content-box-code-example">
+              <figcaption>A <span class="look-at-me-text"> difference</span> blend with background image</figcaption>
+              <div class="blend_img blend_difference"></div>
+            </figure>
+          </div>
+          <!--EXAMPLE OF EXCLUSION BACKGROUND IMAGE BLEND -->
+          <div class="figure_box">
+            <figure class="content-box-code-example">
+              <figcaption>A <span class="look-at-me-text"> exclusion</span> blend with background colour</figcaption>
+              <div class="blend_col blend_exclusion"></div>
+            </figure>
+            <figure class="content-box-code-example">
+              <figcaption>A <span class="look-at-me-text"> exclusion</span> blend with background image</figcaption>
+              <div class="blend_img blend_exclusion"></div>
+            </figure>
+            </div>
+            <!--EXAMPLE OF HUE BACKGROUND IMAGE BLEND -->
+          <div class="figure_box">
+            <figure class="content-box-code-example">
+              <figcaption>A <span class="look-at-me-text"> hue</span> blend with background colour</figcaption>
+              <div class="blend_col blend_hue"></div>
+            </figure>
+            <figure class="content-box-code-example">
+              <figcaption>A <span class="look-at-me-text"> hue</span> blend with background image</figcaption>
+              <div class="blend_img blend_hue"></div>
+            </figure>
+          </div>
+          <!--EXAMPLE OF SATURATION BACKGROUND IMAGE BLEND -->
+          <div class="figure_box">
+            <figure class="content-box-code-example">
+              <figcaption>A <span class="look-at-me-text"> saturation</span> blend with background colour</figcaption>
+              <div class="blend_col blend_saturation"></div>
+            </figure>
+            <figure class="content-box-code-example">
+              <figcaption>A <span class="look-at-me-text"> saturation</span> blend with background image</figcaption>
+              <div class="blend_img blend_saturation"></div>
+            </figure>
+          </div>
+          <!--EXAMPLE OF COLOR BACKGROUND IMAGE BLEND -->
+          <div class="figure_box">
+            <figure class="content-box-code-example">
+              <figcaption>A <span class="look-at-me-text"> color</span> blend with background colour</figcaption>
+              <div class="blend_col blend_color"></div>
+            </figure>
+            <figure class="content-box-code-example">
+              <figcaption>A <span class="look-at-me-text"> color</span> blend with background image</figcaption>
+              <div class="blend_img blend_color"></div>
+            </figure>
+          </div>
+            <!--EXAMPLE OF LUMINOSITY BACKGROUND IMAGE BLEND -->
+          <div class="figure_box">
+            <figure class="content-box-code-example">
+              <figcaption>A <span class="look-at-me-text"> luminosity</span> blend with background colour</figcaption>
+              <div class="blend_col blend_luminosity"></div>
+            </figure>
+            <figure class="content-box-code-example">
+              <figcaption>A <span class="look-at-me-text"> luminosity</span> blend with background image</figcaption>
+              <div class="blend_img blend_luminosity"></div>
+            </figure>
+          </div>
+          </div>
         </div>
       </div>
     </section>

@@ -749,20 +749,79 @@ Code example figure boxes
   }
 
   /* multiply blend*/
+  .blend_multiply {
+    background-blend-mode: multiply;
+  }
+
   /* screen blend*/
+  .blend_screen {
+    background-blend-mode: screen;
+  }
+
   /* overlay blend*/
+  .blend_overlay {
+    background-blend-mode: overlay;
+  }
+
   /* darken blend*/
+  .blend_darken {
+    background-blend-mode: darken;
+  }
+  
   /* lighten blend*/
+  .blend_lighten {
+    background-blend-mode: lighten;
+  }
+
   /* color-dodge blend*/
+  .blend_colordodge {
+    background-blend-mode: color-dodge;
+  }
+
   /* color-burn blend*/
+  .blend_colorburn {
+    background-blend-mode: color-burn;
+  }
+
   /* hard-light blend*/
+  .blend_hardlight {
+    background-blend-mode: hard-light;
+  }
+
   /* soft-light blend*/
+  .blend_softlight {
+    background-blend-mode: soft-light;
+  }
+
   /* difference blend*/
+  .blend_difference {
+    background-blend-mode: difference;
+  }
+
   /* exclusion blend*/
+  .blend_exclusion {
+    background-blend-mode: exclusion;
+  }
+
   /* hue blend*/
+  .blend_hue {
+    background-blend-mode: hue;
+  }
+
   /* saturation blend*/
+  .blend_saturation {
+    background-blend-mode: saturation;
+  }
+
   /* color blend*/
+  .blend_color {
+    background-blend-mode: color;
+  }
+
   /* luminosity blend*/
+  .blend_luminosity {
+    background-blend-mode: luminosity;
+  }
 
 /*====
 Footer
