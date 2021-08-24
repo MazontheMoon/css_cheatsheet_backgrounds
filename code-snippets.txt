@@ -64,6 +64,9 @@ var(--lightest-colour, #f2e9e4);
 --text-font: font-family: 'Saira', sans-serif;
 --code-font: font-family: 'Space Mono', monospace;
 
+form {
+  accent-color: deeppink;
+}
 
 /* repeating smiley
 background-image: url(https://upload.wikimedia.org/wikipedia/commons/b/b0/Smiley_head_happy.png);
