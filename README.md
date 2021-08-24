@@ -13,7 +13,7 @@
 
  ## Software
 
- * Atom
+ * VS Code
  * CodePen
  * Github Desktop
 
@@ -21,12 +21,7 @@
 
 Version 1.1 - Initial content
 Version 1.2 - Styling
-Version 1.3 - Add new section for Background Blend
-
-## Table of Contents
-
-
-## Authors
+Version 1.3 - Add new section for Background Blend & Backdrop Filter
 * **Mary Ronan** - [MazOnTheMoon](https://github.com/MazontheMoon)
 
 ## Code Naming Conventions

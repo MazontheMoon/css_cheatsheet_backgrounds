@@ -823,6 +823,13 @@ Code example figure boxes
     background-blend-mode: luminosity;
   }
 
+  /*BACKDROP FILTER EXAMPLES*/
+
+  /*container box for showing filter effect*/
+  .backdrop_example {
+    padding: 1rem;
+    background-image: linear-gradient(to right,black, white, purple, blue, white, black);
+  }
 /*====
 Footer
 =======*/

@@ -68,6 +68,12 @@ form {
   accent-color: deeppink;
 }
 
+@media (max-width: 599px) - for-phone-only
+@media (min-width: 600px) - for-tablet-portrait-up
+@media (min-width: 900px) - for-tablet-landscape-up
+@media (min-width: 1200px) - for-desktop-up
+@media (min-width: 1800px) -for-big-desktop-up
+
 /* repeating smiley
 background-image: url(https://upload.wikimedia.org/wikipedia/commons/b/b0/Smiley_head_happy.png);
  /*cite = https://en.wikipedia.org/wiki/en:User:Robbrown*/
