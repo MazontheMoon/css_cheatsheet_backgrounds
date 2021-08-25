@@ -827,9 +827,23 @@ Code example figure boxes
 
   /*container box for showing filter effect*/
   .backdrop_example {
-    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-image: linear-gradient(to right,black, white, purple, blue, white, black);
   }
+
+  .backdrop_box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 3px #000;
+    height: 80%;
+    width: 80%;
+  }
+
+
+
 /*====
 Footer
 =======*/
