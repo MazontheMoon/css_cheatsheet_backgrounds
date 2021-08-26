@@ -720,11 +720,10 @@ Code example figure boxes
 
 .figure_box figure {
   flex: 1;
-  }
+}
 
 .figure_box figure div {
   height: 45vh;
-
 }
 
 /* blend colour*/
@@ -736,113 +735,126 @@ Code example figure boxes
   background-position: center;
 }
 
-  .blend_img {
-    background-image: url("https://github.com/MazontheMoon/css_cheatsheet_backgrounds/blob/main/assets/balloon.jpg?raw=true"), url("https://github.com/MazontheMoon/css_cheatsheet_backgrounds/blob/main/assets/tree-bark-texture.jpg?raw=true");
-    background-repeat: no-repeat;
+.blend_img {
+  background-image: url("https://github.com/MazontheMoon/css_cheatsheet_backgrounds/blob/main/assets/balloon.jpg?raw=true"),
+    url("https://github.com/MazontheMoon/css_cheatsheet_backgrounds/blob/main/assets/tree-bark-texture.jpg?raw=true");
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  }
+}
 
-  /* normal blend*/
-  .blend_normal {
-    background-blend-mode: normal;
-  }
+/* normal blend*/
+.blend_normal {
+  background-blend-mode: normal;
+}
 
-  /* multiply blend*/
-  .blend_multiply {
-    background-blend-mode: multiply;
-  }
+/* multiply blend*/
+.blend_multiply {
+  background-blend-mode: multiply;
+}
 
-  /* screen blend*/
-  .blend_screen {
-    background-blend-mode: screen;
-  }
+/* screen blend*/
+.blend_screen {
+  background-blend-mode: screen;
+}
 
-  /* overlay blend*/
-  .blend_overlay {
-    background-blend-mode: overlay;
-  }
+/* overlay blend*/
+.blend_overlay {
+  background-blend-mode: overlay;
+}
 
-  /* darken blend*/
-  .blend_darken {
-    background-blend-mode: darken;
-  }
-  
-  /* lighten blend*/
-  .blend_lighten {
-    background-blend-mode: lighten;
-  }
+/* darken blend*/
+.blend_darken {
+  background-blend-mode: darken;
+}
 
-  /* color-dodge blend*/
-  .blend_colordodge {
-    background-blend-mode: color-dodge;
-  }
+/* lighten blend*/
+.blend_lighten {
+  background-blend-mode: lighten;
+}
 
-  /* color-burn blend*/
-  .blend_colorburn {
-    background-blend-mode: color-burn;
-  }
+/* color-dodge blend*/
+.blend_colordodge {
+  background-blend-mode: color-dodge;
+}
 
-  /* hard-light blend*/
-  .blend_hardlight {
-    background-blend-mode: hard-light;
-  }
+/* color-burn blend*/
+.blend_colorburn {
+  background-blend-mode: color-burn;
+}
 
-  /* soft-light blend*/
-  .blend_softlight {
-    background-blend-mode: soft-light;
-  }
+/* hard-light blend*/
+.blend_hardlight {
+  background-blend-mode: hard-light;
+}
 
-  /* difference blend*/
-  .blend_difference {
-    background-blend-mode: difference;
-  }
+/* soft-light blend*/
+.blend_softlight {
+  background-blend-mode: soft-light;
+}
 
-  /* exclusion blend*/
-  .blend_exclusion {
-    background-blend-mode: exclusion;
-  }
+/* difference blend*/
+.blend_difference {
+  background-blend-mode: difference;
+}
 
-  /* hue blend*/
-  .blend_hue {
-    background-blend-mode: hue;
-  }
+/* exclusion blend*/
+.blend_exclusion {
+  background-blend-mode: exclusion;
+}
 
-  /* saturation blend*/
-  .blend_saturation {
-    background-blend-mode: saturation;
-  }
+/* hue blend*/
+.blend_hue {
+  background-blend-mode: hue;
+}
 
-  /* color blend*/
-  .blend_color {
-    background-blend-mode: color;
-  }
+/* saturation blend*/
+.blend_saturation {
+  background-blend-mode: saturation;
+}
 
-  /* luminosity blend*/
-  .blend_luminosity {
-    background-blend-mode: luminosity;
-  }
+/* color blend*/
+.blend_color {
+  background-blend-mode: color;
+}
 
-  /*BACKDROP FILTER EXAMPLES*/
+/* luminosity blend*/
+.blend_luminosity {
+  background-blend-mode: luminosity;
+}
 
-  /*container box for showing filter effect*/
-  .backdrop_example {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-image: linear-gradient(to right,black, white, purple, blue, white, black);
-  }
+/*BACKDROP FILTER EXAMPLES*/
 
-  .backdrop_box {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: solid 3px #000;
-    height: 80%;
-    width: 80%;
-  }
+/*container box for showing filter effect*/
+.backdrop_example {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(
+    to right,
+    black,
+    white,
+    purple,
+    blue,
+    white,
+    black
+  );
+}
 
+.backdrop_box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid 3px #000;
+  height: 80%;
+  width: 80%;
+  font-size: 3rem;
+}
 
+#backdrop_blur {
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+}
 
 /*====
 Footer
@@ -911,6 +923,10 @@ Responsivesnness
   nav #nav-bar {
     position: sticky;
     top: 0;
+  }
+
+  nav #nav-bar li {
+    flex: 1 0 100%;
   }
 
   .backtotop {
