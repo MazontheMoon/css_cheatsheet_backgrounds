@@ -856,16 +856,65 @@ Code example figure boxes
   font-size: 3rem;
 }
 
+/*blur effect*/
 #backdrop_blur {
   backdrop-filter: blur(30px);
   -webkit-backdrop-filter: blur(30px);
 }
 
+/*brightness effect*/
 #backdrop_brightness {
   backdrop-filter: brightness(45%);
   -webkit-backdrop-filter: brightness(45%);
 }
 
+/*contrast effect*/
+#backdrop_contrast {
+  backdrop-filter: contrast(45%);
+  -webkit-backdrop-filter: contrast(45%);
+}
+
+/*drop-shadow effect*/
+#backdrop_shadow {
+  backdrop-filter: drop-shadow(4px 4px 10px grey);
+  -webkit-backdrop-filter: drop-shadow(4px 4px 10px grey);
+}
+
+/*grayscale effect*/
+#backdrop_grayscale {
+  backdrop-filter: grayscale(60%);
+  -webkit-backdrop-filter: grayscale(60%);
+}
+
+/*hue-rotate effect*/
+#backdrop_hue {
+  backdrop-filter: hue-rotate(120deg);
+  -webkit-backdrop-filter: hue-rotate(120deg);
+}
+
+/*invert effect*/
+#backdrop_invert{
+  backdrop-filter: invert(70%);
+  -webkit-backdrop-filter: invert(70%);
+}
+
+/*opacity effect*/
+#backdrop_opacity {
+  backdrop-filter: opacity(25%);
+  -webkit-backdrop-filter: opacity(25%);
+}
+
+/*sepia effect*/
+#backdrop_sepia {
+  backdrop-filter: sepia(45%);
+  -webkit-backdrop-filter: sepia(45%);
+}
+
+/*saturate effect*/
+#backdrop_saturate {
+  backdrop-filter: saturate(35%);
+  -webkit-backdrop-filter: saturate(35%);
+}
 /*====
 Footer
 =======*/
