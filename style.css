@@ -827,7 +827,6 @@ Code example figure boxes
 
 /*container box for showing filter effect*/
 .backdrop_example {
-  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -840,6 +839,10 @@ Code example figure boxes
     white,
     black
   );
+  background-image: url("https://github.com/MazontheMoon/css_cheatsheet_backgrounds/blob/main/assets/balloon.jpg?raw=true");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .backdrop_box {
@@ -847,20 +850,20 @@ Code example figure boxes
   align-items: center;
   justify-content: center;
   border: solid 3px #000;
+  background: rgba(255, 255, 255, 0.2);
   height: 80%;
   width: 80%;
-}
-
-.backdrop_box p {
-  border: dashed 1px #000;
-  padding: 2rem;
   font-size: 3rem;
-  color: rgba(0,0,0,.8);
 }
 
 #backdrop_blur {
-  backdrop-filter: blur(3px);
-  -webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+}
+
+#backdrop_brightness {
+  backdrop-filter: brightness(45%);
+  -webkit-backdrop-filter: brightness(45%);
 }
 
 /*====
