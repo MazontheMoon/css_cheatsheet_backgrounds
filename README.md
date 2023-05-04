@@ -22,7 +22,7 @@
 Version 1.1 - Initial content
 Version 1.2 - Styling
 Version 1.3 - Add new section for Background Blend & Backdrop Filter
-* **Mary Ronan** - [MazOnTheMoon](https://github.com/MazontheMoon)
+Version 1.4 - Add new subsection for Isolation property in Blend section - IN PROGRESS
 
 ## Code Naming Conventions
 
