@@ -824,7 +824,19 @@ Code example figure boxes
 }
 
 /*MIX BLEND MODE EXAMPLE*/
+.mix_blend {
+  mix-blend-mode: color-burn;
+}
 
+.banner {
+  width: 95%;
+  margin: auto;
+  line-height: 2;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 2pxs;
+  border: 2px solid black;
+}
 /*MIX BLEND MODE ISOLATION EXAMPLE*/
 
 /*BACKDROP FILTER EXAMPLES*/
