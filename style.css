@@ -825,11 +825,12 @@ Code example figure boxes
 
 /*MIX BLEND MODE EXAMPLE*/
 .mix_blend {
-  mix-blend-mode: color-burn;
+  mix-blend-mode: difference;
 }
 
 .banner {
   width: 95%;
+  height: 50%;
   margin: auto;
   padding: 2rem;
   font-size: 2rem;
