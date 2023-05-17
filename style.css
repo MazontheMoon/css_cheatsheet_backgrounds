@@ -833,13 +833,18 @@ Code example figure boxes
   height: 50%;
   margin: auto;
   padding: 2rem;
-  line-height: 100%;
+  font-size: 2rem;
+  line-height: 2;
   text-align: center;
   font-weight: bold;
   letter-spacing: 2pxs;
   border: 2px solid black;
 }
 /*MIX BLEND MODE ISOLATION EXAMPLE*/
+
+.isolate {
+  isolation: isolate;
+}
 
 /*BACKDROP FILTER EXAMPLES*/
 
