@@ -825,20 +825,22 @@ Code example figure boxes
 
 /*MIX BLEND MODE EXAMPLE*/
 .mix_blend {
-  mix-blend-mode: difference;
+  mix-blend-mode: hard-light;
 }
 
 .banner {
-  width: 95%;
-  height: 50%;
+  width: 90%;
+  height: 90%;
   margin: auto;
-  padding: 2rem;
+  border: 2px solid black;
+  background-color: var(--dark-colour);
+}
+
+.banner p {
   font-size: 2rem;
-  line-height: 2;
   text-align: center;
   font-weight: bold;
-  letter-spacing: 2pxs;
-  border: 2px solid black;
+  letter-spacing: 2px;
 }
 /*MIX BLEND MODE ISOLATION EXAMPLE*/
 
