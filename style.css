@@ -833,6 +833,7 @@ Code example figure boxes
   height: 90%;
   margin: auto;
   border: 2px solid black;
+  mix-blend-mode: hard-light;
   background-color: var(--dark-colour);
 }
 
@@ -840,7 +841,9 @@ Code example figure boxes
   font-size: 2rem;
   text-align: center;
   font-weight: bold;
+  text-decoration: underline;
   letter-spacing: 2px;
+  background-color: var(--lightest-colour);
 }
 /*MIX BLEND MODE ISOLATION EXAMPLE*/
 
