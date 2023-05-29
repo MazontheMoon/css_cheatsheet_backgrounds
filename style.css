@@ -834,7 +834,6 @@ Code example figure boxes
   margin: auto;
   border: 2px solid black;
   background-color: var(--dark-colour);
-  mix-blend-mode: difference;
 }
 
 .banner p {
@@ -843,11 +842,13 @@ Code example figure boxes
   font-weight: bold;
   letter-spacing: 2px;
   background-color: var(--lightest-colour);
+  mix-blend-mode: hard-light;
 }
 /*MIX BLEND MODE ISOLATION EXAMPLE*/
 
 .isolate {
   isolation: isolate;
+  display: inline-block;
 }
 
 /*BACKDROP FILTER EXAMPLES*/
