@@ -842,6 +842,7 @@ Code example figure boxes
   font-weight: bold;
   letter-spacing: 2px;
   background-color: var(--lightest-colour);
+  color: var(--darkest-colour);
   mix-blend-mode: hard-light;
 }
 /*MIX BLEND MODE ISOLATION EXAMPLE*/

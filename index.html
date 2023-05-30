@@ -1236,7 +1236,7 @@ Finding your way around
             </figure>
           </div>
           <div class="content-box-text">
-            <p>The <span class="code-word">isolation</span> is used to prevent elements from blending with their backdrops.</p>
+            <p>The <span class="code-word">isolation</span> (coming soon) is used to prevent elements from blending with their backdrops.</p>
             <p>If <span class="code-word">mix-blend-mode</span>  is telling overlapping elements to blend with one another, then <span class="code-word">isolation</span> creates an exemption on the elements where it's applied. It's like a way to turn off <span class="code-word">mix-blend-mode</span> , but from a parent element rather than needing to select the element with blending directly.</p>
             <div class="content-box-code">
               <code>
@@ -1253,7 +1253,9 @@ Finding your way around
               <figcaption><span class="look-at-me-text">isolation</span></figcaption>
               <div class="blend_col">
                 <div class="banner mix_blend">
-                  <p>Hi! <span class="isolate">Hello!</span> Heya!</p>
+                  <p>Hi! Hello! Heya!</p>
+                  <p><span class="isolate">Hi! Hello! Heya!</span></p>
+                  <p>Hi! Hello! Heya!</p>
                 </div> 
               </div>
             </figure>
@@ -1261,6 +1263,8 @@ Finding your way around
               <figcaption><span class="look-at-me-text">no isolation</span></figcaption>
               <div class="blend_col">
                 <div class="banner mix_blend">
+                  <p>Hi! Hello! Heya!</p>
+                  <p>Hi! Hello! Heya!</p>
                   <p>Hi! Hello! Heya!</p>
                 </div> 
               </div>
