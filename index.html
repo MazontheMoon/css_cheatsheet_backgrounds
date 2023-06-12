@@ -606,6 +606,70 @@ Finding your way around
       <!--HUE INTERPOLATION-->
           <div class="content-box-text">
             <p class="mini-header">Hue Interpolation</p>
+            <p>Interpolation is when you calculate one or more values between two known values...so if you have a gradient from red to blue, interpolation is how you calculate which colors are in the range between red and blue.</p>
+            <p>When creating a linear-gradient() or similar CSS gradients, you can use <span class="code-word">in</span> (for interpolation) followed by the color space of the gradient:</p>
+            <div class="content-box-code">
+              <code>
+                .hsl {<br>
+                  background: linear-gradient(in hsl, blue, red);<br>
+                }
+              </code>
+            </div>
+            <!--EXAMPLES OF GRADIENT BY COLOR SPACE-->
+            <figure class="content-box-code-example">
+             <figcaption>rgb</figcaption>
+             <div class="content-box-code">
+               <code>
+                 background: linear-gradient(to right, blue, red);
+               </code>
+             </div>
+             <div class="example-boxes" id="example-col-grad-rgb"></div>
+            </figure>
+            <figure class="content-box-code-example">
+              <figcaption>hsl</figcaption>
+              <div class="content-box-code">
+                <code>
+                  background: linear-gradient(in hsl to right, blue, red);
+                </code>
+              </div>
+              <div class="example-boxes" id="example-col-grad-hsl"></div>
+             </figure>
+             <figure class="content-box-code-example">
+              <figcaption>lch</figcaption>
+              <div class="content-box-code">
+                <code>
+                  background: linear-gradient(in lch to right, blue, red);
+                </code>
+              </div>
+              <div class="example-boxes" id="example-col-grad-lch"></div>
+             </figure>
+             <figure class="content-box-code-example">
+              <figcaption>lab</figcaption>
+              <div class="content-box-code">
+                <code>
+                  background: linear-gradientt(in lab to right, blue, red);
+                </code>
+              </div>
+              <div class="example-boxes" id="example-col-grad-lab"></div>
+             </figure>
+             <figure class="content-box-code-example">
+              <figcaption>oklch</figcaption>
+              <div class="content-box-code">
+                <code>
+                  background: linear-gradientt(in oklch to right, blue, red);
+                </code>
+              </div>
+              <div class="example-boxes" id="example-col-grad-oklch"></div>
+             </figure>
+             <figure class="content-box-code-example">
+              <figcaption>oklab</figcaption>
+              <div class="content-box-code">
+                <code>
+                  background: linear-gradientt(in oklab to right, blue, red);
+                </code>
+              </div>
+              <div class="example-boxes" id="example-col-grad-oklab"></div>
+             </figure>
             <p>There are some interpolation modes that control the direction around the color wheel that the hue should be interpolated in color spaces with hue angles</p>
             <p>Four methods are available for interpolating the hue value:</p>
             <ul>
