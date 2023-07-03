@@ -682,7 +682,18 @@ Finding your way around
               <figcaption>...shorter</figcaption>
               <div class="content-box-code">
                 <code>
-                  ...
+                  .hsl { <br>
+                    background: linear-gradient(
+                      to right in hsl,
+                      hsl(39deg 100% 50%),
+                      hsl(60deg 100% 50%)
+                    );<br>
+                  }<br>
+                  /*Can also use named colors*/<br>
+                  .hsl-named {<br>
+                    background: linear-gradient(to right in hsl, orange, yellow);<br>
+                  }  <br>
+
                 </code>
               </div>
               <div class="example-boxes" id="example-col-grad-in-shorter"></div>
