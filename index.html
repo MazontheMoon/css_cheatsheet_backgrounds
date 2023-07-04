@@ -682,7 +682,7 @@ Finding your way around
               <figcaption>...shorter</figcaption>
               <div class="content-box-code">
                 <code>
-                  .hsl { <br>
+                  .hsl-shorter { <br>
                     background: linear-gradient(
                       to right in hsl,
                       hsl(39deg 100% 50%),
@@ -690,7 +690,7 @@ Finding your way around
                     );<br>
                   }<br>
                   /*Can also use named colors*/<br>
-                  .hsl-named {<br>
+                  .hsl-named-shorter {<br>
                     background: linear-gradient(to right in hsl, orange, yellow);<br>
                   }  <br>
 
@@ -702,7 +702,17 @@ Finding your way around
               <figcaption>...longer</figcaption>
               <div class="content-box-code">
                 <code>
-                  ...
+                 .hsl-longer { <br>
+                   background: linear-gradient(
+                    to right in hsl longer hue,
+                   hsl(39deg 100% 50%),
+                   hsl(60deg 100% 50%)
+                    );<br>
+                 }<br>
+                 /*Can also use named colors*/<br>
+                 .hsl-named-longer {<br>
+                    background: linear-gradient(to right in hsl longer hue, orange, yellow);<br>
+                 }<br>
                 </code>
               </div>
               <div class="example-boxes" id="example-col-grad-in-longer"></div>
