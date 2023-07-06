@@ -278,6 +278,12 @@ section .sect-content-box-subsection .subsection-header h5 {
   color: inherit;
   padding: 0.3em;
 }
+
+.mini-header {
+  font-weight: bold;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
 /*=========================
 Code example figure boxes
 ===========================*/
@@ -584,6 +590,75 @@ Code example figure boxes
   );
 }
 
+/*COLOR SPACE EXAMPLES*/
+
+/*rgb color space*/
+#example-col-grad-rgb {
+  background: linear-gradient(to right, blue, red)
+}
+
+/*hsl color space*/
+#example-col-grad-hsl {
+  background: linear-gradient(in hsl to right, blue, red);
+}
+
+/*lch color space*/
+#example-col-grad-lch {
+  background: linear-gradient(in lch to right, blue, red);
+}
+
+/*lab color space*/
+#example-col-grad-lab {
+  background: linear-gradient(in lab to right, blue, red);
+}
+
+/*oklch color space*/
+#example-col-grad-oklch {
+  background: linear-gradient(in oklch to right, blue, red);
+}
+
+/*oklab color space*/
+#example-col-grad-oklab {
+  background: linear-gradient(in oklab to right, blue, red);
+}
+
+/*HUE INTERPOLATION EXAMPLES*/
+
+/*shorter interpolation*/
+#example-col-grad-in-shorter {
+  background: linear-gradient(
+                      to right in hsl,
+                      hsl(39deg 100% 50%),
+                      hsl(60deg 100% 50%)
+                    );
+}
+
+/*longer interpolation*/
+#example-col-grad-in-longer {
+  background: linear-gradient(
+                      to right in hsl longer hue,
+                      hsl(39deg 100% 50%),
+                      hsl(60deg 100% 50%)
+                    );
+}
+
+/*increasing interpolation*/
+#example-col-grad-in-increasing {
+  background: linear-gradient(
+                      to right in hsl increasing hue,
+                      hsl(39deg 100% 50%),
+                      hsl(60deg 100% 50%)
+                    );
+}
+
+/*decreasing interpolation*/
+#example-col-grad-in-decreasing {
+  background: linear-gradient(
+                      to right in hsl decreasing hue,
+                      hsl(39deg 100% 50%),
+                      hsl(60deg 100% 50%)
+                    );
+}
 /*background-image with repeat*/
 #example-bg-img-rep {
   background-color: var(--dark-colour);
