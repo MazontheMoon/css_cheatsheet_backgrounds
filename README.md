@@ -22,7 +22,8 @@
 Version 1.1 - Initial content
 Version 1.2 - Styling
 Version 1.3 - Add new section for Background Blend & Backdrop Filter
-Version 1.4 - Add new subsection for Isolation property in Blend section - IN PROGRESS
+Version 1.4 - Add new subsection for Isolation property in Blend section
+Version 1.5 - Add currentColor tip to Color subsection
 
 ## Code Naming Conventions
 
