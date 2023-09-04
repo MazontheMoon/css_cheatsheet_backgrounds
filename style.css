@@ -293,6 +293,10 @@ Code example figure boxes
   background-color: var(--dark-colour);
 }
 
+#current-color-fade {
+  background-color: color-mix(in srgb, transparent 60%, currentColor);
+}
+
 /*background image covering entire container*/
 #example-bg-img {
   background-color: var(--dark-colour);
